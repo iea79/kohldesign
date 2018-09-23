@@ -4,11 +4,12 @@
 	font-size: $main_font_size;
 	position: relative;
 	height: $footer_height;
-	background: #BFF08E;
+	color: #fff;
+	// background: #BFF08E;
 	@extend %clear_all;
 	.container_center {
-		padding-top: 10px;
-		padding-bottom: 10px;
+		padding-top: 2em;
+		padding-bottom: 2em;
 	}
 }
 

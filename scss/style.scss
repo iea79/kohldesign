@@ -8,12 +8,13 @@
 
 @import 'mixins/mixin';
 // Fonts
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,900);
+@import 'core/fonts';
+// @include font-face("PF Din Text Cond Pro", '../fonts/PF Din Text Cond Pro/PFDinTextCondPro-Medium', 500, normal);
+// @include font-face("Gotham Pro", '../fonts/GothamPro/GothamPro', 400, normal);
 
-// Mixin for include fonts
-// @include font-face("ArialMT", fonts/CenturyGothic, normal, normal);
 
  // Import files
+
 @import 'variables/variables';
 @import 'core/reset';
 @import 'core/template';
@@ -27,4 +28,145 @@
 @import 'core/buttons';
 @import 'core/video';
 
+@import 'block/elena';
+@import 'block/plate';
+@import 'block/tasks';
+
+.section__title {
+	color: #fff;
+	font-size: 3.7em;
+	font-family: "PF Din Text Cond Pro";
+	font-weight: 500;
+	line-height: 1.2;
+	text-transform: uppercase;
+}
+
+@import 'block/plate';
+@import 'block/tasks';
+
+// Заглушка
+.nameSection {
+	color: #fff4fb;
+	padding: 16em 0;
+	background: url('../img/05-03.png') no-repeat center right;
+	background-size: contain;
+	&:before {
+		content: '';
+		position: absolute;
+		top: -(55.5em / 2);
+		left: -(55.5em / 2);
+		width: 55.5em;
+		height: 55.563em;
+		// background-color: ;
+		opacity: 0.4;
+		display: block;
+		background: radial-gradient(#f51e1e, rgba(#f51e1e, 0) 71%);
+		
+	}
+	.section__title {
+		position: relative;
+		&:before {
+			content: '';
+			width: 3em;
+			height: 3em;
+			background: url('../img/title-ell.png') no-repeat center center;
+			background-size: contain;
+			position: absolute;
+			left: -1.2em;
+			top: -1.1em;
+		}
+	}
+	a {
+		color: #f51e1e;
+		font-weight: 400;
+	}
+	h2 {
+		font-weight: 400;
+		line-height: 1.6;
+	}
+}
+
+.fScreen {
+	padding: 11.7em 0;
+	@extend %clear_a;
+	.container_center {}
+	.section__title {
+		font-size: 4.47em;
+		line-height: 1.14;
+		margin-bottom: 0.35em;
+	}
+	&__left {
+		float: left;
+		width: 59%;
+		margin-right: -20%;
+	}
+	&__sub {
+		font-size: 1.95em;
+		color: rgba(#fff, 0.5);
+		margin-bottom: 1.8em;
+	}
+	&__action {
+
+		&Name {
+			color: rgba(#fff4fb, .3);
+			position: relative;
+			padding-left: 4.9em;
+			line-height: 1.4;
+			margin-bottom: 5.4em;
+			letter-spacing: 0.05em;
+			&:before {
+				content: '';
+				background: url('../img/action_first.png') no-repeat center;
+				background-size: contain;
+				width: 2.063em;
+				height: 5.063em;
+				position: absolute;
+				left: 1.6em;
+				top: 1em;
+			}
+		}
+	}
+	&__btn {
+
+	}
+	&__img {
+		position: relative;
+		float: right;
+		text-align: right;
+		width: 78%;
+		margin-right: -18%;
+		margin-top: -4em;
+	}
+	&__signature {
+		position: absolute;
+		bottom: 13.5em;
+		left: 6em;
+		text-align: left;
+	}
+	&__name {
+		font-size: 1.563em;
+		font-weight: 500;
+		font-family: "PF Din Text Cond Pro";
+		line-height: 1.99;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		&Sub {
+			color: rgba(#fff4fb, .3);
+			font-size: 1em;
+			font-weight: 400;
+			line-height: 1.5;
+			letter-spacing: 0.05em;
+		}
+	}
+	.btn {
+		padding-top: 1.8em;
+		padding-bottom: 2.1em;
+		// padding-right: 3.8em;
+	}
+	.btn_img {
+		img {
+			width: 10.48em;
+		}
+	}
+}
 

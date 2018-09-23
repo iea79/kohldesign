@@ -72,7 +72,7 @@ $(document).ready(function() {
     // $('[name=tel]').inputmask("+9(999)999 99 99",{ showMaskOnHover: false });
     // formSubmit();
     
-   	gridMatch();
+   	// gridMatch();
 
     checkOnResize();
 
@@ -89,7 +89,7 @@ $(window).resize(function(event) {
 });
 
 function checkOnResize() {
-   	gridMatch();
+   	// gridMatch();
     fontResize();
 }
 
@@ -101,9 +101,9 @@ function gridMatch() {
 
 function fontResize() {
     var windowWidth = $(window).width();
-    if (windowWidth >= 1200) {
+    if (windowWidth >= 768) {
     	var fontSize = windowWidth/19.05;
-    } else if (windowWidth < 1200) {
+    } else if (windowWidth < 768) {
     	var fontSize = 60;
     }
 	$('body').css('fontSize', fontSize + '%');

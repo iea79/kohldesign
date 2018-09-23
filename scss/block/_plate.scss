@@ -1,0 +1,42 @@
+.plate{
+	padding-top: 6%;
+	margin-left: -2%;
+	@include flex();
+	@extend %clear_all;
+	&__item{
+		padding-left: 2%;
+		margin-bottom: 7%;
+		width: 33.3%;
+		float: left;
+		vertical-align: middle;
+		min-height: 12.900em;
+	}
+	&__icon{
+	    float: left;
+	    margin-top: -8%;
+	    margin-right: -8%;
+	}
+	&__content{
+	    overflow: hidden;
+	    padding-top: 12%;
+	    padding-left: 8%;
+	}
+	&__title{
+		color: #ffffff;
+		font-family: "Gotham Pro";
+		font-size: 1.4em;
+		font-weight: 500;
+		line-height: 1.813em;
+		letter-spacing: 0.034em;
+	}
+	&__subtitle{
+		padding-top: 4%;
+		opacity: 0.5;
+		color: #fff4fb;
+		font-family: "Gotham Pro";
+		font-size: 1.125em;
+		font-weight: 400;
+		line-height: 1.7em;
+		letter-spacing: 0.056em;
+	}
+}

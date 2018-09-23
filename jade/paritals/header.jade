@@ -2,12 +2,22 @@
 header.header
 	.container_center
 
-		a.logo
-			img(src="img/logo.png")
+		.header__logo
+			a(href="#")
+				img(src="img/logo.png")
+			.header__logoSub
+				|Первое брендинговое агентство 
+				|для промышленных предприятий
 
-		// begin navbar 
+		.header__action
+			.header__actionItem
+				a(href="tel:+7 (968) 081 96 76") +7 (968) 081 96 76
+			.header__actionItem
+				a(href="").header__call Заказать звонок
 
-		ul.navbar
+		//- // begin navbar 
+
+		//- ul.navbar
 
 			li.navbar__item
 				a.navbar__link Item_1
@@ -16,6 +26,6 @@ header.header
 			li.navbar__item
 				a.navbar__link Item_3
 
-		// end navbar 
+		//- // end navbar 
 
 // end header 

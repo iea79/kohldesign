@@ -1,0 +1,49 @@
+.tasks{
+	padding-top: 5%;
+	padding-bottom: 3%;
+	background-color: #161515;
+	position: relative;
+	&__img{
+		position: absolute;	
+		top: 3%;
+		right: 3%;
+	}
+	&:after{
+		content: '';
+		top: 3%;
+		right: 3%;
+		display: block;
+		position: absolute;
+		background-image: url(../img/el5.png);
+		width: 17.313em;
+		height: 15.438em;	
+	}
+	&:before{
+		content: '';
+		bottom: 28%;
+		right: 3%;
+		display: block;
+		position: absolute;
+		background-image: url(../img/el5_2.png);
+		height: 2.125em;
+		width: 2.063em;
+	}
+}
+
+.section__title {
+	color: #fff;
+	font-size: 3.7em;
+	font-family: "PF Din Text Cond Pro";
+	font-weight: 500;
+	line-height: 1.2;
+	text-transform: uppercase;
+	&_small{
+		font-family: "Gotham Pro";
+		font-size: 0.4em !important;
+		font-weight: 400;
+		line-height: 1.500em;
+		&.text{
+			opacity: 0.6;
+		}
+	}
+}

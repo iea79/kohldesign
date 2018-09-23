@@ -1,12 +1,69 @@
 /* Header
  ----------------------------------------------------------------------------- */
 .header {
-	background-color: #ccc;
-	padding: 10px 0;
+	padding: 3.3em 0;
 	@extend %clear_a;
+	position: absolute;
+	width: 100%;
 	&__logo {
 		float: left;
-		width: 150px;
+		// width: 150px;
+		a {
+			vertical-align: middle;
+			display: inline-block;
+			margin-right: 0.5em;
+		}
+		&Sub {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 0.9em;
+			max-width: 23em;
+			line-height: 1.1;
+			color: rgba(#fff, .7);
+			text-transform: uppercase;
+			letter-spacing: .07em;
+		}
+	}
+	&__action {
+		float: right;
+		padding-top: 0.1em;
+		@extend %clear_a;
+		&Item {
+			float: left;
+			a {
+				display: inline-block;
+				color: #fff;
+				text-decoration: none;
+				&[href*="tel"] {
+					font-size: 1.7em;
+					font-weight: 500;
+					margin-right: 1em;
+					&:hover {
+						color: #f01e1e;
+					}
+				}
+			}
+		}
+	}
+	&__call {
+		margin-top: 0.1em;
+		padding-bottom: .1em;
+		font-size: 1.15em;
+		&:after {
+			content: '';
+			border-bottom: 1px solid #f01e1e;
+			display: block;
+			transition: .3s;
+			margin-left: 0;
+			width: 100%;
+		}
+		&:hover {
+			&:after {
+				margin-left: 90%;
+				width: 10%;
+			}
+			
+		}
 	}
 }
 
