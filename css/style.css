@@ -1966,8 +1966,20 @@ body {
 
 .fScreen {
   padding: 11.7em 0 0;
-  margin-bottom: 0em;
+  margin-bottom: -3.5em;
   position: relative; }
+  .fScreen:before {
+    content: '';
+    position: absolute;
+    top: -27.75em;
+    left: -27.75em;
+    width: 55.5em;
+    height: 55.563em;
+    opacity: 0.4;
+    display: block;
+    background: -webkit-radial-gradient(#f51e1e, rgba(245, 30, 30, 0) 71%);
+    background: -o-radial-gradient(#f51e1e, rgba(245, 30, 30, 0) 71%);
+    background: radial-gradient(#f51e1e, rgba(245, 30, 30, 0) 71%); }
   .fScreen .section__title {
     font-size: 4.47em;
     line-height: 1.14;
@@ -2027,6 +2039,22 @@ body {
     padding-bottom: 2.1em; }
   .fScreen .btn_img img {
     width: 10.48em; }
+  .fScreen > .fly_1 {
+    top: 7em;
+    right: 4.6em;
+    width: 4em; }
+  .fScreen > .fly_2 {
+    top: 22.3em;
+    left: 4.7em; }
+  .fScreen > .fly_3 {
+    top: 57em;
+    left: 12em;
+    width: 2.8em;
+    height: 2.2em; }
+  .fScreen > .fly_4 {
+    top: 36.2em;
+    right: 7.2em;
+    width: 15em; }
 
 .company {
   margin-top: 0em; }
@@ -2089,13 +2117,18 @@ body {
   .company__job {
     color: rgba(255, 244, 251, 0.5); }
 
+.fly {
+  position: absolute;
+  display: block;
+  z-index: 5; }
+
 .videoScreen .section__title {
   text-align: center; }
 
 .videoScreen .video__prev {
   background-position: center;
   background-size: contain;
-  background-color: #000;
+  background-repeat: no-repeat;
   -webkit-filter: grayscale(1);
   filter: grayscale(1); }
 
@@ -2114,5 +2147,15 @@ body {
 
 .promotion__img img {
   height: auto; }
+
+.video:before {
+  display: none; }
+
+.video:after {
+  display: none; }
+
+.video__wrapper {
+  background: none !important;
+  background-image: none !important; }
 
 /*# sourceMappingURL=style.css.map */

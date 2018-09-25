@@ -82,9 +82,21 @@
 
 .fScreen {
 	padding: 11.7em 0 0;
-	margin-bottom: 0em;
+	margin-bottom: -3.5em;
 	position: relative;
-	
+	&:before {
+		content: '';
+		position: absolute;
+		top: -(55.5em / 2);
+		left: -(55.5em / 2);
+		width: 55.5em;
+		height: 55.563em;
+		// background-color: ;
+		opacity: 0.4;
+		display: block;
+		background: radial-gradient(#f51e1e, rgba(#f51e1e, 0) 71%);
+		
+	}
 	@extend %clear_a;
 	.container_center {
 		@extend %clear_a;
@@ -168,6 +180,30 @@
 			width: 10.48em;
 		}
 	}
+	> .fly {
+		&_1 {
+			top: 7em;
+			right: 4.6em;
+			width: 4em;
+		}
+		&_2 {
+			top: 22.3em;
+			left: 4.7em;
+			
+		}
+		&_3 {
+			top: 57em;
+			left: 12em;
+			width: 2.8em;
+			height: 2.2em;
+			
+		}
+		&_4 {
+			top: 36.2em;
+			right: 7.2em;
+			width: 15em;
+		}
+	}
 }
 
 .company {
@@ -246,6 +282,12 @@
 	}
 }
 
+.fly {
+	position: absolute;
+	display: block;
+	z-index: 5;
+}
+
 
 
 .videoScreen {
@@ -256,7 +298,9 @@
 	.video__prev {
 		background-position: center;
 		background-size: contain;
-		background-color: #000;
+		background-repeat: no-repeat;
+		
+		// background-color: #000;
 		filter: grayscale(1);
 	}
 }
@@ -284,8 +328,17 @@
 }
 
 
-@media (max-width: 1366px) {
-
-.section__title {
-}
+.video {
+	&:before {
+		display: none;
+		
+	}
+	&:after {
+		display: none;
+		
+	}
+	&__wrapper {
+		background: none !important;
+		background-image: none !important;
+	}
 }
