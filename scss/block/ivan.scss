@@ -1,0 +1,188 @@
+.videoScreen {
+	color: #fff4fb;
+	padding: 1.5em 0 22em 0;
+	position: relative;
+	background: url('../img/planet.png') no-repeat bottom right;
+	background-size: 40em 100em;
+	.section__title {
+		font-size: 4.18em;
+		letter-spacing: 0.05em;
+		position: relative;
+		&:before {
+			content: '';
+			width: 2.7em;
+			height: 2.7em;
+			background: url('../img/title-ell.png') no-repeat center center;
+			background-size: contain;
+			position: absolute;
+			left: 4.2em;
+			top: -0.8em;
+		}
+	}
+	&__element {
+		li {
+			width: 3em;
+			height: 2.5em;
+			background-image: url(../img/element-2.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+			position: absolute;
+			list-style-type: none;
+			&:nth-child(1) {
+				top: 2em;
+				left: 33em;
+			}
+			&:nth-child(2) {
+				top: 42em;
+				right: 15em;
+			}
+			&:nth-child(3) {
+				width: 5em;
+				height: 5em;
+				background-image: url(../img/element-1.png);
+				top: 55em;
+				left: 13em;
+				z-index: 2;
+			}
+			&:nth-child(4) {
+				bottom: 38em;
+				left: 66em;
+			}
+		}
+	}
+}
+.video {
+	position: relative;
+	width: 87%;
+	margin-left: auto;
+	margin-right: auto;
+  margin-bottom: 4.5em;
+	&:after {
+		content: '';
+		display: block;
+		width: 110%;
+		height: 3em;
+		margin-left: -55%;
+		border-radius: 50%;
+		background-color: #161515;
+		position: absolute;
+		top: -1.5em;
+		left: 50%;
+		z-index: 3;
+	}
+	&:before {
+		content: '';
+		display: block;
+		width: 110%;
+		height: 3em;
+		margin-left: -55%;
+		border-radius: 50%;
+		background-color: #161515;
+		position: absolute;
+		bottom: -1.5em;
+		left: 50%;
+		z-index: 3;
+	}
+}
+.videoOver {
+	max-width: 19em;
+	position: absolute;
+	top: 23em;
+	right: 15.2em;
+	z-index: 4;
+	&__title {
+		margin-bottom: 0.5em;
+		font-family: 'PF Din Text Cond Pro';
+		font-size: 1.56em;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+	}
+	&__text {
+		font-size: 1em;
+		line-height: 1.5em;
+		letter-spacing: 0.05em;
+		color: #fff4fb;
+	}
+	&:after {
+		content: '';
+		display: block;
+		width: 2.063em;
+    height: 5.063em;
+		background-image: url(../img/action_first.png);
+		background-size: contain;
+		position: absolute;
+		top: -6em;
+		left: 2em;
+		transform: rotate(124deg);
+	}
+}
+.getTest {
+	padding: 4em 3.3em 3.7em 5em;
+	background: url(../img/k.png) no-repeat center, linear-gradient(to left, #412020, #201f1f 25%);
+	position: relative;
+	overflow: hidden;
+	&:after {
+		content: '';
+		display: table; 
+		clear: both;
+		width: 100%;
+	}
+	&:before {
+		content: '';
+		display: block;
+		width: 40em;
+		height: 40em;
+		background: radial-gradient(#412020, #201f1f 70%);
+		position: absolute;
+		top: -20em;
+		left: -20em;
+		z-index: 1;
+	}
+	&__left {
+		float: left;
+		width: 59%;
+		color: #fff;
+		position: relative;
+		z-index: 2;
+	}
+	&__title {
+		margin-bottom: 0.5em;
+		font-family: 'PF Din Text Cond Pro';
+		font-size: 3em;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+	}
+	&__text {
+		max-width: 29em;
+		font-size: 1.125rem;
+		letter-spacing: 0.04em;
+		line-height: 1.5em;
+	}
+	&__right {
+		float: left;
+		width: 41%;
+		padding-top: 4.4em;
+	}
+	&__btn {
+		position: relative;
+		&:after {
+			content: '';
+			width: 16em;
+			height: 16em;
+			background: url('../img/btn-ell.png') no-repeat center center;
+			background-size: contain;
+			position: absolute;
+			left: -5.5em;
+			top: -5em;
+			z-index: 1;
+		}
+	}
+	.btn_img {
+		padding: 1.6em 2em 2.1em 8.2em;
+		z-index: 2;
+		img {
+			left: -0.2em;
+    	top: -0.3em;
+		}
+	}
+}

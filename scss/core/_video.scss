@@ -3,10 +3,11 @@
 //		iframe c youtube
 // </div>
 .video {
+	position: relative;
 	&__wrapper {
 		position: relative;
 		overflow: hidden;
-		padding-bottom: 56.4%;
+		padding-bottom: 49.4%;
 		iframe,.video__prev {
 			position: absolute;
 			top: 0;
@@ -27,12 +28,28 @@
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		width: 7.2em;
-		height: 7.2em;
-		margin-top: -3.6em;
+		width: 8em;
+		height: 8em;
+		margin-top: -4.6em;
 		margin-left: -3.6em;
 		border-radius: 50%;
+		border: 1px solid #fff;
 		cursor: pointer;
-		// background-color: #f00;
+		transition: .3s;
+		&:after {
+			content: '';
+			display: block;
+			border: 1.5em solid transparent;
+			border-left: 1.7em solid #fff;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -1.4em;
+			margin-left: -0.5em;
+		}
+		&:hover {
+			border-color: #DC2323;
+			background-color: #DC2323;
+		}
 	}
 }

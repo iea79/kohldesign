@@ -114,10 +114,13 @@ $(function () {
     if ($(".js_youtube")) {
         $(".js_youtube").each(function () {
             // Зная идентификатор видео на YouTube, легко можно найти его миниатюру
-            $(this).css('background-image', 'url(http://i.ytimg.com/vi/' + this.id + '/sddefault.jpg)');
+            $('.video__wrapper').css({
+                'background-image': 'url(http://i.ytimg.com/vi/' + this.id + '/sddefault.jpg)',
+                'background-size': '100%'
+            });
 
             // Добавляем иконку Play поверх миниатюры, чтобы было похоже на видеоплеер
-            $(this).append($('<img src="img/play.svg" alt="Play" class="video__play">'));
+            $(this).append($('<div class="video__play"></div>'));
 
         });
 
@@ -131,9 +134,12 @@ $(function () {
             var iframe = $('<iframe/>', {
                 'frameborder': '0',
                 'src': iframe_url,
-                'width': $(this).width(),
-                'height': $(this).innerHeight()
+                'width': $('.video__prev').width(),
+                'height': $('.video__prev').innerHeight()
             })
+
+            // Убираем "Посмотрите видео" при воспроизведении
+            $('.videoOver').hide();
 
             // Заменяем миниатюру HTML5 плеером с YouTube
             $(this).closest('.video__wrapper').append(iframe);

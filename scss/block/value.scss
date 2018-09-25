@@ -1,0 +1,67 @@
+// Value
+.value {
+	position: relative;
+	min-height: 20em;
+	padding-top: 4.1em;
+	&__bg {
+		position: absolute;
+		top: -3.4em;
+		left: 0;
+		z-index: 0;
+		width: 100%;
+		display: block;
+	}
+	&__img {
+		opacity: 0.3;
+	}
+	&__info {
+		padding: 3.8em 4em 7em;
+		background: url('../img/value/value_bg2.png') 0 0 no-repeat;
+		background-size: 100%;
+		display: table;
+	}
+	&__left {
+		width: 55%;
+		display: table-cell;
+	}
+	&__title {
+		margin-bottom: 0.5em;
+		font-size: 2.8em;
+		line-height: 1.1;
+		font-family: "PF Din Text Cond Pro";
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+	&__sub {
+		margin-bottom: 0.8em;
+		opacity: 0.5;
+	}
+	&__list {
+		&_item {
+			margin-bottom: 0.3em;
+			&:before {
+				content: '';
+				position: relative;
+				top: -0.17em;
+				width: 0.3em;
+				height: 0.3em;
+				border-radius: 50%;
+				margin-right: 0.5em;
+				background-color: #fff;
+				display: inline-block;
+			}
+		}
+	}
+	&__right {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	&__btn {
+		width: 100%;
+		padding-left: 7.4em;
+		display: inline-block;
+		img {
+			width: 9em;
+		}
+	}
+}

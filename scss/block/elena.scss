@@ -42,12 +42,12 @@ body {
 			margin-left: 0;
 		}
 	}
-	@media (max-width : 1366px) {
-		font-size: 2.9em;
-		br {
-			display: none;
-		}
-	}
+	// @media (max-width : 1366px) {
+	// 	font-size: 2.9em;
+	// 	br {
+	// 		display: none;
+	// 	}
+	// }
 	@media (max-width : 768px) {
 		font-size: 2em;
 	}
@@ -119,17 +119,17 @@ body {
 // Meeting
 .meeting {
 	position: relative;
-	@media (max-width : 1200px) {
-		font-size: 0.9em;
-	}
-	@media (max-width : 768px) {
-		width: auto;
-		overflow: hidden;
-		overflow-x: auto;
-		overflow-y: hidden;
-		margin-left: -15px;
-		margin-right: -15px;
-	}
+	// @media (max-width : 1200px) {
+	// 	font-size: 0.9em;
+	// }
+	// @media (max-width : 768px) {
+	// 	width: auto;
+	// 	overflow: hidden;
+	// 	overflow-x: auto;
+	// 	overflow-y: hidden;
+	// 	margin-left: -15px;
+	// 	margin-right: -15px;
+	// }
 	&__wrap {
 		position: relative;
 		top: 1em;
@@ -139,27 +139,27 @@ body {
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
-		@media (max-width : 1620px) {
-			width: 100%;
-			min-height: 36em;
-			// min-height: 44em;
-		}
-		@media (max-width : 1366px) {
-			left: 0;
-			min-height: 30em;
-			// min-height: 44em;
-		}
-		@media (max-width : 12006px) {
-			// min-height: 50em;
-		}
-		@media (max-width : 992px) {
-			min-height: 24em;
-			// min-height: 44em;
-		}
-		@media (max-width : 768px) {
-			width: 46.57em;
+		// @media (max-width : 1620px) {
+		// 	width: 100%;
+		// 	min-height: 36em;
+		// 	// min-height: 44em;
+		// }
+		// @media (max-width : 1366px) {
+		// 	left: 0;
+		// 	min-height: 30em;
+		// 	// min-height: 44em;
+		// }
+		// @media (max-width : 12006px) {
+		// 	// min-height: 50em;
+		// }
+		// @media (max-width : 992px) {
+		// 	min-height: 24em;
+		// 	// min-height: 44em;
+		// }
+		// @media (max-width : 768px) {
+		// 	width: 46.57em;
 
-		}
+		// }
 	}
 	&__img {
 		position: absolute;
@@ -174,16 +174,16 @@ body {
 		min-height: 175%;
 		border-radius: 50%;
 		box-shadow: -100px -150px 200px 0px rgba(95,34,34,0.4);
-		@media (max-width : 1620px) {
-			min-height: 210%;
-		}
-		@media (max-width : 1366px) {
-			min-height: 250%;
-			box-shadow: -50px -50px 200px 0px rgba(95,34,34,0.4);
-		}
-		@media (max-width : 1200px) {
-			min-height: 280%;
-		}
+		// @media (max-width : 1620px) {
+		// 	min-height: 210%;
+		// }
+		// @media (max-width : 1366px) {
+		// 	min-height: 250%;
+		// 	box-shadow: -50px -50px 200px 0px rgba(95,34,34,0.4);
+		// }
+		// @media (max-width : 1200px) {
+		// 	min-height: 280%;
+		// }
 	}
 	&__meteorite_06,
 	&__meteorite_07 {
@@ -199,31 +199,31 @@ body {
 		@media (max-width : 1366px) {
 			right: 3em;
 		}
-		@media (max-width : 1200px) {
-			right: -3em;
-		}
-		@media (max-width : 992px) {
-			right: -6em;
-		}
-		@media (max-width : 768px) {
-			top: -1em;
-			right: auto;
-			left: -60px;
-			background-size: 5.5em 4.7em;
-		}
+		// @media (max-width : 1200px) {
+		// 	right: -3em;
+		// }
+		// @media (max-width : 992px) {
+		// 	right: -6em;
+		// }
+		// @media (max-width : 768px) {
+		// 	top: -1em;
+		// 	right: auto;
+		// 	left: -60px;
+		// 	background-size: 5.5em 4.7em;
+		// }
 	}
 	&__meteorite_07 {
 		top: 6em;
 		left: -15em;
-		@media (max-width : 1366px) {
-			left: -10em;
-		}
-		@media (max-width : 992px) {
-			top: 14em;
-		}
-		@media (max-width : 768px) {
-			background-size: 5.08em 4.75em;
-		}
+		// @media (max-width : 1366px) {
+		// 	left: -10em;
+		// }
+		// @media (max-width : 992px) {
+		// 	top: 14em;
+		// }
+		// @media (max-width : 768px) {
+		// 	background-size: 5.08em 4.75em;
+		// }
 	}
 }
 
@@ -307,12 +307,12 @@ body {
 		top: -5em;
 		left: -7em;
 		width: 15em;
-		@media (max-width : 1620px) {
-			width: 17em;
-		}
-		@media (max-width : 1366px) {
-			width: 19em;
-		}
+		// @media (max-width : 1620px) {
+		// 	width: 17em;
+		// }
+		// @media (max-width : 1366px) {
+		// 	width: 19em;
+		// }
 		& > img {
 			margin-right: 0.6em;
 			margin-bottom: 0;
