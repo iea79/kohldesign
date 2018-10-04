@@ -170,7 +170,7 @@ function fontResize() {
     if (windowWidth >= 768) {
     	var fontSize = windowWidth/19.05;
     } else if (windowWidth < 768) {
-    	var fontSize = 60;
+    	var fontSize = windowWidth/4.8;
     }
 	$('body').css('fontSize', fontSize + '%');
 }
