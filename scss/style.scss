@@ -28,6 +28,9 @@
 @import 'core/buttons';
 @import 'core/video';
 
+@import 'vendor/slick';
+@import 'vendor/modal';
+
 @import 'block/elena';
 @import 'block/ivan';
 @import 'block/plate';
@@ -37,6 +40,7 @@
 
 @import 'block/plate';
 @import 'block/tasks';
+
 
 // Заглушка
 .nameSection {

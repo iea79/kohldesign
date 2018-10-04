@@ -46,6 +46,72 @@ $(document).ready(function() {
 		event.preventDefault();
 	});
 
+    $('.sliderFor').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      infinite: false,
+      asNavFor: '.sliderNav'
+    });
+    $('.sliderFor2').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      infinite: false,
+      asNavFor: '.sliderNav',
+    });
+    $('.sliderFor3').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      infinite: false,
+      asNavFor: '.sliderNav',
+    });
+    var slider = $('.sliderNav').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      asNavFor: '.sliderFor,.sliderFor2,.sliderFor3',
+      dots: false,
+      arrows: false,
+      centerMode: true,
+      infinite: false,
+      focusOnSelect: true,
+      vertical: true,
+    });
+    $('.sliderButton_prev').click(function() {
+        slider.slick('slickPrev');
+    });
+    $('.sliderButton_next').click(function() {
+        slider.slick('slickNext');
+    });
+
+    // РџРѕСЏРІР»РµРЅРёРµ РїРѕР»СЏ РїСЂРё РІС‹Р±РѕСЂРµ РёРЅРїСѓС‚Р° РІ РјРѕРґР°Р»РєРµ
+    $('.form__radio input').change(function() {
+        var inputDate = $('#input_date')
+        var checked = $('#form_radio_1').prop('checked')
+        console.log(checked)
+        if (checked) {
+            inputDate.fadeOut(300);
+        }
+        else {
+            inputDate.fadeIn(300);
+        }
+    });
+
+    // РўР°Р±С‹ РІ РјРѕРґР°Р»РєРµ
+    var houseTab = $('#modal_tabs li')
+    var houseGroup = $('.modal__text');
+    houseTab.click(function() {
+        var index = $(this).index();
+        houseTab.removeClass('active');
+        $(this).addClass('active');
+        houseGroup.addClass('hide');
+        houseGroup.eq(index).removeClass('hide');
+    });
+
 	// Scroll to ID // Плавный скролл к элементу при нажатии на ссылку. В ссылке указываем ID элемента
 	// $('#main__menu a[href^="#"]').click( function(){ 
 	// 	var scroll_el = $(this).attr('href'); 
