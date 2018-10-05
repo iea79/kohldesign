@@ -57,6 +57,24 @@
 		font-weight: 300;
 		color: rgba(#fff, .6);
 		text-transform: uppercase;
-		
+	}
+	&__element {
+		position: absolute;
+		top: -2.2em;
+		left: -1.7em;
+		transform: rotateZ(20deg) scale(1.25);
+		@media (max-width : 1366px) {
+			left: -3.5em;
+		}
+		@media (max-width : 1199px) {
+			left: -5em;
+		}
+	}
+}
+
+.section__tasksTitle {
+	&:before {
+		top: -0.72em;
+		left: -1.1em;
 	}
 }

@@ -1,9 +1,9 @@
 // Meeting
 .meeting {
 	position: relative;
-	// @media (max-width : 1200px) {
-	// 	font-size: 0.9em;
-	// }
+	@media (max-width : 1200px) {
+		font-size: 0.9em;
+	}
 	// @media (max-width : 768px) {
 	// 	width: auto;
 	// 	overflow: hidden;
@@ -15,32 +15,24 @@
 	&__wrap {
 		position: relative;
 		top: 1em;
-		left: -3em;
-		width: 93%;
+		// left: -3em;
+		width: 80%;
 		min-height: 40em;
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
-		// @media (max-width : 1620px) {
-		// 	width: 100%;
-		// 	min-height: 36em;
-		// 	// min-height: 44em;
-		// }
-		// @media (max-width : 1366px) {
-		// 	left: 0;
-		// 	min-height: 30em;
-		// 	// min-height: 44em;
-		// }
-		// @media (max-width : 12006px) {
-		// 	// min-height: 50em;
-		// }
-		// @media (max-width : 992px) {
-		// 	min-height: 24em;
-		// 	// min-height: 44em;
-		// }
+		@media (max-width : 1366px) {
+			width: 100%;
+			min-height: 52em;
+		}
+		@media (max-width : 1200px) {
+			min-height: 59em;
+		}
+		@media (max-width : 992px) {
+			// min-height: 24em;
+		}
 		// @media (max-width : 768px) {
 		// 	width: 46.57em;
-
 		// }
 	}
 	&__img {
@@ -56,37 +48,34 @@
 		min-height: 175%;
 		border-radius: 50%;
 		box-shadow: -100px -150px 200px 0px rgba(95,34,34,0.4);
-		// @media (max-width : 1620px) {
-		// 	min-height: 210%;
-		// }
-		// @media (max-width : 1366px) {
-		// 	min-height: 250%;
-		// 	box-shadow: -50px -50px 200px 0px rgba(95,34,34,0.4);
-		// }
-		// @media (max-width : 1200px) {
-		// 	min-height: 280%;
-		// }
+		@media (max-width : 1620px) {
+			min-height: 210%;
+		}
+		@media (max-width : 1366px) {
+			min-height: 250%;
+			box-shadow: -50px -50px 200px 0px rgba(95,34,34,0.4);
+		}
+		@media (max-width : 1200px) {
+			min-height: 280%;
+		}
 	}
 	&__meteorite_06,
 	&__meteorite_07 {
 		position: absolute;
 		z-index: 5;
-		@media (max-width : 767px) {
-			// display: none;
-		}
 	}
 	&__meteorite_06 {
 		top: -1em;
-		right: 10em;
-		// @media (max-width : 1366px) {
-		// 	right: 3em;
-		// }
-		// @media (max-width : 1200px) {
-		// 	right: -3em;
-		// }
-		// @media (max-width : 992px) {
-		// 	right: -6em;
-		// }
+		right: 11em;
+		@media (max-width : 1366px) {
+			right: 3em;
+		}
+		@media (max-width : 1200px) {
+			right: -3em;
+		}
+		@media (max-width : 992px) {
+			right: -6em;
+		}
 		// @media (max-width : 768px) {
 		// 	top: -1em;
 		// 	right: auto;
@@ -96,16 +85,22 @@
 	}
 	&__meteorite_07 {
 		top: 6em;
-		left: -15em;
-		// @media (max-width : 1366px) {
-		// 	left: -10em;
-		// }
-		// @media (max-width : 992px) {
-		// 	top: 14em;
-		// }
-		// @media (max-width : 768px) {
-		// 	background-size: 5.08em 4.75em;
-		// }
+		left: -7em;
+		@media (max-width : 1366px) {
+			left: -10em;
+		}
+		@media (max-width : 992px) {
+			top: 25em;
+		}
+	}
+	&__element {
+		position: absolute;
+		top: 0em;
+		left: -1.3em;
+		transform: rotateZ(205deg) scale(1.25);
+		@media (max-width : 992px) {
+			left: -2em;
+		}
 	}
 }
 
@@ -113,15 +108,18 @@
 .meeting {
 	&__point {
 		position: absolute;
-		z-index: 3;
+		z-index: 5;
 		cursor: pointer;
+		color: #fff;
+		text-decoration: none;
 	}
 	&__icon {
 		color: #f92626;
 		font-size: 2em;
-		// @media (max-width : 1200px) {
-		// 	font-size: 1.5em;
-		// }
+		margin-right: 0.1em;
+		@media (max-width : 1200px) {
+			// font-size: 1.5em;
+		}
 	}
 	&__amsterdam {
 		top: 38.3%;
@@ -172,9 +170,9 @@
 		text-align: center;
 		background-color: rgba(23, 22, 22, 0.7);
 		box-sizing: border-box;
-		// @media (max-width : 1366px) {
-		// 	display: none;
-		// }
+		@media (max-width : 1366px) {
+			display: none;
+		}
 	}
 
 	&__amsterdamTooltip {
@@ -182,19 +180,20 @@
 		left: -1.4em;
 	}
 	&__barentsevoTooltip {
-		top: -5.1em;
+		top: -5.5em;
 		left: -0.4em;
 	}
 	&__germanyTooltip {
 		top: -5em;
 		left: -7em;
-		width: 15em;
-		// @media (max-width : 1620px) {
-		// 	width: 17em;
-		// }
-		// @media (max-width : 1366px) {
-		// 	width: 19em;
-		// }
+		width: 16em;
+		@media (max-width : 1620px) {
+			top: -5.2em;
+			width: 18em;
+		}
+		@media (max-width : 1366px) {
+			width: 19em;
+		}
 		& > img {
 			margin-right: 0.6em;
 			margin-bottom: 0;
@@ -217,6 +216,9 @@
 		left: -2.1em;
 		min-width: 10em;
 		text-align: left;
+		@media (max-width : 1620px) {
+			top: -10.8em;
+		}
 	}
 	&__sochiTooltip {
 		top: 3.3em;
@@ -294,5 +296,18 @@
 	}
 	&__kazanArrow {
 		top: 35%;
+	}
+}
+
+.section__meetingTitle {
+	&:before {
+		top: -0.65em;
+		left: -1.1em;
+	}
+	.section__title_left {
+		margin-left: 5%;
+		@media (max-width : 1366px) {
+			margin-left: 0;
+		}
 	}
 }

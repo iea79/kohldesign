@@ -27,17 +27,20 @@
 @import 'core/pagination';
 @import 'core/buttons';
 @import 'core/video';
+@import 'core/icon';
 
 @import 'vendor/slick';
 @import 'vendor/modal';
 
-@import 'block/elena';
 @import 'block/ivan';
 @import 'block/plate';
 @import 'block/tasks';
 @import 'block/promotion';
 @import 'block/value';
 @import 'block/form';
+@import 'block/strategy';
+@import 'block/meeting';
+@import 'block/map';
 
 @import 'block/plate';
 @import 'block/tasks';
@@ -329,14 +332,6 @@
 	filter: grayscale(1);
 }
 
-.promotion__step {
-    min-height: 23.75em;
-}
-
-.promotion__img img {
-	height: auto;
-}
-
 
 .video {
 	&:before {
@@ -352,5 +347,4 @@
 		background-image: none !important;
 	}
 }
-
 

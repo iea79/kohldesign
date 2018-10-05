@@ -3,7 +3,7 @@
 $main_font_family:								"Gotham Pro";
 $main_color:									#fff;
 $main_line_height:								1.2;
-$main_font_size:								1em;
+$main_font_size:								1.125em;
 
 $container_width:								89.5em;
 
@@ -32,7 +32,7 @@ $el-colors: (
 
 /* Grid */
 /* ======================================================================== */
-$grid_padding:									20px;
+$grid_padding:									0.625em;;
 
 
 /* Form */
@@ -70,7 +70,7 @@ $input_error_border_color:						red;
 $input_error_placeholder_color:					red;
 
 // Button variables
-$btn_default_bg_color:				 			#ddd;
+$btn_default_bg_color:				 			#f51212;
 $btn_default_text_color:                        $main_color;
 $btn_contrast_text_color:                       $color_withe;
 $btn_default_bg_color_hover:					#ccc;
