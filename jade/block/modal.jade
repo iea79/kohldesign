@@ -4,7 +4,7 @@
 .modal.fade.modalDownload#modalDownload
 	.modal-dialog
 		// Begin form__present
-		form.form.form__present(id="present" action="")
+		form.form.form__present(id="present" action="send.php")
 			input(type="hidden", name="subject" value="Форма - Скачать презентацию")
 			a.form__close(href="#" class="modal-close" data-dismiss="modal")
 			.form__title.form__title_element Скачайте презентацию<br>с условиями и примерами работ
@@ -17,7 +17,7 @@
 				.form__inputRow
 					input.form__input(type="text" required name="name" placeholder="Ваше имя")
 				.form__inputRow
-					input.form__input(type="email" required name="email" placeholder="Введите e-mail")
+					input.form__input(type="tel" required name="tel" placeholder="Введите номер телефона")
 			.form__row.form__action
 				button.btn.btn_danger(type="submit") Скачать презентацию
 			.form__row.form__privacy
@@ -35,7 +35,7 @@
 .modal.fade.modalAudit#modalAudit
 	.modal-dialog
 		// Begin form__audit
-		form.form.form__audit(id="audit" action="")
+		form.form.form__audit(id="audit" action="send.php")
 			input(type="hidden", name="subject" value="Форма - Скачать пример аудита")
 			a.form__close(href="#" class="modal-close" data-dismiss="modal")
 			.form__title Скачайте пример аудита компании в формате PDF
@@ -64,7 +64,7 @@
 .modal.fade.modalPromotion#modalPromotion
 	.modal-dialog
 		// Begin form__promotion
-		form.form.form__promotion(id="promotion" action="")
+		form.form.form__promotion(id="promotion" action="send.php")
 			input(type="hidden", name="subject" value="Форма - Скачать пример раскрутки")
 			a.form__close(href="#" class="modal-close" data-dismiss="modal")
 			.form__title Посмотрите примеры инструментов внедрения и раскрутки бренда
@@ -92,7 +92,7 @@
 .modal.fade.modalLayout#modalLayout
 	.modal-dialog
 		// Begin form__layout
-		form.form.form__layout(id="layout" action="")
+		form.form.form__layout(id="layout" action="send.php")
 			input(type="hidden", name="subject" value="Форма - Посмотреть примеры макетов")
 			a.form__close(href="#" class="modal-close" data-dismiss="modal")
 			.form__title Посмотрите примеры дизайн-макетов, которые вы получите
@@ -120,7 +120,7 @@
 .modal.fade.modalStrategy#modalStrategy
 	.modal-dialog
 		// Begin form__strategy
-		form.form.form__strategy(id="strategy" action="")
+		form.form.form__strategy(id="strategy" action="send.php")
 			input(type="hidden", name="subject" value="Форма - Скачать пример стратегии")
 			a.form__close(href="#" class="modal-close" data-dismiss="modal")
 			.form__title Скачайте пример стратегии для компании в формате PDF
@@ -148,7 +148,7 @@
 .modal.fade.modalCalc#modalCalc
 	.modal-dialog
 		// Begin form__calc
-		form.form.form__calc(id="calc" action="")
+		form.form.form__calc(id="calc" action="send.php")
 			input(type="hidden", name="subject" value="Форма - Получить расчет стоимости")
 			a.form__close(href="#" class="modal-close" data-dismiss="modal")
 			.form__title.form__title_element Получите расчет стоимости разработки вашего бренда
@@ -179,7 +179,7 @@
 .modal.fade.modalDiscuss#modalDiscuss
 	.modal-dialog
 		// Begin form__discuss
-		form.form.form__discuss(id="discuss" action="")
+		form.form.form__discuss(id="discuss" action="send.php")
 			input(type="hidden", name="subject" value="Форма - Обсудить проект")
 			a.form__close(href="#" class="modal-close" data-dismiss="modal")
 			.form__title.form__title_element Обсудите проект с директором компании KOHLDESIGN
@@ -209,7 +209,7 @@
 .modal.fade.modalAnalys#modalAnalys
 	.modal-dialog
 		// Begin form__analys
-		form.form.form__analys(id="analys" action="")
+		form.form.form__analys(id="analys" action="send.php")
 			input(type="hidden", name="subject" value="Форма - Получить анализ компании")
 			a.form__close(href="#" class="modal-close" data-dismiss="modal")
 			.form__title.form__title_element Получите бесплатный брендинговый анализ компании
@@ -237,7 +237,7 @@
 .modal.fade.modalCallback#modalCallback
 	.modal-dialog
 		// Begin form__callback
-		form.form.form__callback(id="callback" action="")
+		form.form.form__callback(id="callback" action="send.php")
 			input(type="hidden", name="subject" value="Форма - Закажите обратный звонок")
 			a.form__close(href="#" class="modal-close" data-dismiss="modal")
 			.form__title.form__title_element Закажите обратный звонок

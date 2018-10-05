@@ -1186,7 +1186,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
     vertical-align: middle;
     position: relative;
     max-width: 95%;
-    margin: 10px 0; }
+    margin: 4em 0; }
   .modal-content {
     position: relative;
     background-color: #212121;
@@ -2089,9 +2089,9 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
       cursor: pointer; }
 
 .plate {
-  max-width: 87em;
+  max-width: 82.6em;
   padding-top: 6%;
-  margin-left: -2%;
+  margin-left: -2.1em;
   padding-left: 5em;
   font-family: "Gotham Pro"; }
   html[data-browser*="flexible"] .plate {
@@ -2119,15 +2119,49 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
       line-height: 1.2;
       font-size: 1.125em; }
   .plate__item {
-    padding-left: 2%;
+    padding-left: 2.1em;
     margin-bottom: 3.2em;
     width: 33.3%;
     float: left;
     vertical-align: middle; }
+    .plate__item:nth-child(3n+2) {
+      padding-left: 1em; }
+      .plate__item:nth-child(3n+2) img {
+        margin-left: 2.2em; }
+    .plate__item:nth-child(n+4) {
+      margin-bottom: 5.3em; }
+    .plate__item:first-child .plate__icon img {
+      width: 8em; }
+    .plate__item:nth-child(2) .plate__icon img {
+      width: 5.5em;
+      margin-top: 0.2em;
+      margin-left: 2.3em; }
+    .plate__item:nth-child(3) .plate__icon img {
+      width: 6.2em;
+      margin-left: 1.8em;
+      margin-top: 0.4em; }
+    .plate__item:nth-child(4) .plate__icon img {
+      width: 6.6em;
+      margin-left: 1.9em; }
+    .plate__item:nth-child(5) .plate__icon img {
+      width: 6.5em;
+      margin-left: 1.7em; }
+    .plate__item:nth-child(6) .plate__icon img {
+      width: 6.5em;
+      margin-left: 1.6em; }
+    .plate__item:nth-child(7) .plate__icon img {
+      width: 6.1em;
+      margin-left: 1.7em; }
+    .plate__item:nth-child(8) .plate__icon img {
+      width: 5.9em; }
+    .plate__item:nth-child(9) .plate__icon img {
+      width: 7.2em;
+      margin-left: 0.9em; }
   .plate__icon {
     float: left;
     margin-top: -2.5em;
-    margin-right: -8%; }
+    margin-right: -8%;
+    width: 8.1em; }
   .plate__content {
     overflow: hidden;
     padding-top: 2.6em;
@@ -3135,9 +3169,9 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
   left: -1.15em; }
 
 .plate {
-  max-width: 87em;
+  max-width: 82.6em;
   padding-top: 6%;
-  margin-left: -2%;
+  margin-left: -2.1em;
   padding-left: 5em;
   font-family: "Gotham Pro"; }
   html[data-browser*="flexible"] .plate {
@@ -3165,15 +3199,49 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
       line-height: 1.2;
       font-size: 1.125em; }
   .plate__item {
-    padding-left: 2%;
+    padding-left: 2.1em;
     margin-bottom: 3.2em;
     width: 33.3%;
     float: left;
     vertical-align: middle; }
+    .plate__item:nth-child(3n+2) {
+      padding-left: 1em; }
+      .plate__item:nth-child(3n+2) img {
+        margin-left: 2.2em; }
+    .plate__item:nth-child(n+4) {
+      margin-bottom: 5.3em; }
+    .plate__item:first-child .plate__icon img {
+      width: 8em; }
+    .plate__item:nth-child(2) .plate__icon img {
+      width: 5.5em;
+      margin-top: 0.2em;
+      margin-left: 2.3em; }
+    .plate__item:nth-child(3) .plate__icon img {
+      width: 6.2em;
+      margin-left: 1.8em;
+      margin-top: 0.4em; }
+    .plate__item:nth-child(4) .plate__icon img {
+      width: 6.6em;
+      margin-left: 1.9em; }
+    .plate__item:nth-child(5) .plate__icon img {
+      width: 6.5em;
+      margin-left: 1.7em; }
+    .plate__item:nth-child(6) .plate__icon img {
+      width: 6.5em;
+      margin-left: 1.6em; }
+    .plate__item:nth-child(7) .plate__icon img {
+      width: 6.1em;
+      margin-left: 1.7em; }
+    .plate__item:nth-child(8) .plate__icon img {
+      width: 5.9em; }
+    .plate__item:nth-child(9) .plate__icon img {
+      width: 7.2em;
+      margin-left: 0.9em; }
   .plate__icon {
     float: left;
     margin-top: -2.5em;
-    margin-right: -8%; }
+    margin-right: -8%;
+    width: 8.1em; }
   .plate__content {
     overflow: hidden;
     padding-top: 2.6em;
@@ -3316,6 +3384,8 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
     font-size: 4.47em;
     line-height: 1.14;
     margin-bottom: 0.35em; }
+    .fScreen .section__title:before {
+      display: none; }
   .fScreen__left {
     float: left;
     width: 59%;
@@ -3386,7 +3456,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
   .fScreen > .fly_4 {
     top: 36.2em;
     right: 7.2em;
-    width: 15em; }
+    width: 14em; }
 
 .company {
   margin-top: 0em; }
@@ -3415,8 +3485,8 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
     .company__item:hover .company__drop {
       opacity: 1; }
     .company__item:nth-child(5) img {
-      -webkit-filter: contrast(1) grayscale(1);
-      filter: contrast(1) grayscale(1); }
+      -webkit-filter: contrast(0.6) grayscale(1);
+      filter: contrast(0.6) grayscale(1); }
   .company__img {
     text-align: center;
     border: 1px solid rgba(59, 57, 57, 0.4);
@@ -3486,5 +3556,39 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 .video__wrapper {
   background: none !important;
   background-image: none !important; }
+
+.section {
+  overflow: hidden; }
+
+.section__title {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  font-size: 4em;
+  font-family: 'PF Din Text Cond Pro';
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: uppercase; }
+  .section__title:before {
+    content: '';
+    position: absolute;
+    top: -0.8em;
+    width: 2.7em;
+    height: 2.7em;
+    background: url("../img/title-ell.png") no-repeat center center;
+    background-size: contain; }
+  @media (max-width: 1366px) {
+    .section__title {
+      font-size: 2.9em; }
+      .section__title br {
+        display: none; } }
+
+.section__sub {
+  margin-top: 0.27em;
+  color: #fff;
+  font-size: 0.46em;
+  font-family: 'Gotham Pro';
+  font-weight: 300;
+  text-transform: none; }
 
 /*# sourceMappingURL=style.css.map */

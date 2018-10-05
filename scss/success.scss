@@ -1,0 +1,51 @@
+@import 'mixins/mixin';
+// Fonts
+@import 'core/fonts';
+// @include font-face("PF Din Text Cond Pro", '../fonts/PF Din Text Cond Pro/PFDinTextCondPro-Medium', 500, normal);
+// @include font-face("Gotham Pro", '../fonts/GothamPro/GothamPro', 400, normal);
+
+
+ // Import files
+
+@import 'variables/variables';
+@import 'core/reset';
+.success {
+	display: table;
+	background: url('../img/success-bg.jpg') no-repeat center center;
+	background-size: cover;
+	background-color: #151414;
+	width: 100%;
+	height: 100vh;
+	&__vertical {
+		display: table-cell;
+		vertical-align: middle;
+		
+	}
+	&__content {
+		max-width: 20em;
+		margin: auto;
+		text-align: center;
+		
+	}
+	&__title {
+		font-size: 4.188em;
+		font-weight: 500;
+		text-transform: uppercase;
+		font-family: "PF Din Text Cond Pro";
+		letter-spacing: 0.01em;
+		margin-bottom: 0.6em;
+	}
+	&__link {
+		display: inline-block;
+		padding-bottom: .1em;
+		text-decoration: none;
+		color: #ffffff;
+		font-size: 1em;
+		letter-spacing: 0.085em;
+		border-bottom: 1px solid #f01e1e;
+		&:hover {
+			border-bottom-color: transparent;
+			
+		}
+	}
+}

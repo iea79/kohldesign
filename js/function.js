@@ -34,7 +34,7 @@ $(document).ready(function() {
 	// First screen full height
 	function setHeiHeight() {
 	    $('.full__height').css({
-	        minHeight: $(window).height() + 'px'
+	        height: $(window).height() + 'px'
 	    });
 	}
 	setHeiHeight(); // устанавливаем высоту окна при первой загрузке страницы
@@ -88,20 +88,19 @@ $(document).ready(function() {
         slider.slick('slickNext');
     });
 
-    // РџРѕСЏРІР»РµРЅРёРµ РїРѕР»СЏ РїСЂРё РІС‹Р±РѕСЂРµ РёРЅРїСѓС‚Р° РІ РјРѕРґР°Р»РєРµ
     $('.form__radio input').change(function() {
         var inputDate = $('#input_date')
         var checked = $('#form_radio_1').prop('checked')
-        console.log(checked)
+        // console.log(checked)
         if (checked) {
             inputDate.fadeOut(300);
+            inputDate.find('input').val('');
         }
         else {
             inputDate.fadeIn(300);
         }
     });
 
-    // РўР°Р±С‹ РІ РјРѕРґР°Р»РєРµ
     var houseTab = $('#modal_tabs li')
     var houseGroup = $('.modal__text');
     houseTab.click(function() {
@@ -113,14 +112,14 @@ $(document).ready(function() {
     });
 
     // Tooltips in Meeting block
-    $('.meeting__point_js').hover(function() {
-      var $this = $(this),
-          tooltipId = $this.attr('href');
+    // $('.meeting__point_js').hover(function() {
+    //   var $this = $(this),
+    //       tooltipId = $this.attr('href');
 
-      $(tooltipId).fadeIn();      
-    }, function() {
-      $('.meeting__tooltip_js').fadeOut();
-    }, 200);
+    //   $(tooltipId).fadeIn();      
+    // }, function() {
+    //   $('.meeting__tooltip_js').fadeOut();
+    // }, 200);
 
     $('.meeting__point_js').on('click', function(e) {
       e.preventDefault();
@@ -150,12 +149,19 @@ $(document).ready(function() {
 
     // Inputmask.js
     $('[name=tel]').inputmask("+9(999)999 99 99",{ showMaskOnHover: false });
+    $('[name=timeToCall]').inputmask("99:99",{ showMaskOnHover: false });
 
     formSubmit();
     
    	// gridMatch();
 
     checkOnResize();
+
+    $('.modal').on('hidden.bs.modal', function() {
+        if ($('.modal.in').length > 0) {
+            $('body').addClass('modal-open');
+        }
+    });
 
 });
 
@@ -182,7 +188,7 @@ function gridMatch() {
 
 function fontResize() {
     var windowWidth = $(window).width();
-    	var fontSize = windowWidth/19.05;
+    	var fontSize = windowWidth/21.55;
     // if (windowWidth >= 768) {
     //     var fontSize = windowWidth/19.05;
     // } else if (windowWidth < 768) {
@@ -306,14 +312,14 @@ function formSubmit() {
                 data: form_data,
                 success: function (response) {
                     // $('#success').modal('show');
-                    console.log('success');
+                    // console.log('success');
                     // console.log(response);
                     // console.log(data);
-                    // document.location.href = "success.html";
+                    document.location.href = "success.html";
                 },
                 error: function (response) {
                     // $('#success').modal('show');
-                    console.log('error');
+                    // console.log('error');
                     // console.log(response);
                 }
             });
