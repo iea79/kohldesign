@@ -1,0 +1,329 @@
+.form {
+	background-color: #212121;
+	border-radius: 0.188em;
+	// position: relative;
+	// z-index: 9;
+	// margin-bottom: 50px;
+	&:after {
+		content: '';
+		display: block;
+		background-repeat: no-repeat;
+		background-size: contain;
+		position: absolute;
+	}
+	&__audit {
+		max-width: 81em;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 4.9em 0 3em 45em;
+		&:after {
+			width: 50em;
+			height: 48.6em;
+			background-image: url(../img/form-audit.png);
+			background-size: 50em 48.6em;
+			bottom: 0;
+			left: -2em;
+		}
+	}
+	&__promotion {
+		max-width: 81em;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 4.9em 0 3em 45em;
+		&:after {
+			width: 50em;
+			height: 50.6em;
+			background-image: url(../img/form-promotion.png);
+			background-size: 50em 51.6em;
+			bottom: 0;
+			left: -2em;
+		}
+		.form__title {
+			padding-right: 0;
+		}
+	}
+	&__layout {
+		max-width: 81em;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 4.9em 0 3em 45em;
+		&:after {
+			width: 48em;
+			height: 55.6em;
+			background-image: url(../img/form-layout.png);
+			background-size: 48em 55.6em;
+			bottom: 0;
+			left: -6.4em;
+		}
+	}
+	&__strategy {
+		max-width: 81em;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 4.9em 0 3em 45em;
+		&:after {
+			width: 46.6em;
+			height: 49.6em;
+			background-image: url(../img/form-strategy.png);
+			background-size: 46.6em 49.6em;
+			bottom: 0;
+			left: -5em;
+		}
+	}
+	&__present {
+		max-width: 41.7em;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 4.9em 0 3em 6.2em;
+		.form__row {
+			padding-right: 6.1em;
+		}
+	}
+	&__calc {
+		max-width: 41.7em;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 4.9em 0 3em 6.2em;
+		.form__list {
+			margin-bottom: 1.6em;
+		}
+		.form__subtext {
+			margin-bottom: 3em;
+		}
+		.form__row {
+			padding-right: 6.1em;
+		}
+	}
+	&__discuss {
+		max-width: 41.7em;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 4.9em 0 3em 6.2em;
+		.form__list {
+			margin-bottom: 1.6em;
+		}
+		.form__subtext {
+			margin-bottom: 1.5em;
+		}
+		.form__row {
+			padding-right: 6.1em;
+		}
+	}
+	&__analys {
+		max-width: 41.7em;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 4.9em 0 3em 6.2em;
+		.form__title {
+			padding-right: 2em;
+		}
+		.form__text {
+			padding-right: 4em;
+		}
+		.form__subtext {
+			margin-bottom: 1.5em;
+		}
+		.form__row {
+			padding-right: 6.1em;
+		}
+	}
+	&__callback {
+		max-width: 41.7em;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 4.9em 0 3em 6.2em;
+		.form__title {
+			padding-right: 2em;
+			margin-bottom: 1.9em;
+		}
+		.form__text {
+			font-size: 1.1em;
+			padding-left: 4.8em;
+			margin-bottom: 0.8em;
+			letter-spacing: 0.06em;
+			font-weight: 500;
+		}
+		.form__row {
+			padding-right: 6.1em;
+		}
+	}
+	&__title {
+		margin-bottom: 0.7em;
+		padding-right: 3em;
+		font-family: "PF Din Text Cond Pro";
+		font-size: 1.875em;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		position: relative;
+		z-index: 10;
+		&_element {
+			&:after {
+				content: '';
+				display: block;
+				width: 2em;
+		    height: 1.5em;
+		    background-image: url(../img/element-2.png);
+		    background-repeat: no-repeat;
+		    background-size: contain;
+		    position: absolute;
+		    top: -2.3em;
+		    left: -2.7em;
+		    transform: rotate(200deg);
+			}
+			&:before {
+				content: '';
+		    width: 4.4em;
+		    height: 4.4em;
+		    background: url(../img/title-ell.png) no-repeat center center;
+		    background-size: contain;
+		    position: absolute;
+		    left: -1.8em;
+		    top: -1.6em;
+			}
+		}
+	}
+	&__text {
+		margin-bottom: 3.1em;
+		padding-right: 6em;
+		font-size: 1em;
+		line-height: 1.5em;
+		letter-spacing: 0.05em;
+		color: #fff4fb;
+		position: relative;
+		z-index: 10;
+		&_b {
+			margin-bottom: 1.7em;
+			letter-spacing: 0.13em;
+		}
+		&_grey {
+			color: #686567;
+		}
+		span {
+			color: #929292;
+		}
+	}
+	&__subtext {
+		margin-bottom: 1.8em;
+		padding-right: 17em;
+		font-size: 0.875em;
+		line-height: 1.25em;
+		letter-spacing: 0.044em;
+		color: #646062;
+		position: relative;
+		z-index: 10;
+	}
+	&__radio {
+		padding-right: 6.1em;
+		margin-left: -.5em;
+		margin-right: -.5em;
+		box-sizing: content-box;
+		
+		input[type=radio] {
+			display: none;
+			&:checked + label {
+				background-color: #e62525;
+				border-color: #e62525;
+			}
+		}
+		label {
+			display: inline-block;
+			width: 14em;
+			padding: 0.7em;
+			margin-bottom: 1.1em;
+			margin-right: 0.5em;
+			margin-left: .5em;
+			border-radius: 2em;
+			border: 0.1em solid #595959;
+			font-size: 1em;
+			line-height: 1.5em;
+			letter-spacing: 0.05em;
+			text-align: center;
+			cursor: pointer;
+			user-select: none;
+		}
+	}
+	&__list {
+		color: #a6a0a4;
+		padding-left: 0.15em;
+		margin-bottom: 3.4em;
+	}
+	&__item {
+		font-size: 1.125em;
+		margin-bottom: 0.3em;
+		letter-spacing: 0.04em;
+	}
+	&__row {
+		margin-bottom: 1em;
+		padding-right: 6.6em;
+	}
+	&__inputRow {
+		height: 5.5em;
+		margin-bottom: 0.6em;
+	}
+	&__input {
+		// padding: 2.1em !important;
+		height: 100%;
+		font-size: 1em !important;
+		padding: 0 2em !important;
+		position: relative;
+		z-index: 10;
+	}
+	&__action {
+		margin-bottom: 1.4em;
+	}
+	.btn {
+		padding: 1.8em 2em;
+		position: relative;
+		z-index: 10;
+	}
+	&__privacy {
+		font-size: 0.75em;
+		line-height: 0.938em;
+		letter-spacing: 0.03em;
+		position: relative;
+		z-index: 10;
+		input {
+			background-color: #fff;
+			border-radius: 0.2em;
+			margin-right: 0.3em;
+		}
+		label {
+			color: #8d8d8d;
+		}
+		a {
+			color: #2dbff5;
+		}
+	}
+	&__close {
+		width: 2.188em;
+		height: 2.188em;
+		border: 0.2em solid #424242;
+		border-radius: 50%;
+		position: absolute;
+		top: -2.3em;
+		right: -2.4em;
+		cursor: pointer;
+		&:after {
+			content: '';
+			display: block;
+			width: 1.1em;
+			height: 0.2em;
+			background-color: #424242;
+			position: absolute;
+			top: 0.8em;
+			left: 0.35em;
+			transform: rotate(45deg);
+		}
+		&:before {
+			content: '';
+			display: block;
+			width: 1.1em;
+			height: 0.2em;
+			background-color: #424242;
+			position: absolute;
+			top: 0.8em;
+			left: 0.35em;
+			transform: rotate(-45deg);
+		}
+	}
+}

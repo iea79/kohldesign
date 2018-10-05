@@ -26,6 +26,9 @@
 	&:hover {
 		text-decoration: none;
 	}
+	&:disabled {
+		filter: grayscale(1);
+	}
 	&:hover,
 	&:focus,
 	&:active {

@@ -11,33 +11,41 @@
     z-index: 1050;
     -webkit-overflow-scrolling: touch;
     outline: 0;
+    text-align: center;
+    &:before {
+        content: '';
+        width: 0;
+        height: 100vh;
+        display: inline-block;
+        vertical-align: middle;
+    }
     &-open {
         overflow: hidden;
     }
     &-close {
-        position: absolute;
-        width: 21px;
-        height: 21px;
-        right: 23px;
-        top: 23px;
-        // background: image-url('close.svg') no-repeat center center;
-        &:before,&:after {
-            content: '';
-            position: absolute;
-            display: block;
-            width: 20px;
-            border-top: 1px solid $main_color;
-            top: 10px;
-        }
-        &:before {
-            transform: rotate(45deg);
-        }
-        &:after {
-            transform: rotate(-45deg);
-        }
-        &:hover {
-            opacity: .8;
-        }
+        // position: absolute;
+        // width: 21px;
+        // height: 21px;
+        // right: 23px;
+        // top: 23px;
+        // // background: image-url('close.svg') no-repeat center center;
+        // &:before,&:after {
+        //     content: '';
+        //     position: absolute;
+        //     display: block;
+        //     width: 20px;
+        //     border-top: 1px solid $main_color;
+        //     top: 10px;
+        // }
+        // &:before {
+        //     transform: rotate(45deg);
+        // }
+        // &:after {
+        //     transform: rotate(-45deg);
+        // }
+        // &:hover {
+        //     opacity: .8;
+        // }
     }
     &.fade .modal-dialog {
         transform: translate(0, -25%);
@@ -48,22 +56,25 @@
         position: relative;
     }
     &-dialog {
+        text-align: initial;
+        display: inline-block;
+        vertical-align: middle;
+        
         position: relative;
-        width: auto;
-        margin: 10px auto;
-        max-width: 690px;
+        max-width: 95%;
+        margin: 10px 0;
     }
 
     &-content {
         position: relative;
-        background-color: #fff;
-        border: 1px solid #999;
-        border: 1px solid rgba(0,0,0,.2);
-        border-radius: 6px;
-        box-shadow: 0 3px 9px rgba(0,0,0,.5);
+        background-color: #212121;
+        // border: 1px solid #999;
+        // border: 1px solid rgba(0,0,0,.2);
+        // border-radius: 6px;
+        // box-shadow: 0 3px 9px rgba(0,0,0,.5);
         background-clip: padding-box;
         outline: 0;
-        padding: 46px 53px;
+        // padding: 46px 53px;
     }
 
     &-backdrop {
@@ -123,8 +134,31 @@
             margin-left: 0;
         }
     }
-
+    &__rosteh {
+        background-color: #212121;
+        display: block !important;
+        position: relative;
+        top: initial;
+        right: initial;
+        bottom: initial;
+        left: initial;
+        overflow: initial;
+        text-align: left;
+        max-width: 48em;
+        min-height: 51em;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 4.5em 0 3em 9.2em;
+        &:before {
+            display: none;
+        }
+    }
 }
 
-
+.privacyModal {
+    .modal-content {
+        max-width: 58em;
+        padding: 3em 4em;
+    }
+}
 

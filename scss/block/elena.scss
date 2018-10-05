@@ -1,26 +1,3 @@
-$main_font_family:								'Gotham Pro';
-$main_color:									#fff !important;
-$main_font_size:								1.125em;
-$container_width:								73%;
-$btn_default_bg_color:				 			#f51212;
-
-
-body {
-	background-color: #151414;
-	color: $main_color;
-	color: #fff;
-}
-
-.container_center {
-	@media (max-width : 768px) {
-		max-width: 100%;
-	}
-}
-
-.section {
-	overflow: hidden;
-}
-
 .section__title {
 	position: relative;
 	z-index: 3;

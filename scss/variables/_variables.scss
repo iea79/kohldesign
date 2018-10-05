@@ -1,7 +1,7 @@
 /* Global variables */
 /* ======================================================================== */
 $main_font_family:								"Gotham Pro";
-$main_color:									#000;
+$main_color:									#fff;
 $main_line_height:								1.2;
 $main_font_size:								1em;
 
@@ -40,10 +40,10 @@ $grid_padding:									20px;
 // Input variables
 
 // Input color
-$input_color:									$main_color;
+$input_color:									#a0a0a0;
 $input_bg_color:								#fff;
 $input_border_color:							#ddd;
-$input_placeholder_color:						#ddd;
+$input_placeholder_color:						#a0a0a0;
 
 // Input hover color
 $input_hover_color:								#fff;

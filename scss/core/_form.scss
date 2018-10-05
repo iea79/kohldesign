@@ -42,7 +42,7 @@ textarea {
 	padding: 6px 15px;
 	outline: none;
 	font-size: 16px;
-	font-weight: 300;
+	font-weight: 400;
 	font-family: $main_font_family;
 	border-radius: 5px;
 	transition: all .3s;
@@ -79,13 +79,13 @@ input[type=checkbox],
 input[type=radio] {
 	padding: 0;
     display: inline-block;
-    height: 14px;
-    width: 14px;
-    border: 1px solid #aaa;
+    height: 0.9em;
+    width: 0.9em;
+    border: none;
     overflow: hidden;
     margin-top: -4px;
     vertical-align: middle;
-    -webkit-appearance: none;
+    appearance: none;
     outline: 0;
     background: 0 0;
     text-align: center;
@@ -125,14 +125,11 @@ input[type=radio] {
 }
 
 input[type=checkbox] {
-	&:checked:before,
-	&:indeterminate:before {
-	    content: "\2714";
-	    font-size: 12px;
-	    -webkit-font-smoothing: antialiased;
-	    text-align: center;
-	    line-height: 13px;
-	    color: #000;
+	&:checked,
+	&:indeterminate {
+		background-image: url('../img/check.png');
+		background-position: top center;
+		background-size: 100%;
 	}
 
 	&:indeterminate:before {

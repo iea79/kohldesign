@@ -37,6 +37,7 @@
 @import 'block/tasks';
 @import 'block/promotion';
 @import 'block/value';
+@import 'block/form';
 
 @import 'block/plate';
 @import 'block/tasks';
@@ -238,12 +239,17 @@
 					background-color: #fff;
 					border-color: #fff;
 					img {
-						filter: contrast(1);
+						filter: contrast(1) grayscale(0);
 					}
 				}
 				&__drop {
 					opacity: 1;
 				}
+			}
+		}
+		&:nth-child(5) {
+			img {
+				filter: contrast(1) grayscale(1);
 			}
 		}
 	}
@@ -260,12 +266,12 @@
 			
 		}
 		img {
-			filter: contrast(0);
 			vertical-align: middle;
 			display: inline-block;
 			max-width: 95%;
 			transition: .3s;
 			max-height: 5em;
+			filter: contrast(0) grayscale(1);
 		    // filter: brightness(95%);
 		}
 	}
@@ -346,3 +352,5 @@
 		background-image: none !important;
 	}
 }
+
+
