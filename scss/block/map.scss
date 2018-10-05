@@ -1,0 +1,58 @@
+// Map
+.map {
+	position: absolute;
+	top: 0;
+	left: 100%;
+	left: 0;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	&__wrap {
+		position: relative;
+		min-height: 44em;
+	}
+	&__infoMarker {
+		padding: 2em 4em 2em 3em;
+	}
+	&__info {
+		 @extend %clear_a;
+		 &:first-child {
+		 	margin-bottom: 1em;
+		 }
+	}
+	&__left {
+		position: relative;
+		top: 0.5em;
+	 	float: left;
+	 	margin-right: 1em;
+	 	color: #ccc;
+	 	font-size: 1em;
+	 	&_letter {
+	 		top: 0.9em;
+	 		font-size: 0.7em;
+	 	}
+	}
+	&__right {
+		overflow: hidden;
+		color: #161515;
+		font-family: "Gotham Pro";
+		font-size: 1.125em;
+		font-weight: 500;
+		line-height: 1.688em;
+	}
+	&__element {
+		position: absolute;
+		top: 0em;
+		left: -1.4em;
+		transform: rotateZ(25deg) scale(1.25);
+		@media (max-width : 1199px) {
+			left: -2.7em;
+		}
+	}
+}
+
+.section__mapTitle {
+	&:before {
+		left: -1.15em;
+	}
+}

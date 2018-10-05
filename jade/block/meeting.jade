@@ -2,71 +2,72 @@
 section.section
 	.container_center
 
-		h2.section__title Мы готовы приехать на встречу лично, <br>
-			span.section__title_left_5 в любую точку страны, 
-			.section__sub.section__title_left_5 чтобы обсудить детали работы
+		h2.section__title.section__meetingTitle Мы готовы приехать на встречу лично, <br>
+			span.section__title_left в любую точку страны, 
+			.section__sub.section__title_left чтобы обсудить детали работы
+			img.meeting__element(src="img/element-2.png", alt="")
 
 		.meeting
 			.meeting__wrap
 				img.meeting__img(src="img/meeting/planet.png", alt="")
-				.meeting__shadow
-				.meeting__point.meeting__amsterdam
+				//- .meeting__shadow
+				a.meeting__point.meeting__amsterdam.meeting__point_js(href="meeting1")
 					|Амстердам 
 					span.icon-point.meeting__icon
-					.meeting__tooltip.meeting__amsterdamTooltip
+					.meeting__tooltip.meeting__amsterdamTooltip.meeting__tooltip_js(id="meeting1")
 						img(src="img/meeting/politie_logo.png", alt="")
 						span.meeting__arrow_top.meeting__amsterdamArrow
-				.meeting__point.meeting__barentsevo
+				a.meeting__point.meeting__barentsevo.meeting__point_js(href="meeting2")
 					span.icon-point.meeting__icon
 					|Баренцево море
-					.meeting__tooltip.meeting__barentsevoTooltip
+					.meeting__tooltip.meeting__barentsevoTooltip.meeting__tooltip_js(id="meeting2")
 						img(src="img/meeting/shtokman.png", alt="")
 						span.meeting__arrow_down.meeting__barentsevoArrow
-				.meeting__point.meeting__germany
+				a.meeting__point.meeting__germany.meeting__point_js(href="meeting3")
 					span.icon-point.meeting__icon
 					|Германия
-					.meeting__tooltip.meeting__germanyTooltip
+					.meeting__tooltip.meeting__germanyTooltip.meeting__tooltip_js(id="meeting3")
 						img(src="img/meeting/bmw.png", alt="")
 						img(src="img/meeting/mini.png", alt="")
 						img(src="img/meeting/thyssenkrupp.png", alt="")
 						span.meeting__arrow_down.meeting__germanyArrow
-				.meeting__point.meeting__czech
+				a.meeting__point.meeting__czech.meeting__point_js(href="meeting4")
 					span.icon-point.meeting__icon
 					|Чехия
-					.meeting__tooltip.meeting__czechTooltip
+					.meeting__tooltip.meeting__czechTooltip.meeting__tooltip_js(id="meeting4")
 						img(src="img/meeting/skoda.png", alt="")
 						span.meeting__arrow_top.meeting__czechArrow
-				.meeting__point.meeting__moscow
+				a.meeting__point.meeting__moscow.meeting__point_js(href="meeting5")
 					span.icon-point.meeting__icon
 					|Москва
-					.meeting__tooltip.meeting__moscowTooltip
+					.meeting__tooltip.meeting__moscowTooltip.meeting__tooltip_js(id="meeting5")
 						img(src="img/meeting/rosteh.png", alt="")
 						img(src="img/meeting/tehnodinamika.png", alt="")
 						img(src="img/meeting/minpromtorg.png", alt="")
 						span.meeting__arrow_down.meeting__moscowArrow
-				.meeting__point.meeting__sochi
+				a.meeting__point.meeting__sochi.meeting__point_js(href="meeting6")
 					span.icon-point.meeting__icon
 					|Сочи
-					.meeting__tooltip.meeting__sochiTooltip
+					.meeting__tooltip.meeting__sochiTooltip.meeting__tooltip_js(id="meeting6")
 						img(src="img/meeting/sirius.png", alt="")
 						img(src="img/meeting/sochi.png", alt="")
 						span.meeting__arrow_top.meeting__sochiArrow
-				.meeting__point.meeting__izhevsk
+				a.meeting__point.meeting__izhevsk.meeting__point_js(href="meeting7")
 					span.icon-point.meeting__icon
 					|Ижевск
-					.meeting__tooltip.meeting__izhevskTooltip
+					.meeting__tooltip.meeting__izhevskTooltip.meeting__tooltip_js(id="meeting7")
 						img(src="img/meeting/kalashnikov.png", alt="")
 						span.meeting__arrow_left.meeting__izhevskArrow
-				.meeting__point.meeting__kazan
+				a.meeting__point.meeting__kazan.meeting__point_js(href="meeting8")
 					span.icon-point.meeting__icon
 					|Казань, Татарстан
-					.meeting__tooltip.meeting__kazanTooltip
+					.meeting__tooltip.meeting__kazanTooltip.meeting__tooltip_js(id="meeting8")
 						img(src="img/meeting/tatarstan.png", alt="")
 						span.meeting__arrow_left.meeting__kazanArrow
-				.meeting__point.meeting__gudermes
+				a.meeting__point.meeting__gudermes.meeting__point_js(href="meeting9")
 					span.icon-point.meeting__icon
 					|Чеченская Республика, Гудермес
-					.meeting__tooltip.meeting__gudermesTooltip
+					.meeting__tooltip.meeting__gudermesTooltip.meeting__tooltip_js(id="meeting9")
 						img(src="img/meeting/rus.png", alt="")
 						span.meeting__arrow_top.meeting__gudermesArrow
 			img.meeting__meteorite_06(src="img/meeting/meteorite_06.png", alt="")
