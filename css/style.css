@@ -2855,7 +2855,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
     margin-bottom: 1em;
     font-size: 1.9em;
     font-style: italic;
-    line-height: 1.15; }
+    line-height: 1.2; }
     .promotion__blockquote:before {
       content: '«';
       position: absolute;
@@ -2863,8 +2863,9 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
       left: -0.7em; }
     @media (max-width: 768px) {
       .promotion__blockquote {
-        margin-bottom: 0.2em;
-        font-size: 1.7em; } }
+        margin-bottom: 1.5em;
+        font-size: 1.7em;
+        line-height: 1.3; } }
   .promotion__info {
     padding-right: 20%;
     opacity: 0.4;
@@ -3053,10 +3054,6 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
       .promotion__btn {
         bottom: 11.8em;
         width: 100%; } }
-
-@media (max-width: 768px) {
-  .section__promotionTitle {
-    padding-right: 5em; } }
 
 .section__promotionTitle:before {
   left: -1.25em; }
@@ -3519,6 +3516,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
       margin-bottom: -5.2em; } }
   .strategy__left {
     position: relative;
+    top: -1.8em;
     overflow: hidden;
     padding: 2em 7em; }
     @media (max-width: 1366px) {
@@ -3719,10 +3717,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
     @media (max-width: 1200px) {
       .meeting__wrap {
         min-height: 59em; } }
-    @media (max-width: 768px) {
-      .meeting__wrap {
-        min-height: 40em; } }
-    @media (max-width: 480px) {
+    @media (max-width: 767px) {
       .meeting__wrap {
         min-height: 20em; } }
   .meeting__img {
@@ -3752,6 +3747,9 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
   .meeting__meteorite_06, .meeting__meteorite_07 {
     position: absolute;
     z-index: 5; }
+    @media (max-width: 767px) {
+      .meeting__meteorite_06, .meeting__meteorite_07 {
+        display: none; } }
   .meeting__meteorite_06 {
     top: -1em;
     right: 11em; }
@@ -3798,8 +3796,9 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 .meeting__point {
   position: absolute;
   z-index: 5;
-  cursor: default; }
-  @media (max-width: 768px) {
+  cursor: default;
+  font-weight: 500; }
+  @media (max-width: 767px) {
     .meeting__point {
       font-size: 0.7em; } }
 
@@ -3811,11 +3810,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 .meeting__amsterdam {
   top: 38.3%;
   left: 12.5%; }
-  @media (max-width: 768px) {
-    .meeting__amsterdam {
-      top: 50%;
-      left: 16%; } }
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
     .meeting__amsterdam {
       top: 25%;
       left: 6%; } }
@@ -3823,11 +3818,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 .meeting__barentsevo {
   top: 15.3%;
   left: 25.5%; }
-  @media (max-width: 768px) {
-    .meeting__barentsevo {
-      top: 23%;
-      left: 30%; } }
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
     .meeting__barentsevo {
       top: 8%;
       left: 25%; } }
@@ -3835,11 +3826,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 .meeting__germany {
   top: 35.5%;
   left: 27.3%; }
-  @media (max-width: 768px) {
-    .meeting__germany {
-      top: 54%;
-      left: 27%; } }
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
     .meeting__germany {
       top: 24%;
       left: 26%; } }
@@ -3847,11 +3834,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 .meeting__czech {
   top: 41.8%;
   left: 30.3%; }
-  @media (max-width: 768px) {
-    .meeting__czech {
-      top: 58%;
-      left: 30%; } }
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
     .meeting__czech {
       top: 31%;
       left: 28%; } }
@@ -3859,11 +3842,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 .meeting__moscow {
   top: 27.6%;
   left: 43.7%; }
-  @media (max-width: 768px) {
-    .meeting__moscow {
-      top: 39%;
-      left: 42.5%; } }
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
     .meeting__moscow {
       top: 19%;
       left: 42%; } }
@@ -3871,11 +3850,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 .meeting__sochi {
   top: 41.5%;
   left: 45.3%; }
-  @media (max-width: 768px) {
-    .meeting__sochi {
-      top: 60%;
-      left: 45%; } }
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
     .meeting__sochi {
       top: 31%;
       left: 44%; } }
@@ -3883,11 +3858,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 .meeting__izhevsk {
   top: 28.1%;
   left: 55.9%; }
-  @media (max-width: 768px) {
-    .meeting__izhevsk {
-      top: 36%;
-      left: 55%; } }
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
     .meeting__izhevsk {
       top: 15%;
       left: 60%; } }
@@ -3895,11 +3866,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 .meeting__kazan {
   top: 34.7%;
   left: 53.3%; }
-  @media (max-width: 768px) {
-    .meeting__kazan {
-      top: 47%;
-      left: 53%; } }
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
     .meeting__kazan {
       top: 26%;
       left: 56%; } }
@@ -3907,11 +3874,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 .meeting__gudermes {
   top: 47.2%;
   left: 51.1%; }
-  @media (max-width: 768px) {
-    .meeting__gudermes {
-      top: 64%;
-      left: 51%; } }
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
     .meeting__gudermes {
       top: 38%;
       left: 50%; } }

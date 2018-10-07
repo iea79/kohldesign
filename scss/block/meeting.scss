@@ -23,10 +23,7 @@
 		@media (max-width : 1200px) {
 			min-height: 59em;
 		}
-		@media (max-width : 768px) {
-			min-height: 40em;
-		}
-		@media (max-width : 480px) {
+		@media (max-width : 767px) {
 			min-height: 20em;
 		}
 	}
@@ -58,6 +55,9 @@
 	&__meteorite_07 {
 		position: absolute;
 		z-index: 5;
+		@media (max-width : 767px) {
+			display: none;
+		}
 	}
 	&__meteorite_06 {
 		top: -1em;
@@ -110,7 +110,8 @@
 		position: absolute;
 		z-index: 5;
 		cursor: default;
-		@media (max-width : 768px) {
+		font-weight: 500;
+		@media (max-width : 767px) {
 			font-size: 0.7em;
 		}
 	}
@@ -122,11 +123,11 @@
 	&__amsterdam {
 		top: 38.3%;
 		left: 12.5%;
-		@media (max-width : 768px) {
-			top: 50%;
-			left: 16%;
-		}
-		@media (max-width : 480px) {
+		// @media (max-width : 768px) {
+		// 	top: 50%;
+		// 	left: 16%;
+		// }
+		@media (max-width : 767px) {
 			top: 25%;
 			left: 6%;
 		}
@@ -134,11 +135,11 @@
 	&__barentsevo {
 		top: 15.3%;
 		left: 25.5%;
-		@media (max-width : 768px) {
-			top: 23%;
-			left: 30%;
-		}
-		@media (max-width : 480px) {
+		// @media (max-width : 768px) {
+		// 	top: 23%;
+		// 	left: 30%;
+		// }
+		@media (max-width : 767px) {
 			top: 8%;
 			left: 25%;
 		}
@@ -146,11 +147,11 @@
 	&__germany {
 		top: 35.5%;
 		left: 27.3%;
-		@media (max-width : 768px) {
-		    top: 54%;
-		    left: 27%;
-		}
-		@media (max-width : 480px) {
+		// @media (max-width : 768px) {
+		//     top: 54%;
+		//     left: 27%;
+		// }
+		@media (max-width : 767px) {
 		    top: 24%;
 		    left: 26%;
 		}
@@ -158,11 +159,11 @@
 	&__czech  {
 		top: 41.8%;
 		left: 30.3%;
-		@media (max-width : 768px) {
-		    top: 58%;
-			left: 30%;
-		}
-		@media (max-width : 480px) {
+		// @media (max-width : 768px) {
+		//     top: 58%;
+		// 	left: 30%;
+		// }
+		@media (max-width : 767px) {
 		    top: 31%;
 			left: 28%;
 		}
@@ -170,11 +171,11 @@
 	&__moscow  {
 		top: 27.6%;
 		left: 43.7%;
-		@media (max-width : 768px) {
-		    top: 39%;
-			left: 42.5%;
-		}
-		@media (max-width : 480px) {
+		// @media (max-width : 768px) {
+		//     top: 39%;
+		// 	left: 42.5%;
+		// }
+		@media (max-width : 767px) {
 		    top: 19%;
 			left: 42%;
 		}
@@ -182,11 +183,11 @@
 	&__sochi  {
 		top: 41.5%;
 		left: 45.3%;
-		@media (max-width : 768px) {
-		    top: 60%;
-			left: 45%;
-		}
-		@media (max-width : 480px) {
+		// @media (max-width : 768px) {
+		//     top: 60%;
+		// 	left: 45%;
+		// }
+		@media (max-width : 767px) {
 		    top: 31%;
 			left: 44%;
 		}
@@ -194,11 +195,11 @@
 	&__izhevsk  {
 		top: 28.1%;
 		left: 55.9%;
-		@media (max-width : 768px) {
-		    top: 36%;
-			left: 55%;
-		}
-		@media (max-width : 480px) {
+		// @media (max-width : 768px) {
+		//     top: 36%;
+		// 	left: 55%;
+		// }
+		@media (max-width : 767px) {
 		    top: 15%;
 			left: 60%;
 		}
@@ -206,11 +207,11 @@
 	&__kazan  {
 		top: 34.7%;
 		left: 53.3%;
-		@media (max-width : 768px) {
-		    top: 47%;
-			left: 53%;
-		}
-		@media (max-width : 480px) {
+		// @media (max-width : 768px) {
+		//     top: 47%;
+		// 	left: 53%;
+		// }
+		@media (max-width : 767px) {
 		    top: 26%;
 			left: 56%;
 		}
@@ -218,11 +219,11 @@
 	&__gudermes  {
 		top: 47.2%;
 		left: 51.1%;
-		@media (max-width : 768px) {
-		    top: 64%;
-			left: 51%;
-		}
-		@media (max-width : 480px) {
+		// @media (max-width : 768px) {
+		//     top: 64%;
+		// 	left: 51%;
+		// }
+		@media (max-width : 767px) {
 		    top: 38%;
 			left: 50%;
 		}
