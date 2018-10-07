@@ -10,23 +10,52 @@
 	&__wrap {
 		position: relative;
 		min-height: 44em;
-	}
-	&__infoMarker {
-		padding: 2em 4em 2em 3em;
+		@media (max-width : 767px) {
+			width: 100%;
+			min-height: 11.688em;
+		}
 	}
 	&__info {
-		 @extend %clear_a;
-		 &:first-child {
-		 	margin-bottom: 1em;
-		 }
+		position: absolute;
+		top: 12em;
+		left: 19em;
+		z-index: 8;
+		min-width: 22em;
+		padding: 2.7em 2.2em 2em;
+		background-color: #fff;
+		border-radius: 0.25em;
+		@media (max-width : 1366px) {
+			left: 17em;
+		}
+		@media (max-width : 768px) {
+			display: none;
+		}
+		&_item {
+			margin-bottom: 0.4em;
+		}
+	}
+	&__infoArrow {
+		position: absolute;
+		right: -1.8em;
+    	bottom: 2.3em;
+		z-index: 9;
+		width: 2em;
+		height: 2em;
+		display: inline-block;
+		border: 1.25em solid transparent;
+		border-left: 1.25em solid #fff;
+	}
+	&__firstIcon {
+		font-size: 2em;
+	}
+	&__secondIcon {
+		font-size: 0.85em;
 	}
 	&__left {
-		position: relative;
-		top: 0.5em;
+		padding-top: 0.3em;
 	 	float: left;
-	 	margin-right: 1em;
+	 	width: 11%;
 	 	color: #ccc;
-	 	font-size: 1em;
 	 	&_letter {
 	 		top: 0.9em;
 	 		font-size: 0.7em;
@@ -38,7 +67,7 @@
 		font-family: "Gotham Pro";
 		font-size: 1.125em;
 		font-weight: 500;
-		line-height: 1.688em;
+		line-height: 1.5em;
 	}
 	&__element {
 		position: absolute;
@@ -48,6 +77,42 @@
 		@media (max-width : 1199px) {
 			left: -2.7em;
 		}
+		@media (max-width : 768px) {
+			top: -1em;
+			left: auto;
+			right: 0;
+			transform: rotateZ(165deg) scale(1.25);
+		}
+	}
+	&__down {
+		display: none;
+		padding: 2em 0 1.5em;
+		margin-left: -1.5em;
+		border-bottom: 1px solid #2E2D2D;
+		@extend %clear_a;
+		@media (max-width : 768px) {
+			display: block;
+		}
+		&_item {
+			width: 50%;
+			float: left;
+			padding-left: 1.5em;
+			@extend %clear_a;
+		}
+	}
+	&__downIcon {
+		width: 1.7em;
+		font-size: 0.6em;
+		float: left;
+		color: #f92626;
+		&_small {
+			font-size: 0.8em;
+		}
+	}
+	&__downInfo {
+		overflow: hidden;
+		font-size: 0.688em;
+		line-height: 1.24em;
 	}
 }
 

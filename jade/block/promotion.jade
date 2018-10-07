@@ -9,6 +9,8 @@ section.pr
 			img.promotion__element(src="img/element-2.png", alt="")
 
 		.promotion
+			.promotion__list_top Разработка сильного бренда <br>состоит из 
+				span.promotion__number 4-х этапов
 			.promotion__list.grid.grid__4
 				.promotion__item
 					.promotion__step
@@ -18,8 +20,16 @@ section.pr
 						.promotion__img
 							img(src="img/promotion/folder1.png", alt="")
 					.promotion__back
-						.promotion__back_in
-							img(src="img/promotion/folder-back3.png", alt="")
+						.promotion__title.promotion__backTitle
+							|аудит 
+							span.promotion__number 1
+						.promotion__backList
+							.promotion__backList_item Рыночный анализ
+							.promotion__backList_item Анализ конкурентов
+							.promotion__backList_item Визуальный аудит
+							.promotion__backList_item Проведение интервью
+						.promotion__backDown
+							a.promotion__backBtn(href="#") Посмотреть пример
 				.promotion__item
 					.promotion__step
 						.promotion__title
@@ -28,8 +38,15 @@ section.pr
 						.promotion__img
 							img(src="img/promotion/folder2.png", alt="")
 					.promotion__back
-						.promotion__back_in
-							img(src="img/promotion/folder-back2.png", alt="")
+						.promotion__title.promotion__backTitle
+							|стратегия 
+							span.promotion__number 2
+						.promotion__backList
+							.promotion__backList_item Разработка позиционирования
+							.promotion__backList_item Разработка архитектуры бренда
+							.promotion__backList_item Создание концепции платформы бренда
+						.promotion__backDown
+							a.promotion__backBtn(href="#") Посмотреть пример
 				.promotion__item
 					.promotion__step
 						.promotion__title
@@ -38,8 +55,18 @@ section.pr
 						.promotion__img
 							img(src="img/promotion/folder3.png", alt="")
 					.promotion__back
-						.promotion__back_in
-							img(src="img/promotion/folder-back3.png", alt="")
+						.promotion__title.promotion__backTitle
+							|дизайн 
+							span.promotion__number 3
+						.promotion__backList
+							.promotion__backList_item Корпоративный бренд
+							.promotion__backList_item Корпоративная архитектура бренда
+							.promotion__backList_item Дизайн упаковка
+							.promotion__backList_item Корпоративный веб-сайт
+							.promotion__backList_item Корпоративный видео ролик
+							.promotion__backList_item Выставочный дизайн
+						.promotion__backDown
+							a.promotion__backBtn(href="#") Посмотреть пример
 				.promotion__item
 					.promotion__step
 						.promotion__title
@@ -48,10 +75,17 @@ section.pr
 						.promotion__img
 							img(src="img/promotion/folder4.png", alt="")
 					.promotion__back
-						.promotion__back_in
-							img(src="img/promotion/folder-back2.png", alt="")
-			.promotion__list_top Разработка сильного бренда <br>состоит из 
-				span.promotion__number 4-х этапов
+						.promotion__title.promotion__backTitle
+							|внедрение 
+							span.promotion__number 4
+						.promotion__backList
+							.promotion__backList_item Руководство по использованию бренда
+							.promotion__backList_item Контроль за изменениями
+							.promotion__backList_item Мониторинг внедрения бренда
+							.promotion__backList_item Управление брендом
+							.promotion__backList_item PR – Раскрутка бренда
+						.promotion__backDown
+							a.promotion__backBtn(href="#") Посмотреть пример
 			.promotion__alex
 				.promotion__blockquote ...При соблюдении всех наших рекомендаций по внедрению нового бренда, я гарантирую вам увеличение выручки компании более чем на 20%»
 				.promotion__info
@@ -59,9 +93,11 @@ section.pr
 					.promotion__info_item Основал «kohldesign» и укрепляю промышленность России сильными брендами 
 					.promotion__info_item Вооружил сильными брендами: Калашников Концерн, Дом.рф, Сириус - образовательный центр, Наследие Татарстана и другие
 					.promotion__info_item Возглавлял команды в Европе и России
-			<button class="btn" data-toggle="modal" data-target="#modalDiscuss">Получить консультацию Александра</button>
-			img.promotion__manImg(src="img/promotion/man.png", alt="")
-			img.promotion__manSign(src="img/promotion/sign.png", alt="")
-			.promotion__alexName александр кооль
-				.promotion__alexName_sub Основатель и генеральный директор <br>ООО KOHLDESIGN
+			.promotion__alexImg
+				img.promotion__manImg(src="img/promotion/man.png", alt="")
+				img.promotion__manSign(src="img/promotion/sign.png", alt="")
+				.promotion__alexName александр кооль
+					.promotion__alexName_sub Основатель и генеральный директор <br>
+					span.promotion__alexCompany ООО KOHLDESIGN
+			button.btn.promotion__btn(data-toggle="modal", data-target="#modalDiscuss") Получить консультацию Александра
 // end promotion

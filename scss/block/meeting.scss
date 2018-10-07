@@ -4,14 +4,9 @@
 	@media (max-width : 1200px) {
 		font-size: 0.9em;
 	}
-	// @media (max-width : 768px) {
-	// 	width: auto;
-	// 	overflow: hidden;
-	// 	overflow-x: auto;
-	// 	overflow-y: hidden;
-	// 	margin-left: -15px;
-	// 	margin-right: -15px;
-	// }
+	@media (max-width : 768px) {
+		margin-bottom: -3em;
+	}
 	&__wrap {
 		position: relative;
 		top: 1em;
@@ -28,12 +23,12 @@
 		@media (max-width : 1200px) {
 			min-height: 59em;
 		}
-		@media (max-width : 992px) {
-			// min-height: 24em;
+		@media (max-width : 768px) {
+			min-height: 40em;
 		}
-		// @media (max-width : 768px) {
-		// 	width: 46.57em;
-		// }
+		@media (max-width : 480px) {
+			min-height: 20em;
+		}
 	}
 	&__img {
 		position: absolute;
@@ -76,12 +71,10 @@
 		@media (max-width : 992px) {
 			right: -6em;
 		}
-		// @media (max-width : 768px) {
-		// 	top: -1em;
-		// 	right: auto;
-		// 	left: -60px;
-		// 	background-size: 5.5em 4.7em;
-		// }
+		@media (max-width : 768px) {
+			top: -1em;
+			right: -20em;
+		}
 	}
 	&__meteorite_07 {
 		top: 6em;
@@ -90,7 +83,11 @@
 			left: -10em;
 		}
 		@media (max-width : 992px) {
-			top: 25em;
+			top: 30em;
+		}
+		@media (max-width : 768px) {
+			top: 6em;
+			left: -30em;
 		}
 	}
 	&__element {
@@ -101,6 +98,9 @@
 		@media (max-width : 992px) {
 			left: -2em;
 		}
+		@media (max-width : 768px) {
+			display: none;
+		}
 	}
 }
 
@@ -109,53 +109,123 @@
 	&__point {
 		position: absolute;
 		z-index: 5;
-		cursor: pointer;
-		color: #fff;
-		text-decoration: none;
+		cursor: default;
+		@media (max-width : 768px) {
+			font-size: 0.7em;
+		}
 	}
 	&__icon {
 		color: #f92626;
 		font-size: 2em;
 		margin-right: 0.1em;
-		@media (max-width : 1200px) {
-			// font-size: 1.5em;
-		}
 	}
 	&__amsterdam {
 		top: 38.3%;
 		left: 12.5%;
+		@media (max-width : 768px) {
+			top: 50%;
+			left: 16%;
+		}
+		@media (max-width : 480px) {
+			top: 25%;
+			left: 6%;
+		}
 	}
 	&__barentsevo {
-		top: 15.5%;
+		top: 15.3%;
 		left: 25.5%;
+		@media (max-width : 768px) {
+			top: 23%;
+			left: 30%;
+		}
+		@media (max-width : 480px) {
+			top: 8%;
+			left: 25%;
+		}
 	}
 	&__germany {
-		top: 35.9%;
+		top: 35.5%;
 		left: 27.3%;
+		@media (max-width : 768px) {
+		    top: 54%;
+		    left: 27%;
+		}
+		@media (max-width : 480px) {
+		    top: 24%;
+		    left: 26%;
+		}
 	}
 	&__czech  {
 		top: 41.8%;
 		left: 30.3%;
+		@media (max-width : 768px) {
+		    top: 58%;
+			left: 30%;
+		}
+		@media (max-width : 480px) {
+		    top: 31%;
+			left: 28%;
+		}
 	}
 	&__moscow  {
 		top: 27.6%;
 		left: 43.7%;
+		@media (max-width : 768px) {
+		    top: 39%;
+			left: 42.5%;
+		}
+		@media (max-width : 480px) {
+		    top: 19%;
+			left: 42%;
+		}
 	}
 	&__sochi  {
 		top: 41.5%;
 		left: 45.3%;
+		@media (max-width : 768px) {
+		    top: 60%;
+			left: 45%;
+		}
+		@media (max-width : 480px) {
+		    top: 31%;
+			left: 44%;
+		}
 	}
 	&__izhevsk  {
 		top: 28.1%;
 		left: 55.9%;
+		@media (max-width : 768px) {
+		    top: 36%;
+			left: 55%;
+		}
+		@media (max-width : 480px) {
+		    top: 15%;
+			left: 60%;
+		}
 	}
 	&__kazan  {
 		top: 34.7%;
 		left: 53.3%;
+		@media (max-width : 768px) {
+		    top: 47%;
+			left: 53%;
+		}
+		@media (max-width : 480px) {
+		    top: 26%;
+			left: 56%;
+		}
 	}
 	&__gudermes  {
 		top: 47.2%;
 		left: 51.1%;
+		@media (max-width : 768px) {
+		    top: 64%;
+			left: 51%;
+		}
+		@media (max-width : 480px) {
+		    top: 38%;
+			left: 50%;
+		}
 	}	
 }
 
@@ -164,86 +234,126 @@
 	&__tooltip {
 		position: absolute;
 		z-index: 3;
-		// padding: 0.5em 2em;
 		padding: 0.5em 1em;
 		border: 0.063em solid #6f6f6f;
 		text-align: center;
 		background-color: rgba(23, 22, 22, 0.7);
 		box-sizing: border-box;
-		@media (max-width : 1366px) {
+		@media (max-width : 768px) {
 			display: none;
 		}
 	}
 
 	&__amsterdamTooltip {
 		top: 3.2em;
-		left: -1.4em;
+		left: -1.2em;
+		padding: 0.5em 1em 0.8em;
+		img {
+			width: 7.25em;
+		}
 	}
 	&__barentsevoTooltip {
 		top: -5.5em;
 		left: -0.4em;
+	    padding: 1.2em 0.8em 0.8em;
+		img {
+			width: 8.063em;
+		}
 	}
 	&__germanyTooltip {
 		top: -5em;
 		left: -7em;
 		width: 16em;
-		@media (max-width : 1620px) {
-			top: -5.2em;
-			width: 18em;
-		}
-		@media (max-width : 1366px) {
-			width: 19em;
-		}
 		& > img {
 			margin-right: 0.6em;
 			margin-bottom: 0;
 			display: inline-block;
+			&:nth-child(1) {
+				width: 3.063em;
+			}
 			&:nth-child(2) {
+				width: 5.125em;
 				padding-bottom: 0.4em;
 			}
 			&:nth-child(3) {
+				width: 4.25em;
 				margin-right: 0;
 			}
 		}
 	}
 	&__czechTooltip {
-		top: 3.6em;
+		top: 3.3em;
 		left: -3em;
-		min-width: 5em;
+		padding: 0.7em 1.7em;
+		img {
+			width: 3.125em;
+		}
 	}
 	&__moscowTooltip {
 		top: -10.6em;
 		left: -2.1em;
-		min-width: 10em;
+		padding: 1em 1.5em 0.5em;
+		min-width: 11.3em;
 		text-align: left;
-		@media (max-width : 1620px) {
-			top: -10.8em;
+		& > img {
+			margin-bottom: 0.5em;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			&:nth-child(1) {
+				width: 2.625em;
+			}
+			&:nth-child(2) {
+				width: 8.875em;
+			}
+			&:nth-child(3) {
+				width: 7.5em;
+			}
 		}
 	}
 	&__sochiTooltip {
 		top: 3.3em;
 		left: -5.8em;
+		padding: 1em 1em 0;
 		text-align: left;
+		& > img {
+			margin-bottom: 0.7em;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			&:nth-child(1) {
+				width: 7.688em;
+			}
+			&:nth-child(2) {
+				width: 5.25em;
+			}
+		}
 	}
 	&__izhevskTooltip {
 		top: -4.9em;
-		right: -5.4em;
+		right: -6.4em;
+		min-width: 8em;
+		padding: 1em 1em 0.3em;
+		img {
+			width: 5.438em;
+		}
 	}
 	&__kazanTooltip {
-		top: -1em;
-		right: -8.4em;
+		top: -1.2em;
+		right: -11.5em;
+		min-width: 10em;
+		text-align: left;
+		img {
+			width: 4.75em;
+		}
 	}
 	&__gudermesTooltip {
 		top: 4.7em;
 		left: 2em;
-	}
-	&__moscowTooltip,
-	&__sochiTooltip {
-		& > img {
-			margin-bottom: 0.8em;
-			&:last-child {
-				margin-bottom: 0;
-			}
+		min-width: 9.7em;
+		padding: 0.7em 1em;
+		img {
+			width: 7.25em;
 		}
 	}
 }
@@ -263,18 +373,15 @@
 			height: 0.8em;
 		}
 		&_down {
-			bottom: -0.75em;
-			background: url('../img/meeting/arrow_down.png') no-repeat;
+			bottom: -0.6em;
 		}
 		&_top {
-			top: -0.7em;
-			background: url('../img/meeting/arrow_top.png') no-repeat;
+			top: -0.85em;
 		}
 		&_left {
 			width: 0.9em;
 			height: 1.5em;
-			left: -0.7em;
-			background: url('../img/meeting/arrow_left.png') no-repeat;
+			left: -0.8em;
 		}
 	}
 	&__barentsevoArrow,
@@ -308,6 +415,9 @@
 		margin-left: 5%;
 		@media (max-width : 1366px) {
 			margin-left: 0;
+		}
+		@media (max-width : 768px) {
+			margin-top: 1.5em;
 		}
 	}
 }
