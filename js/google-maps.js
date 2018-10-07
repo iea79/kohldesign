@@ -219,81 +219,35 @@ function init() {
     // Create the Google Map using our element and options defined above
     var map = new google.maps.Map(mapElement, mapOptions);
 
-    // Let's also add a marker while we're at it
-    // var marker = new google.maps.Marker({
-    //     position: new google.maps.LatLng(55.7658875,37.6080417),
-    //     map: map,
-    //     title: 'Snazzy!',
-    //     icon: 'img/point.svg'
-    // });
-
-    // Если информ-окошки нужны, используем эту конструкцию
+    // Используется, если не нужны информационные окошки к объектам/маркерам
     var neighborhoods = [
         // Main
-        {lat: 55.7658875, lng: 37.6080417, icon: 'point.svg'},
+        {lat: 55.7658875, lng: 37.6080417, title: 'kohlDesign', icon: 'point.svg'},
     ];
 
-     /* Info windows
-    =========================*/
-    infoWindow = new google.maps.InfoWindow();
+    var markers = [];
 
-    function displayMarkers() {
-
-       // this variable sets the map bounds and zoom level according to markers position
-       var bounds = new google.maps.LatLngBounds();
-
-       // For loop that runs through the info on markersData making it possible to createMarker function to create the markers
-       for (var i = 0; i < neighborhoods.length; i++){
-
-          var latlng = new google.maps.LatLng(neighborhoods[i].lat, neighborhoods[i].lng);
-          var name = neighborhoods[i].title;
-          var icon = neighborhoods[i].icon;
-          var content = neighborhoods[i].content;
-
-          createMarker(latlng, name, content, icon, i * 250);
-
-          // Marker’s Lat. and Lng. values are added to bounds variable
-          bounds.extend(latlng);
-       }
-
+    function drop() {
+        for (var i = 0; i < neighborhoods.length; i++) {
+            addMarkerWithTimeout(neighborhoods[i], i * 1500);
+        }
     }
 
-
-    function createMarker(latlng, title, content, icon, timeout) {
-
+    function addMarkerWithTimeout(marker, timeout) {
         window.setTimeout(function() {
-           var marker = new google.maps.Marker({
-              map: map,
-              position: latlng,
-              clickable: true,
-              icon: {
-                url: "img/map/" + icon
-              },
-              animation: google.maps.Animation.DROP
-           });
-
-           google.maps.event.addListener(marker, 'click', function() {
-              var infoContent = '<div id="map__infoMarker">' + 
-                                    '<div class="map__info">' + 
-                                        '<div class="map__left icon-house"></div>' + 
-                                        '<div class="map__right">Большая Дмитровка <br>23 строение 1,<br>Москва, 125009</div>' + 
-                                    '</div>' + 
-                                    '<div class="map__info">' + 
-                                        '<div class="map__left icon-letter map__left_letter"></div>' + 
-                                        '<div class="map__right">info@kohldesign.ru</div>' + 
-                                    '</div>' + 
-                                '</div>';
-
-              infoWindow.setContent(infoContent);
-              infoWindow.open(map, marker);
-
-           });
-
+            markers.push(new google.maps.Marker({
+                position: new google.maps.LatLng(marker["lat"], marker["lng"]),
+                map: map,
+                title: marker["title"],
+                icon: {
+                    url: "img/map/" + marker["icon"]
+                },
+                animation: google.maps.Animation.DROP
+            }));
         }, timeout);
-
     }
 
-    displayMarkers();
+    drop();
 
 
     // Enable scroll zoom after click on map

@@ -112,20 +112,6 @@ $(document).ready(function() {
         houseGroup.eq(index).removeClass('hide');
     });
 
-    // Tooltips in Meeting block
-    $('.meeting__point_js').hover(function() {
-      var $this = $(this),
-          tooltipId = $this.attr('href');
-
-      $(tooltipId).fadeIn();      
-    }, function() {
-      $('.meeting__tooltip_js').fadeOut();
-    }, 200);
-
-    $('.meeting__point_js').on('click', function(e) {
-      e.preventDefault();
-    });
-
 	// Scroll to ID // Плавный скролл к элементу при нажатии на ссылку. В ссылке указываем ID элемента
 	// $('#main__menu a[href^="#"]').click( function(){ 
 	// 	var scroll_el = $(this).attr('href'); 
@@ -182,12 +168,12 @@ function gridMatch() {
 
 function fontResize() {
     var windowWidth = $(window).width();
-    	var fontSize = windowWidth/19.05;
-    // if (windowWidth >= 768) {
-    //     var fontSize = windowWidth/19.05;
-    // } else if (windowWidth < 768) {
-    // 	var fontSize = windowWidth/4.8;
-    // }
+    	// var fontSize = windowWidth/19.05;
+    if (windowWidth >= 768) {
+        var fontSize = windowWidth/19.05;
+    } else if (windowWidth < 768) {
+    	var fontSize = windowWidth/4.8;
+    }
 	$('body').css('fontSize', fontSize + '%');
 }
 

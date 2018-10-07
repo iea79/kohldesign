@@ -1,31 +1,31 @@
 /* Footer
  ----------------------------------------------------------------------------- */
-// .footer {
-// 	font-size: $main_font_size;
-// 	position: relative;
-// 	height: $footer_height;
-// 	// background: #BFF08E;
-// 	@extend %clear_all;
-// 	.container_center {
-// 		padding-top: 10px;
-// 		padding-bottom: 10px;
-// 	}
-// }
-
 .footer {
 	font-size: $main_font_size;
 	position: relative;
-	height: $footer_height;
-	padding: 3.8em 0 7em;
+	// height: $footer_height;
+	padding: 3.8em 0 2em;
 	@extend %clear_a;
+	@media (max-width : 768px) {
+		text-align: center;
+		padding: 1.5em 0 2em;
+	}
 	&__left {
 		float: left;
 		@extend %clear_a;
 		display: table;
+		@media (max-width : 768px) {
+			float: none;
+			margin: 0 auto 1em;
+		}
 	}
 	&__logo {
 		margin-right: 0.7em;
 		display: table-cell;
+		width: 11.5em;
+		@media (max-width : 768px) {
+			width: 14em;
+		}
 	}
 	&__sub {
 		color: #fff;
@@ -39,12 +39,19 @@
 	&__center {
 		float: left;
 		margin-left: 5.5em;
+		@media (max-width : 768px) {
+			float: none;
+			margin-left: 0;
+		}
 	}
 	&__policy {
 		margin-bottom: 1.5em;
 		display: block;
 		color: #00b9fe;
 		font-size: 0.875em;
+		@media (max-width : 768px) {
+			font-size: 1.1em;
+		}
 	}
 	&__copy {
 		color: #fff4fb;
@@ -52,11 +59,18 @@
 	}
 	&__right {
 		float: right;
+		@media (max-width : 768px) {
+			float: none;
+			margin-bottom: 0.8em;
+		}
 	}
 	&__tel {
 		margin-bottom: 0.5em;
 		font-size: 1.5em;
   		font-weight: 500;
+  		@media (max-width : 768px) {
+			margin-bottom: 0.8em;
+		}
 	}
 	&__order {
 		display: inline-block;
@@ -67,6 +81,16 @@
 		text-decoration: none;
 		&:hover {
 			border-bottom: 1px solid #f01e1e;
+		}
+		@media (max-width : 768px) {
+			float: none;
+			padding: 1em 2em;
+			font-size: 1.2em;
+			border-radius: 1.5em;
+			border: 0.063em solid #f01e1e;
+			&:hover {
+				background-color: #f01e1e;
+			}
 		}
 	}
 }
