@@ -12,7 +12,7 @@
 		min-height: 44em;
 		@media (max-width : 767px) {
 			width: 100%;
-			min-height: 11.688em;
+			min-height: 15.69em;
 		}
 	}
 	&__info {
@@ -113,6 +113,9 @@
 		overflow: hidden;
 		font-size: 0.688em;
 		line-height: 1.24em;
+		@media (max-width: 767px) {
+		    font-size: 0.9em;
+		}
 	}
 }
 

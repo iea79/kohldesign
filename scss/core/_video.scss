@@ -52,4 +52,12 @@
 			background-color: #DC2323;
 		}
 	}
+	@media (max-width: 767px) {
+	    &__play {
+	    	width: 7em;
+	    	height: 7em;
+	    	margin-top: -3.5em;
+	    	margin-left: -3.5em;
+	    }
+	}
 }

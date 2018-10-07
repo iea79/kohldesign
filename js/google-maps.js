@@ -1,12 +1,26 @@
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
 
+var markerImg = "img/map/point.svg",
+    latMap = 55.76598136836506,
+    lngMap = 37.60972251719666,
+    zoom = 18,
+    centerOfset = 0.00009;
+
+if (isXsWidth()) {
+    var markerImg = "img/map/point-sm.svg";
+    var zoom = 17;
+    centerOfset = 0.0003;
+}
+
+
 function init() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
-        zoom: 17,
+        language: 'ru',
+        zoom: zoom,
         zoomControl: false,
         scrollwheel: false,
         mapTypeControl: false,
@@ -15,7 +29,7 @@ function init() {
         streetViewControl: false,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(55.7658875,37.6080417), 
+        center: new google.maps.LatLng(latMap + centerOfset,lngMap), 
 
         // How you would like to style the map. 
         // This is where you would paste any style found on Snazzy Maps.
@@ -222,7 +236,7 @@ function init() {
     // Используется, если не нужны информационные окошки к объектам/маркерам
     var neighborhoods = [
         // Main
-        {lat: 55.7658875, lng: 37.6080417, title: 'kohlDesign', icon: 'point.svg'},
+        {lat: latMap, lng: lngMap, title: 'kohlDesign', icon: markerImg},
     ];
 
     var markers = [];
@@ -240,7 +254,7 @@ function init() {
                 map: map,
                 title: marker["title"],
                 icon: {
-                    url: "img/map/" + marker["icon"]
+                    url: marker["icon"]
                 },
                 animation: google.maps.Animation.DROP
             }));
@@ -249,11 +263,6 @@ function init() {
 
     drop();
 
-    var marker = "img/map/point.svg"
-
-    if ($(marker).isXsWidth('123px')) {
-        var marker = "img/map/point-sm.svg"
-    }
 
 
     // Enable scroll zoom after click on map

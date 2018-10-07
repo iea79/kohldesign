@@ -10,32 +10,42 @@ section#profitScreen.profitScreen
 				p.profitScreen__small.
 					Бренд – это ключевой актив бизнеса. Прежде 
 					чем принимать решение о сотрудничестве, клиенты, партнеры и инвесторы всегда оценивают силу бренда компании. Не стоит пренебрегать тем, что приносит прибыль
-				.profitScreen__brand.
+				.profitScreen__brand.mobileHide.
 					А как выглядит ваша компания 
 					в глазах клиентов, партнеров, 
 					инвесторов?
 			.profitScreen__right
 				.profitImg1
+					.mobileVisible До
 				.profitImg2
+					.mobileVisible После
 				ul.profitList
 					li.profitList__item
 						.profitList__num 179
+						.profitList__procent.mobileVisible %
 						.profitList__right
-							.profitList__procent %
+							.profitList__procent.mobileHide %
 							.profitList__text Рост<br>выручки
 					li.profitList__item
 						.profitList__num 158
+						.profitList__procent.mobileVisible %
 						.profitList__right
-							.profitList__procent %
+							.profitList__procent.mobileHide %
 							.profitList__text Рост объема<br>производства
 					li.profitList__item
 						.profitList__num 8
+						.profitList__procent.mobileVisible %
 						.profitList__right
-							.profitList__procent %
+							.profitList__procent.mobileHide %
 							.profitList__text Рост численности<br>персонала
-		button.btn.btn_img( data-toggle="modal" data-target="#modalAnalys")
-			img(src="img/btn-card.png")
-			| Получить бесплатный<br>брендинговый анализ
+			.profitScreen__brand.mobileVisible.
+				А как выглядит ваша компания 
+				в глазах клиентов, партнеров, 
+				инвесторов?
+		.center_mobile
+			button.btn.btn_img
+				img(src="img/btn-card.png")
+				| Получить бесплатный<br>брендинговый анализ
 	ul.profitScreen__element
 		li
 		li

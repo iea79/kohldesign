@@ -51,24 +51,25 @@ $(document).ready(function() {
       slidesToScroll: 1,
       arrows: false,
       fade: true,
+      asNavFor: '.sliderNav',
       infinite: false,
-      asNavFor: '.sliderNav'
+      adaptiveHeight: true
     });
     $('.sliderFor2').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
       fade: true,
-      infinite: false,
       asNavFor: '.sliderNav',
+      infinite: false
     });
     $('.sliderFor3').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
       fade: true,
-      infinite: false,
       asNavFor: '.sliderNav',
+      infinite: false,
     });
     var slider = $('.sliderNav').slick({
       slidesToShow: 5,
@@ -77,9 +78,21 @@ $(document).ready(function() {
       dots: false,
       arrows: false,
       centerMode: true,
-      infinite: false,
       focusOnSelect: true,
       vertical: true,
+      infinite: false,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            vertical: false,
+            asNavFor: '.sliderFor,.sliderFor3',
+            fade: true,
+            adaptiveHeight: true
+          }
+        }
+    ]
     });
     $('.sliderButton_prev').click(function() {
         slider.slick('slickPrev');
@@ -88,19 +101,20 @@ $(document).ready(function() {
         slider.slick('slickNext');
     });
 
+    // РџРѕСЏРІР»РµРЅРёРµ РїРѕР»СЏ РїСЂРё РІС‹Р±РѕСЂРµ РёРЅРїСѓС‚Р° РІ РјРѕРґР°Р»РєРµ
     $('.form__radio input').change(function() {
         var inputDate = $('#input_date')
         var checked = $('#form_radio_1').prop('checked')
-        // console.log(checked)
+        console.log(checked)
         if (checked) {
             inputDate.fadeOut(300);
-            inputDate.find('input').val('');
         }
         else {
             inputDate.fadeIn(300);
         }
     });
 
+    // РўР°Р±С‹ РІ РјРѕРґР°Р»РєРµ
     var houseTab = $('#modal_tabs li')
     var houseGroup = $('.modal__text');
     houseTab.click(function() {

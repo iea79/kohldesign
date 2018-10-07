@@ -134,25 +134,6 @@
             margin-left: 0;
         }
     }
-    &__rosteh {
-        background-color: #212121;
-        display: block !important;
-        position: relative;
-        top: initial;
-        right: initial;
-        bottom: initial;
-        left: initial;
-        overflow: initial;
-        text-align: left;
-        max-width: 48em;
-        min-height: 51em;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 4.5em 0 3em 9.2em;
-        &:before {
-            display: none;
-        }
-    }
 }
 
 .privacyModal {
