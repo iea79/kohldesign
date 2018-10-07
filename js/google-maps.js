@@ -249,6 +249,12 @@ function init() {
 
     drop();
 
+    var marker = "img/map/point.svg"
+
+    if ($(marker).isXsWidth('123px')) {
+        var marker = "img/map/point-sm.svg"
+    }
+
 
     // Enable scroll zoom after click on map
     map.addListener('click', function() {
