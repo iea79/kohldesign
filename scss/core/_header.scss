@@ -66,6 +66,25 @@
 			
 		}
 	}
+	@media (max-width: 767px) {
+		padding: 1.8em 0;
+	    &__logo {
+	    	float: none;
+	    	font-size: 0.7em;
+	    	img {
+	    		width: 12.3em;
+	    	}
+	    	&Sub {
+	    		line-height: 1.2;
+	    		max-width: 21em;
+	    		color: rgba(#fff, .9);
+	    	}
+	    }
+	    &__action {
+	    	display: none;
+	    	
+	    }
+	}
 }
 
 // stiky menu

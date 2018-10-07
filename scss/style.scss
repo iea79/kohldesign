@@ -216,6 +216,82 @@
 			width: 14em;
 		}
 	}
+	@media (max-width: 767px) {
+		padding: 4.7em 0 0;
+		overflow: hidden;
+		
+	    &__left {
+	    	float: none;
+	    	width: 100%;
+	    	margin-right: auto;
+	    }
+	    .section__title {
+	    	font-size: 2em;
+	    	line-height: 1.2;
+	    	max-width: 80%;
+	    }
+	    &__sub {
+	    	font-size: 1.1em;
+	    	max-width: 66%;
+	    	margin-bottom: 11.3em;
+	    	br {
+	    		display: none;
+	    		
+	    	}
+	    }
+	    &__img {
+	    	position: absolute;
+	    	top: 24.2em;
+	    	width: 100%;
+	    	img {
+	    		position: relative;
+	    		max-width: none;
+	    		width: 124%;
+	    		right: 1em;
+	    	}
+	    }
+	    &__signature {
+	    	left: 0;
+	    	bottom: auto;
+	    	top: 4.6em;
+	    	max-width: 40%;
+	    }
+	    &__name {
+	    	font-size: 1.35em;
+	    	line-height: 1.3;
+	    	margin-bottom: .5em;
+	    }
+	    &__action {
+	    	position: relative;
+	    	z-index: 10;
+	    	padding-top: 9.5em;
+	    	padding-bottom: 3.7em;
+	    	margin-bottom: 3.4em;
+	    	&Name {
+	    		position: absolute;
+	    		bottom: 0em;
+	    		margin-bottom: 0;
+	    		padding-left: 0;
+	    		text-align: center;
+	    		width: 100%;
+	    		&:before {
+	    			display: none;
+	    			
+	    		}
+	    	}
+	    }
+	    .fly {
+	    	display: none;
+	    }
+	    .btn {
+	    	width: 100%;
+	    	img {
+	    		width: 5em;
+	    		top: 1em;
+	    		left: -1em;
+	    	}
+	    }
+	}
 }
 
 .company {
@@ -296,6 +372,34 @@
 	}
 	&__job {
 		color: rgba(#fff4fb, 0.5);
+	}
+	@media (max-width: 767px) {
+		margin-bottom: 4em;
+	    &__label {
+	    	font-size: 2.2em;
+	    	margin-right: auto;
+	    	float: none;
+	    	width: auto;
+	    	margin-bottom: 0.25em;
+	    }
+	    &__item {
+	    	width: 33.3%;
+	    }
+	    &__drop {
+	    	display: none;
+	    }
+	    &__img {
+	    	background-color: #fff;
+	    	border: .25em solid #0f0d0d;
+	    	&:before {
+	    		height: 3.5em;
+	    	}
+	    	img {
+		    	filter: contrast(1) grayscale(0) !important;
+		    	max-height: 3em;
+		    	max-width: 95%;
+	    	}
+	    }
 	}
 }
 
