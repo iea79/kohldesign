@@ -17,11 +17,12 @@
 	}
 	&__info {
 		position: absolute;
-		top: 12em;
-		left: 19em;
+		top: 13.8em;
+		// left: 17em;
+		right: 55.9%;
 		z-index: 8;
-		min-width: 22em;
-		padding: 2.7em 2.2em 2em;
+		width: 24.9em;
+		padding: 3.3em 2.4em 1.8em;
 		background-color: #fff;
 		border-radius: 0.25em;
 		@media (max-width : 1366px) {
@@ -31,13 +32,13 @@
 			display: none;
 		}
 		&_item {
-			margin-bottom: 0.4em;
+			margin-bottom: 0.9em;
 		}
 	}
 	&__infoArrow {
 		position: absolute;
 		right: -1.8em;
-    	bottom: 2.3em;
+    	bottom: 2.9em;
 		z-index: 9;
 		width: 2em;
 		height: 2em;
@@ -46,7 +47,7 @@
 		border-left: 1.25em solid #fff;
 	}
 	&__firstIcon {
-		font-size: 2em;
+		font-size: 2.3em;
 	}
 	&__secondIcon {
 		font-size: 0.85em;
@@ -72,7 +73,8 @@
 	&__element {
 		position: absolute;
 		top: 0em;
-		left: -1.4em;
+		left: -0.4em;
+		width: 0.7em;
 		transform: rotateZ(25deg) scale(1.25);
 		@media (max-width : 1199px) {
 			left: -2.7em;
@@ -108,6 +110,9 @@
 		&_small {
 			font-size: 0.8em;
 		}
+		@media (max-width: 767px) {
+		    font-size: 0.9em;
+		}
 	}
 	&__downInfo {
 		overflow: hidden;
@@ -115,12 +120,19 @@
 		line-height: 1.24em;
 		@media (max-width: 767px) {
 		    font-size: 0.9em;
+		    letter-spacing: 0.02em;
+		    line-height: 1.5;
 		}
 	}
 }
 
 .section__mapTitle {
+	margin-bottom: 1.3em;
+	@media (min-width: 768px) {
+		padding-left: 1.2em;
+	    
+	}
 	&:before {
-		left: -1.15em;
+		left: 0.05em;
 	}
 }

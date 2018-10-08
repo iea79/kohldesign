@@ -203,7 +203,7 @@ function gridMatch() {
 function fontResize() {
     var windowWidth = $(window).width();
     if (windowWidth >= 768) {
-        var fontSize = windowWidth/19.05;
+        var fontSize = windowWidth/21.5;
     } else if (windowWidth < 768) {
     	var fontSize = windowWidth/4.8;
     }

@@ -1,6 +1,9 @@
 .tasks{
-	padding-top: 5%;
-	padding-bottom: 3%;
+	padding-top: 0.6em;
+	padding-bottom: 0em;
+	@media (min-width: 768px) {
+	    margin-bottom: -2.1em;
+	}
 	// background-color: #161515;
 	position: relative;
 	&__img{
@@ -93,7 +96,7 @@
 	    .section__sub {
 	    	font-size: .8em;
 	    	color: rgba(#fff, .9);
-	    	margin-bottom: 2em;
+	    	margin-bottom: 1em;
 	    }
 	}
 }

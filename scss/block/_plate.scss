@@ -128,12 +128,13 @@
 		letter-spacing: 0.056em;
 	}
 	@media (max-width: 767px) {
-	    font-size: 0.7em;
+	    font-size: 0.68em;
 	    padding-left: 0;
 	    margin-left: -0.5em;
 	    &__item {
 	    	padding-left: 0.5em;
 	    	width: 50%;
+	    	margin-bottom: 1.7em;
 	    	&:first-child {
 	    		.plate__icon {
 	    			img {
@@ -158,11 +159,15 @@
 	    	}
 	    }
 	    &__icon {
-	    	width: 27%;
+	    	width: 24%;
 	    }
 	    &__content {
 	    	padding-top: 1em;
 	    	padding-left: 1.2em;
+	    }
+	    &__subtitle {
+	    	padding-top: 1em;
+	    	font-size: 1.2em;
 	    }
 	}
 }

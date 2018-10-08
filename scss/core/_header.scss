@@ -9,6 +9,9 @@
 	&__logo {
 		float: left;
 		// width: 150px;
+		img {
+			width: 13.1em;
+		}
 		a {
 			vertical-align: middle;
 			display: inline-block;
@@ -71,13 +74,21 @@
 	    &__logo {
 	    	float: none;
 	    	font-size: 0.7em;
+    		a {
+    			margin-right: 0.8em;
+    			vertical-align: top;
+    			padding-top: 0.3em;
+    		}
 	    	img {
 	    		width: 12.3em;
 	    	}
 	    	&Sub {
+	    		padding-top: 0.8em;
 	    		line-height: 1.2;
 	    		max-width: 21em;
 	    		color: rgba(#fff, .9);
+	    		vertical-align: top;
+	    		
 	    	}
 	    }
 	    &__action {

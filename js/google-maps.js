@@ -5,7 +5,7 @@ var markerImg = "img/map/point.svg",
     latMap = 55.76598136836506,
     lngMap = 37.60972251719666,
     zoom = 18,
-    centerOfset = 0.00009;
+    centerOfset = 0.0002;
 
 if (isXsWidth()) {
     var markerImg = "img/map/point-sm.svg";

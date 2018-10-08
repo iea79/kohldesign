@@ -1,28 +1,31 @@
 // Meeting
 .meeting {
 	position: relative;
-	@media (max-width : 1200px) {
-		font-size: 0.9em;
-	}
 	@media (max-width : 768px) {
 		margin-bottom: -3em;
+		margin-top: -1em;
+		margin-left: -4em;
+		margin-right: -6em;
+	}
+	&__section {
+		margin-bottom: 5.4em;
+		.container_center {
+			max-width: 80.2em;
+		}
+		@media (max-width: 767px) {
+		    margin-bottom: 4.7em;
+		}
+			
 	}
 	&__wrap {
 		position: relative;
 		top: 1em;
 		// left: -3em;
-		width: 80%;
+		// width: 84%;
 		min-height: 40em;
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
-		@media (max-width : 1366px) {
-			width: 100%;
-			min-height: 52em;
-		}
-		@media (max-width : 1200px) {
-			min-height: 59em;
-		}
 		@media (max-width : 767px) {
 			min-height: 20em;
 		}
@@ -40,16 +43,6 @@
 		min-height: 175%;
 		border-radius: 50%;
 		box-shadow: -100px -150px 200px 0px rgba(95,34,34,0.4);
-		@media (max-width : 1620px) {
-			min-height: 210%;
-		}
-		@media (max-width : 1366px) {
-			min-height: 250%;
-			box-shadow: -50px -50px 200px 0px rgba(95,34,34,0.4);
-		}
-		@media (max-width : 1200px) {
-			min-height: 280%;
-		}
 	}
 	&__meteorite_06,
 	&__meteorite_07 {
@@ -60,31 +53,18 @@
 		}
 	}
 	&__meteorite_06 {
-		top: -1em;
-		right: 11em;
-		@media (max-width : 1366px) {
-			right: 3em;
-		}
-		@media (max-width : 1200px) {
-			right: -3em;
-		}
-		@media (max-width : 992px) {
-			right: -6em;
-		}
+		top: -2em;
+		right: 3em;
+		width: 17em;
 		@media (max-width : 768px) {
 			top: -1em;
 			right: -20em;
 		}
 	}
 	&__meteorite_07 {
-		top: 6em;
-		left: -7em;
-		@media (max-width : 1366px) {
-			left: -10em;
-		}
-		@media (max-width : 992px) {
-			top: 30em;
-		}
+		top: 7em;
+		left: -19em;
+		width: 15em;
 		@media (max-width : 768px) {
 			top: 6em;
 			left: -30em;
@@ -95,9 +75,6 @@
 		top: 0em;
 		left: -1.3em;
 		transform: rotateZ(205deg) scale(1.25);
-		@media (max-width : 992px) {
-			left: -2em;
-		}
 		@media (max-width : 768px) {
 			display: none;
 		}
@@ -112,12 +89,12 @@
 		cursor: default;
 		font-weight: 500;
 		@media (max-width : 767px) {
-			font-size: 0.7em;
+			font-size: 1em;
 		}
 	}
 	&__icon {
 		color: #f92626;
-		font-size: 2em;
+		font-size: 1em;
 		margin-right: 0.1em;
 	}
 	&__amsterdam {
@@ -128,8 +105,18 @@
 		// 	left: 16%;
 		// }
 		@media (max-width : 767px) {
-			top: 25%;
-			left: 6%;
+			top: 42%;
+			left: 12%;
+			padding-top: 1em;
+			.meeting__icon {
+				display: block;
+				text-align: center;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				// padding-bottom: 3em;
+			}
 		}
 	}
 	&__barentsevo {
@@ -140,8 +127,15 @@
 		// 	left: 30%;
 		// }
 		@media (max-width : 767px) {
-			top: 8%;
+			top: 16%;
 			left: 25%;
+			padding-left: 0.9em;
+			width: 5em;
+			.meeting__icon {
+				position: absolute;
+				left: 0;
+				top: 0.4em;
+			}
 		}
 	}
 	&__germany {
@@ -152,8 +146,8 @@
 		//     left: 27%;
 		// }
 		@media (max-width : 767px) {
-		    top: 24%;
-		    left: 26%;
+		    top: 39%;
+		    left: 26.9%;
 		}
 	}
 	&__czech  {
@@ -164,8 +158,8 @@
 		// 	left: 30%;
 		// }
 		@media (max-width : 767px) {
-		    top: 31%;
-			left: 28%;
+		    top: 45%;
+			left: 30%;
 		}
 	}
 	&__moscow  {
@@ -176,8 +170,8 @@
 		// 	left: 42.5%;
 		// }
 		@media (max-width : 767px) {
-		    top: 19%;
-			left: 42%;
+		    top: 31%;
+			left: 45%;
 		}
 	}
 	&__sochi  {
@@ -188,8 +182,8 @@
 		// 	left: 45%;
 		// }
 		@media (max-width : 767px) {
-		    top: 31%;
-			left: 44%;
+		    top: 46%;
+			left: 46%;
 		}
 	}
 	&__izhevsk  {
@@ -200,7 +194,7 @@
 		// 	left: 55%;
 		// }
 		@media (max-width : 767px) {
-		    top: 15%;
+		    top: 32%;
 			left: 60%;
 		}
 	}
@@ -212,8 +206,15 @@
 		// 	left: 53%;
 		// }
 		@media (max-width : 767px) {
-		    top: 26%;
-			left: 56%;
+		    top: 38%;
+			left: 55%;
+			padding-left: 0.9em;
+			width: 5em;
+			.meeting__icon {
+				position: absolute;
+				left: 0;
+				top: 0.4em;
+			}
 		}
 	}
 	&__gudermes  {
@@ -224,8 +225,14 @@
 		// 	left: 51%;
 		// }
 		@media (max-width : 767px) {
-		    top: 38%;
-			left: 50%;
+		    top: 53%;
+			left: 52%;
+			width: 6em;
+			padding-left: 0.9em;
+			.meeting__icon {
+				position: absolute;
+				left: 0;
+			}
 		}
 	}	
 }
@@ -408,12 +415,15 @@
 }
 
 .section__meetingTitle {
+	margin-left: auto;
+	margin-right: auto;
+	letter-spacing: .06em;
 	&:before {
-		top: -0.65em;
-		left: -1.1em;
+		top: -0.7em;
+		left: -1em;
 	}
 	.section__title_left {
-		margin-left: 5%;
+		margin-left: 5.8%;
 		@media (max-width : 1366px) {
 			margin-left: 0;
 		}
