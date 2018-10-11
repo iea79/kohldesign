@@ -82,7 +82,8 @@
 		@media (max-width : 768px) {
 			top: -1em;
 			left: auto;
-			right: 0;
+			width: 1.7em;
+			right: -0.8em;
 			transform: rotateZ(165deg) scale(1.25);
 		}
 	}
@@ -94,12 +95,20 @@
 		@extend %clear_a;
 		@media (max-width : 768px) {
 			display: block;
+			padding-top: 2.9em;
+			padding-bottom: 1.9em;
+			margin-left: 0;
 		}
 		&_item {
 			width: 50%;
 			float: left;
 			padding-left: 1.5em;
 			@extend %clear_a;
+			@media (max-width: 767px) {
+			    &:first-child {
+			    	padding-left: 0;
+			    }
+			}
 		}
 	}
 	&__downIcon {
@@ -131,6 +140,9 @@
 	@media (min-width: 768px) {
 		padding-left: 1.2em;
 	    
+	}
+	@media (max-width: 767px) {
+	    margin-bottom: 0.8em;
 	}
 	&:before {
 		left: 0.05em;

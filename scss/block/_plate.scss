@@ -5,13 +5,13 @@
 	padding-left: 5em;
 	font-family: "Gotham Pro";
 	@include flex();
-	@extend %clear_all;
+	// @extend %clear_all;
 	&__item{
 		padding-left: 2.1em;
 		margin-bottom: 3.2em;
 		width: 33.3%;
-		float: left;
-		vertical-align: middle;
+		// float: left;
+		// vertical-align: middle;
 		// min-height: 12.900em;
 		@media (min-width: 768px) {
 			&:nth-child(3n+2) {

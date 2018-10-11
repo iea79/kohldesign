@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8"/>
-    <title>Home</title>
+    <title>Kohldesign</title>
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="css/style.css?0.4" rel="stylesheet"/>
+    <link href="css/style.css?0.6" rel="stylesheet"/>
   </head>
   <body>
     <div class="wrapper">
@@ -44,7 +44,7 @@
             <div class="fScreen__img"><img src="img/kohl-lg.png" alt=""/>
               <div class="fScreen__signature">
                 <div class="fScreen__name">александр кооль</div>
-                <div class="fScreen__nameSub">Основатель и генеральный директор <br>ООО KOHLDESIGN</div>
+                <div class="fScreen__nameSub">Основатель и генеральный директор <span class="mobileHide"><br>ООО KOHLDESIGN</span></div>
               </div>
             </div>
           </div>
@@ -81,7 +81,7 @@
                   </div>
                 </div>
                 <div class="company__item">
-                  <div class="company__img"><img src="img/company5.png" alt=""/></div>
+                  <div class="company__img"><img class="company__img_hover" src="img/company5.png" alt=""/><img class="company__img_visible" src="img/company2-black.png" alt=""/></div>
                   <div class="company__drop">
                     <div class="company__name">BMW</div>
                     <div class="company__job">Брендинг</div>
@@ -105,7 +105,7 @@
             <h2 class="section__title section__title_center">давайте знакомиться</h2>
             <div class="video">
               <div class="video__wrapper">
-                <div class="js_youtube" id="DLToX0PgoGk">
+                <div class="js_youtube" id="anhMoQE38mQ">
                   <div class="video__prev" style="background-image: url(img/video-prev.png)"></div>
                 </div>
               </div>
@@ -130,12 +130,6 @@
               </div>
             </div>
           </div>
-          <ul class="videoScreen__element">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
         </section>
         <!-- end videoScreen-->
         <!-- begin brandScreen-->
@@ -237,7 +231,7 @@
               </div>
             </div>
             <div class="center_mobile">
-              <button class="btn btn_img"><img src="img/btn-card.png"/>Получить бесплатный<br>брендинговый анализ</button>
+              <button class="btn btn_img" data-toggle="modal" data-target="#modalAnalys"><img src="img/btn-card.png"/>Получить бесплатный<br>брендинговый анализ</button>
             </div>
           </div>
           <ul class="profitScreen__element">
@@ -358,7 +352,12 @@
                 <div class="sliderFor__title sliderFor__title_1"></div>
               </div>
               <div>
-                <div class="sliderFor__left sliderFor__left_b"></div>
+                <div class="sliderFor__left mobileHide">Калашников Концерн — крупнейший российский производитель высокоточного оружия</div>
+                <div class="sliderFor__number">2/16</div>
+                <div class="sliderFor__title sliderFor__title_16"></div>
+              </div>
+              <div>
+                <div class="sliderFor__left sliderFor__left_b"> </div>
                 <div class="sliderFor__right sliderFor__right_b">
                   <div class="sliderFor__top">Показатели ребрендинга Ростеха:</div>
                   <div class="sliderFor__bottom">
@@ -380,7 +379,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="sliderFor__number">2/16</div>
+                <div class="sliderFor__number">3/16</div>
                 <div class="sliderFor__title sliderFor__title_2"></div>
               </div>
               <div>
@@ -406,60 +405,68 @@
                     </ul>
                   </div>
                 </div>
-                <div class="sliderFor__number">3/16</div>
+                <div class="sliderFor__number">4/16</div>
                 <div class="sliderFor__title sliderFor__title_3"></div>
               </div>
               <div>
-                <div class="sliderFor__number">4/16</div>
+                <div class="sliderFor__left mobileHide">Минпромторг — Министерство промышленности <br>и торговли Российской Федерации</div>
+                <div class="sliderFor__number">5/16</div>
                 <div class="sliderFor__title sliderFor__title_4"></div>
               </div>
               <div>
-                <div class="sliderFor__number">5/16</div>
+                <div class="sliderFor__left mobileHide">РУС — российский университет спецназа</div>
+                <div class="sliderFor__number">6/16</div>
                 <div class="sliderFor__title sliderFor__title_5"></div>
               </div>
               <div>
-                <div class="sliderFor__number">6/16</div>
+                <div class="sliderFor__left mobileHide">BMW — многофункциональный выставочный центр Мир BMW в Мюнхене</div>
+                <div class="sliderFor__number">7/16</div>
                 <div class="sliderFor__title sliderFor__title_6"></div>
               </div>
               <div>
-                <div class="sliderFor__number">7/16</div>
+                <div class="sliderFor__left mobileHide">Thyssen Krupp — один из крупнейших промышленных концернов Германии</div>
+                <div class="sliderFor__number">8/16</div>
                 <div class="sliderFor__title sliderFor__title_7"></div>
               </div>
               <div>
-                <div class="sliderFor__number">8/16</div>
+                <div class="sliderFor__left sliderFor__left_lg mobileHide">«Штокман Девелопмент АГ» — предприятие освающее одно из крупнейших газоконденсатных месторождений в мире «Штокманское месторождение»</div>
+                <div class="sliderFor__number">9/16</div>
                 <div class="sliderFor__title sliderFor__title_8"></div>
               </div>
               <div>
-                <div class="sliderFor__number">9/16</div>
+                <div class="sliderFor__left mobileHide">«Baikal» — охотничье и гражданское оружие компании Концерна Калашников </div>
+                <div class="sliderFor__number">10/16</div>
                 <div class="sliderFor__title sliderFor__title_9"></div>
               </div>
               <div>
-                <div class="sliderFor__number">10/16</div>
+                <div class="sliderFor__left mobileHide">«ИЖМАШ» — спортивное оружие компании <br>Концерна Калашников </div>
+                <div class="sliderFor__number">11/16</div>
                 <div class="sliderFor__title sliderFor__title_10"></div>
               </div>
               <div>
-                <div class="sliderFor__number">11/16</div>
+                <div class="sliderFor__left mobileHide">«Салаир» — разрабатывает и внедряет комплексные решения в промышленной логистике</div>
+                <div class="sliderFor__number">12/16</div>
                 <div class="sliderFor__title sliderFor__title_11"></div>
               </div>
               <div>
-                <div class="sliderFor__number">12/16</div>
+                <div class="sliderFor__left mobileHide">КРЭТ – АО «Концерн Радиоэлектронные технологии»</div>
+                <div class="sliderFor__number">13/16</div>
                 <div class="sliderFor__title sliderFor__title_12"></div>
               </div>
               <div>
-                <div class="sliderFor__number">13/16</div>
+                <div class="sliderFor__left sliderFor__left_lg mobileHide">Rolls-Royce — английская компания, подразделение BMW AG, специализирующаяся <br>на выпуске автомобилей класса люкс под маркой Rolls-Royce</div>
+                <div class="sliderFor__number">14/16</div>
                 <div class="sliderFor__title sliderFor__title_13"></div>
               </div>
               <div>
-                <div class="sliderFor__number">14/16</div>
+                <div class="sliderFor__left sliderFor__left_lg mobileHide">БЛЛ — cпециалисты в окрасочном оборудовании, поставляющие и локализующие на российском рынке продукцию лучших европейских производителей</div>
+                <div class="sliderFor__number">15/16</div>
                 <div class="sliderFor__title sliderFor__title_14"></div>
               </div>
               <div>
-                <div class="sliderFor__number">15/16</div>
-                <div class="sliderFor__title sliderFor__title_15"></div>
-              </div>
-              <div>
+                <div class="sliderFor__left sliderFor__left_lg mobileHide">РЕНОВА — Группа компаний "Ренова" является стратегическим инвестором и акционером ведущих международных и российских предприятий</div>
                 <div class="sliderFor__number">16/16</div>
-                <div class="sliderFor__title sliderFor__title_16"></div>
+                <div class="sliderFor__title sliderFor__title_15"></div>
               </div>
             </div>
             <div class="sliderButton_mobile">
@@ -472,6 +479,9 @@
                 <div class="sliderNav">
                   <div>
                     <div class="sliderNav__item sliderNav__item_kalash"></div>
+                  </div>
+                  <div>
+                    <div class="sliderNav__item sliderNav__item_kalash2"></div>
                   </div>
                   <div>
                     <div class="sliderNav__item sliderNav__item_rosteh"></div>
@@ -515,9 +525,6 @@
                   <div>
                     <div class="sliderNav__item sliderNav__item_renova"></div>
                   </div>
-                  <div>
-                    <div class="sliderNav__item sliderNav__item_kalash2"></div>
-                  </div>
                 </div>
                 <div class="sliderButton sliderButton_next mobileHide"></div>
               </div>
@@ -525,6 +532,9 @@
                 <div class="sliderFor2">
                   <div>
                     <div class="sliderFor2__item sliderFor2__item_kalash"></div>
+                  </div>
+                  <div>
+                    <div class="sliderFor2__item sliderFor2__item_kalash2"></div>
                   </div>
                   <div>
                     <div class="sliderFor2__item sliderFor2__item_rosteh"></div>
@@ -568,106 +578,103 @@
                   <div>
                     <div class="sliderFor2__item sliderFor2__item_renova"></div>
                   </div>
-                  <div>
-                    <div class="sliderFor2__item sliderFor2__item_kalash2"></div>
-                  </div>
                 </div>
               </div>
             </div>
             <div class="sliderFor3">
               <div>
                 <div class="center_mobile">
-                  <button class="btn btn_img" data-toggle="modal" data-target="#modalRosteh"><span class="mobileHide">Посмотреть подробное описание<br> проекта Калашников концерн</span><span class="mobileVisible">Посмотреть описание проекта Калашников</span><img src="img/btn-kalash.png"/></button>
+                  <button class="btn btn_img" data-toggle="modal" data-target="#modalDescript111"><span class="mobileHide">Посмотреть подробное описание<br> проекта Калашников </span><span class="mobileVisible">Посмотреть описание проекта Калашников</span><img src="img/brand_btn.png"/></button>
                 </div>
                 <div class="sliderFor3__over">Посмотреть подробности проекта</div>
               </div>
               <div>
                 <div class="center_mobile">
-                  <button class="btn btn_img" data-toggle="modal" data-target="#modalRosteh"><span class="mobileHide">Посмотреть подробное описание<br>проекта Ростех</span><span class="mobileVisible">Посмотреть описание проекта Ростех</span><img src="img/btn-kalash.png"/></button>
+                  <button class="btn btn_img" data-toggle="modal" data-target="#modalDescript1"><span class="mobileHide">Посмотреть подробное описание<br>проекта Калашников концерн</span><span class="mobileVisible">Посмотреть описание проекта Калашников концерн</span><img src="img/brand_btn.png"/></button>
+                </div>
+                <div class="sliderFor3__over">Посмотреть подробности проекта</div>
+              </div>
+              <div>
+                <div class="center_mobile">
+                  <button class="btn btn_img" data-toggle="modal" data-target="#modalDescript"><span class="mobileHide">Посмотреть подробное описание<br>проекта Ростех</span><span class="mobileVisible">Посмотреть описание проекта Ростех</span><img src="img/brand_btn.png"/></button>
                   <div class="sliderFor3__over">Посмотреть подробности проекта</div>
                 </div>
               </div>
               <div>
                 <div class="center_mobile">
-                  <button class="btn btn_img" data-toggle="modal" data-target="#modalRosteh"><span class="mobileHide">Посмотреть подробное описание<br>проекта Технодинамика</span><span class="mobileVisible">Посмотреть описание проекта Технодинамика</span><img src="img/btn-kalash.png"/></button>
+                  <button class="btn btn_img" data-toggle="modal" data-target="#modalDescript3"><span class="mobileHide">Посмотреть подробное описание<br>проекта Технодинамика</span><span class="mobileVisible">Посмотреть описание проекта Технодинамика</span><img src="img/brand_btn.png"/></button>
                   <div class="sliderFor3__over">Посмотреть подробности проекта</div>
                 </div>
               </div>
               <div>
                 <div class="center_mobile">
-                  <button class="btn btn_img" data-toggle="modal" data-target="#modalRosteh"><span class="mobileHide">Посмотреть подробное описание<br>проекта Минторгпром России</span><span class="mobileVisible">Посмотреть описание проекта Минторгпром</span><img src="img/btn-kalash.png"/></button>
+                  <button class="btn btn_img" data-toggle="modal" data-target="#modalDescript4"><span class="mobileHide">Посмотреть подробное описание<br>проекта Минторгпром России</span><span class="mobileVisible">Посмотреть описание проекта Минторгпром</span><img src="img/brand_btn.png"/></button>
                 </div>
                 <div class="sliderFor3__over">Посмотреть подробности проекта</div>
               </div>
               <div>
                 <div class="center_mobile">
-                  <button class="btn btn_img" data-toggle="modal" data-target="#modalRosteh"><span class="mobileHide">Посмотреть подробное описание<br>проекта РУС</span><span class="mobileVisible">Посмотреть описание проекта РУС</span><img src="img/btn-kalash.png"/></button>
+                  <button class="btn btn_img" data-toggle="modal" data-target="#modalDescript7"><span class="mobileHide">Посмотреть подробное описание<br>проекта РУС</span><span class="mobileVisible">Посмотреть описание проекта РУС</span><img src="img/brand_btn.png"/></button>
                 </div>
                 <div class="sliderFor3__over">Посмотреть подробности проекта</div>
               </div>
               <div>
                 <div class="center_mobile">
-                  <button class="btn btn_img" data-toggle="modal" data-target="#modalRosteh"><span class="mobileHide">Посмотреть подробное описание<br>проекта BMW</span><span class="mobileVisible">Посмотреть описание проекта BMW</span><img src="img/btn-kalash.png"/></button>
+                  <button class="btn btn_img" data-toggle="modal" data-target="#modalRosteh"><span class="mobileHide">Посмотреть подробное описание<br>проекта BMW</span><span class="mobileVisible">Посмотреть описание проекта BMW</span><img src="img/brand_btn.png"/></button>
                 </div>
                 <div class="sliderFor3__over">Посмотреть подробности проекта</div>
               </div>
               <div>
                 <div class="center_mobile">
-                  <button class="btn btn_img" data-toggle="modal" data-target="#modalRosteh"><span class="mobileHide">Посмотреть подробное описание<br>проекта Thyssenkrupp</span><span class="mobileVisible">Посмотреть описание проекта Thyssenkrupp</span><img src="img/btn-kalash.png"/></button>
+                  <button class="btn btn_img" data-toggle="modal" data-target="#modalDescript6"><span class="mobileHide">Посмотреть подробное описание<br>проекта Thyssenkrupp</span><span class="mobileVisible">Посмотреть описание проекта Thyssenkrupp</span><img src="img/brand_btn.png"/></button>
                 </div>
                 <div class="sliderFor3__over">Посмотреть подробности проекта</div>
               </div>
               <div>
                 <div class="center_mobile">
-                  <button class="btn btn_img" data-toggle="modal" data-target="#modalRosteh"><span class="mobileHide">Посмотреть подробное описание<br>проекта Штокман</span><span class="mobileVisible">Посмотреть описание проекта Штокман</span><img src="img/btn-kalash.png"/></button>
+                  <button class="btn btn_img" data-toggle="modal" data-target="#modalDescript5"><span class="mobileHide">Посмотреть подробное описание<br>проекта Штокман</span><span class="mobileVisible">Посмотреть описание проекта Штокман</span><img src="img/brand_btn.png"/></button>
                 </div>
                 <div class="sliderFor3__over">Посмотреть подробности проекта</div>
               </div>
               <div>
                 <div class="center_mobile">
-                  <button class="btn btn_img" data-toggle="modal" data-target="#modalRosteh"><span class="mobileHide">Посмотреть подробное описание<br>проекта Raikal</span><span class="mobileVisible">Посмотреть описание проекта Raikal</span><img src="img/btn-kalash.png"/></button>
+                  <button class="btn btn_img" data-toggle="modal" data-target="#modalDescript9"><span class="mobileHide">Посмотреть подробное описание<br>проекта Baikal</span><span class="mobileVisible">Посмотреть описание проекта Baikal</span><img src="img/brand_btn.png"/></button>
                 </div>
                 <div class="sliderFor3__over">Посмотреть подробности проекта</div>
               </div>
               <div>
                 <div class="center_mobile">
-                  <button class="btn btn_img" data-toggle="modal" data-target="#modalRosteh"><span class="mobileHide">Посмотреть подробное описание<br>проекта Ижмаш</span><span class="mobileVisible">Посмотреть описание проекта Ижмаш</span><img src="img/btn-kalash.png"/></button>
+                  <button class="btn btn_img" data-toggle="modal" data-target="#modalDescript10"><span class="mobileHide">Посмотреть подробное описание<br>проекта Ижмаш</span><span class="mobileVisible">Посмотреть описание проекта Ижмаш</span><img src="img/brand_btn.png"/></button>
                 </div>
                 <div class="sliderFor3__over">Посмотреть подробности проекта</div>
               </div>
               <div>
                 <div class="center_mobile">
-                  <button class="btn btn_img" data-toggle="modal" data-target="#modalRosteh"><span class="mobileHide">Посмотреть подробное описание<br>проекта Салаир</span><span class="mobileVisible">Посмотреть описание проекта Салаир</span><img src="img/btn-kalash.png"/></button>
+                  <button class="btn btn_img" data-toggle="modal" data-target="#modalDescript8"><span class="mobileHide">Посмотреть подробное описание<br>проекта Салаир</span><span class="mobileVisible">Посмотреть описание проекта Салаир</span><img src="img/brand_btn.png"/></button>
                 </div>
                 <div class="sliderFor3__over">Посмотреть подробности проекта</div>
               </div>
               <div>
                 <div class="center_mobile">
-                  <button class="btn btn_img" data-toggle="modal" data-target="#modalRosteh"><span class="mobileHide">Посмотреть подробное описание<br>проекта Kret</span><span class="mobileVisible">Посмотреть описание проекта Kret</span><img src="img/btn-kalash.png"/></button>
+                  <button class="btn btn_img" data-toggle="modal" data-target="#modalDescript12"><span class="mobileHide">Посмотреть подробное описание<br>проекта Kret</span><span class="mobileVisible">Посмотреть описание проекта Kret</span><img src="img/brand_btn.png"/></button>
                 </div>
                 <div class="sliderFor3__over">Посмотреть подробности проекта</div>
               </div>
               <div>
                 <div class="center_mobile">
-                  <button class="btn btn_img" data-toggle="modal" data-target="#modalRosteh"><span class="mobileHide">Посмотреть подробное описание<br>проекта Rollsroys</span><span class="mobileVisible">Посмотреть описание проекта Rollsroys</span><img src="img/btn-kalash.png"/></button>
+                  <button class="btn btn_img" data-toggle="modal" data-target="#modalRosteh"><span class="mobileHide">Посмотреть подробное описание<br>проекта Rollsroys</span><span class="mobileVisible">Посмотреть описание проекта Rollsroys</span><img src="img/brand_btn.png"/></button>
                 </div>
                 <div class="sliderFor3__over">Посмотреть подробности проекта</div>
               </div>
               <div>
                 <div class="center_mobile">
-                  <button class="btn btn_img" data-toggle="modal" data-target="#modalRosteh"><span class="mobileHide">Посмотреть подробное описание<br>проекта BLL</span><span class="mobileVisible">Посмотреть описание проекта BLL</span><img src="img/btn-kalash.png"/></button>
+                  <button class="btn btn_img" data-toggle="modal" data-target="#modalDescript11"><span class="mobileHide">Посмотреть подробное описание<br>проекта BLL</span><span class="mobileVisible">Посмотреть описание проекта BLL</span><img src="img/brand_btn.png"/></button>
                 </div>
                 <div class="sliderFor3__over">Посмотреть подробности проекта</div>
               </div>
               <div>
                 <div class="center_mobile">
-                  <button class="btn btn_img" data-toggle="modal" data-target="#modalRosteh"><span class="mobileHide">Посмотреть подробное описание<br>проекта Ренова</span><span class="mobileVisible">Посмотреть описание проекта Ренова</span><img src="img/btn-kalash.png"/></button>
-                </div>
-                <div class="sliderFor3__over">Посмотреть подробности проекта</div>
-              </div>
-              <div>
-                <div class="center_mobile">
-                  <button class="btn btn_img" data-toggle="modal" data-target="#modalRosteh"><span class="mobileHide">Посмотреть подробное описание<br>проекта Калашников</span><span class="mobileVisible">Посмотреть описание проекта Калашников</span><img src="img/btn-kalash.png"/></button>
+                  <button class="btn btn_img" data-toggle="modal" data-target="#modalDescript13"><span class="mobileHide">Посмотреть подробное описание<br>проекта Ренова</span><span class="mobileVisible">Посмотреть описание проекта Ренова</span><img src="img/brand_btn.png"/></button>
                 </div>
                 <div class="sliderFor3__over">Посмотреть подробности проекта</div>
               </div>
@@ -683,7 +690,7 @@
             </h2>
           </div>
           <div class="value">
-            <div class="value__bg"><img class="value__img" src="img/value/value_bg.png" alt=""/></div>
+            <div class="value__bg"><img class="value__img" src="img/value_bg.png" alt=""/></div>
             <div class="container_center">
               <div class="getTest value__info">
                 <div class="getTest__left value__left">
@@ -701,7 +708,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div><img class="fly" src="img/value_fly.png" alt=""/>
           </div>
         </section>
         <!-- end value-->
@@ -760,7 +767,7 @@
                       <div class="promotion__backList_item">Корпоративный видео ролик</div>
                       <div class="promotion__backList_item">Выставочный дизайн</div>
                     </div>
-                    <div class="promotion__backDown"><a class="promotion__backBtn" href="#" data-toggle="modal" data-target="#modalPromotion">Посмотреть пример</a></div>
+                    <div class="promotion__backDown"><a class="promotion__backBtn" href="#" data-toggle="modal" data-target="#modalLayout">Посмотреть пример</a></div>
                   </div>
                 </div>
                 <div class="promotion__item">
@@ -777,7 +784,7 @@
                       <div class="promotion__backList_item">Управление брендом</div>
                       <div class="promotion__backList_item">PR – Раскрутка бренда</div>
                     </div>
-                    <div class="promotion__backDown"><a class="promotion__backBtn" href="#" data-toggle="modal" data-target="#modalLayout">Посмотреть пример</a></div>
+                    <div class="promotion__backDown"><a class="promotion__backBtn" href="#" data-toggle="modal" data-target="#modalPromotion">Посмотреть пример</a></div>
                   </div>
                 </div>
               </div>
@@ -837,7 +844,7 @@
               <div class="section__sub section__title_left">чтобы обсудить детали работы</div><img class="meeting__element" src="img/element-2.png" alt=""/>
             </h2>
             <div class="meeting">
-              <div class="meeting__wrap"><img class="meeting__img" src="img/meeting/planet.png" alt=""/>
+              <div class="meeting__wrap"><img class="meeting__img" src="img/planet.png" alt=""/>
                 <div class="meeting__point meeting__amsterdam">Амстердам <span class="icon-point meeting__icon"></span>
                   <div class="meeting__tooltip meeting__amsterdamTooltip"><img src="img/meeting/politie_logo.png" alt=""/><span class="meeting__arrow_top meeting__amsterdamArrow"><img src="img/meeting/arrow_top.png" alt=""/></span></div>
                 </div>
@@ -911,9 +918,9 @@
           <div class="footer__sub">Первое брендинговое агентство <br>для промышленных предприятий</div>
         </div>
         <div class="footer__right">
-          <div class="footer__tel">+7 (968) 081 96 76</div><a class="footer__order" href="#">Заказать звонок</a>
+          <div class="footer__tel">+7 (968) 081 96 76</div><a class="footer__order" href="#" data-toggle="modal" data-target="#modalCallback">Заказать звонок</a>
         </div>
-        <div class="footer__center"><a class="footer__policy" href="#">Политика конфиденциальности</a>
+        <div class="footer__center"><a class="footer__policy" href="#" data-toggle="modal" data-target="#privacyModal">Политика конфиденциальности</a>
           <div class="footer__copy">&copy; 2018  ООО Коольдизайн</div>
         </div>
       </div>
@@ -925,7 +932,7 @@
         <!-- Begin form__present-->
         <form class="form form__present" id="present" action="send.php">
           <input type="hidden" name="subject" value="Форма - Скачать презентацию"/><a class="form__close modal-close" href="#" data-dismiss="modal"></a>
-          <div class="form__title form__title_element">Скачайте презентацию<br>с условиями и примерами работ</div>
+          <div class="form__title form__title_element">Скачайте презентацию<br>с описанием услуг и примерами работ</div>
           <div class="form__text form__text_b">Заполнив форму вы получите:</div>
           <ul class="form__list">
             <li class="form__item">Подробную презентацию о компании</li>
@@ -988,7 +995,7 @@
         <form class="form form__promotion" id="promotion" action="send.php">
           <input type="hidden" name="subject" value="Форма - Скачать пример раскрутки"/><a class="form__close modal-close" href="#" data-dismiss="modal"></a>
           <div class="form__title">Посмотрите примеры инструментов внедрения и раскрутки бренда</div>
-          <div class="form__text">Заполните форму ниже, чтобы получить примеры аудита компании. <span>Ссылка на скачивание будет доступна сразу же после отправки формы</span></div>
+          <div class="form__text">Заполните форму ниже, чтобы получить примеры инструментов внедрения и раскрутки бренда компании. <span>Ссылка на скачивание будет доступна сразу же после отправки формы</span></div>
           <div class="form__subtext">Руководитель проекта свяжется с вами, чтобы узнать подробности о компании</div>
           <div class="form__row">
             <div class="form__inputRow">
@@ -1017,7 +1024,7 @@
         <form class="form form__layout" id="layout" action="send.php">
           <input type="hidden" name="subject" value="Форма - Посмотреть примеры макетов"/><a class="form__close modal-close" href="#" data-dismiss="modal"></a>
           <div class="form__title">Посмотрите примеры дизайн-макетов, которые вы получите</div>
-          <div class="form__text">Заполните форму ниже, чтобы получить примеры аудита компании. <span>Ссылка на скачивание будет доступна сразу же после отправки формы</span></div>
+          <div class="form__text">Заполните форму ниже, чтобы получить примеры дизайн-макетов. <span>Ссылка на скачивание будет доступна сразу же после отправки формы</span></div>
           <div class="form__subtext">Руководитель проекта свяжется с вами, чтобы узнать подробности о компании</div>
           <div class="form__row">
             <div class="form__inputRow">
@@ -1046,7 +1053,7 @@
         <form class="form form__strategy" id="strategy" action="send.php">
           <input type="hidden" name="subject" value="Форма - Скачать пример стратегии"/><a class="form__close modal-close" href="#" data-dismiss="modal"></a>
           <div class="form__title">Скачайте пример стратегии для компании в формате PDF</div>
-          <div class="form__text">Заполните форму ниже, чтобы получить примеры аудита компании. <span>Ссылка на скачивание будет доступна сразу же после отправки формы</span></div>
+          <div class="form__text">Заполните форму ниже, чтобы получить примеры стратегии компании. <span>Ссылка на скачивание будет доступна сразу же после отправки формы</span></div>
           <div class="form__subtext">Руководитель проекта свяжется с вами, чтобы узнать подробности о компании</div>
           <div class="form__row">
             <div class="form__inputRow">
@@ -1075,7 +1082,7 @@
         <form class="form form__calc" id="calc" action="send.php">
           <input type="hidden" name="subject" value="Форма - Получить расчет стоимости"/><a class="form__close modal-close" href="#" data-dismiss="modal"></a>
           <div class="form__title form__title_element">Получите расчет стоимости разработки вашего бренда</div>
-          <div class="form__text form__text_b">Вместе с расчетом стоимости вы узнаете:</div>
+          <div class="form__text form__text_b">Вместе с расчетом стоимости вы получите:</div>
           <ul class="form__list">
             <li class="form__item">Подробную презентацию о компании</li>
             <li class="form__item">Описание этапов и условий работы</li>
@@ -1205,30 +1212,36 @@
     </div>
     <!-- End modal modalCallback -->
     <!-- Begin Modal modalRosteh -->
-    <div class="modal fade modalRosteh" id="modalRosteh">
+    <div class="modal fade modalRosteh" id="modalDescript">
       <div class="modal-dialog">
         <!-- begin modal__rosteh-->
         <div class="modal modal__rosteh"><a class="form__close modal-close" href="#" data-dismiss="modal"></a>
           <div class="modal__title">Ростех</div>
-          <ul class="modal__list" id="modal_tabs">
+          <ul class="modal__list">
             <li><span>результат</span></li>
             <li><span>Процесс</span></li>
             <li class="active"><span>Причины</span></li>
           </ul>
           <div class="modal__text hide">
-            <h4>Причины для брендинга</h4>
-            <p>Причины для брендинга<br>Провели исследование на мировом рынке. Оказалось, что «Ростех» никто не понимает. Вредили два фактора: длинное и сложно название «Ростехнологии», а также звезда и цвета в логотипе, ассоциация с СССР. Воспринимали как закрытую, непонятная структуру. Поэтому было принять решение о ребрендинге. Не просто перерисовать логотип, а переосмыслить бренд: что говорит бренд? какие смыслы он несет миру? куда и как он хочет развиваться?</p>
-            <p>Причины для брендинга<br>Провели исследование на мировом рынке. Оказалось, что «Ростех» никто не понимает. Вредили два фактора: длинное и сложно название «Ростехнологии», а также звезда и цвета в логотипе, ассоциация с СССР. Воспринимали как закрытую, непонятная структуру. Поэтому было принять решение о ребрендинге. Не просто перерисовать логотип, а переосмыслить бренд: что говорит бренд? какие смыслы он несет миру? куда и как он хочет развиваться?</p>
-            <p>Причины для брендинга<br>Провели исследование на мировом рынке. Оказалось, что «Ростех» никто не понимает. Вредили два фактора: длинное и сложно название «Ростехнологии», а также звезда и цвета в логотипе, ассоциация с СССР. Воспринимали как закрытую, непонятная структуру. Поэтому было принять решение о ребрендинге. Не просто перерисовать логотип, а переосмыслить бренд: что говорит бренд? какие смыслы он несет миру? куда и как он хочет развиваться?</p>
+            <h4>Результат</h4>
+            <ul>
+              <li><b>Открытость</b> – Ростех возглавляет рейтинг российских госкорпораций, который отражает заметность бренда и первых лиц компаний в СМИ. </li>
+              <li><b>Сайт</b>  – занимает первое место по посещаемости среди всех российских госкорпораций и подчеркивает новый тренд – ориентацию на информационную прозрачность. </li>
+              <li><b>Бренд</b>  – первый и единственный «цифровой» промышленный бренд России. Первый промышленный бренд, о котором заговорили в интернете.</li>
+              <li><b>Репутация</b>  – надежный партнер, выполняющий свои обязательства вне зависимости от внешних обстоятельств.</li>
+              <li><b>Имидж </b> – современная промышленная корпорация, ускоритель развития,  трансформатор российской промышленности, драйвер прогресса в технологиях.</li>
+              <li><b>Публикации</b>  – меньше 1% негативных упоминаний о корпорации.</li>
+            </ul>
           </div>
           <div class="modal__text hide">
-            <h4>Причины для брендинга</h4>
-            <p>Причины для брендинга<br>Провели исследование на мировом рынке. Оказалось, что «Ростех» никто не понимает. Вредили два фактора: длинное и сложно название «Ростехнологии», а также звезда и цвета в логотипе, ассоциация с СССР. Воспринимали как закрытую, непонятная структуру. Поэтому было принять решение о ребрендинге. Не просто перерисовать логотип, а переосмыслить бренд: что говорит бренд? какие смыслы он несет миру? куда и как он хочет развиваться?</p>
+            <h4>Процесс</h4>
+            <p>Оформление новой философии госкорпорации. Название изменено на более звучное и лаконичное – Ростех. </p>
+            <p>Новый логотип – открытый квадрат, символизирующий одновременно окно в мир и рамку фокуса. Слоган выражает идеологию бренда – «Партнер в развитии».</p>
+            <p>Изменился весь образ корпорации: логотип, фирменный стиль, слоган, шрифт, фотостиль – каждая деталь имеет смысл и говорит о целях корпорации. «Ростех» получил новый мультимедийный сайт на семи языках. Также у «Ростеха» есть свои видеоблоги, Facebook, Twitter, «ВКонтакте» и канал на YouTube. Название компании было сокращено с «Ростехнологий» до «Ростеха», а логотип изменен со звезды на квадрат, при этом Корпорация стала проводить более открытую публичную политику. От бренда Госкорпорации руководство вышло на стратегическую задачу повышения капитализации холдинговых компаний за счет формирования международных промышленных брендов на рынке высокотехнологичной продукции. </p>
           </div>
           <div class="modal__text">
             <h4>Причины для брендинга</h4>
-            <p>Причины для брендинга<br>Провели исследование на мировом рынке. Оказалось, что «Ростех» никто не понимает. Вредили два фактора: длинное и сложно название «Ростехнологии», а также звезда и цвета в логотипе, ассоциация с СССР. Воспринимали как закрытую, непонятная структуру. Поэтому было принять решение о ребрендинге. Не просто перерисовать логотип, а переосмыслить бренд: что говорит бренд? какие смыслы он несет миру? куда и как он хочет развиваться?</p>
-            <p>Причины для брендинга<br>Провели исследование на мировом рынке. Оказалось, что «Ростех» никто не понимает. Вредили два фактора: длинное и сложно название «Ростехнологии», а также звезда и цвета в логотипе, ассоциация с СССР. Воспринимали как закрытую, непонятная структуру. Поэтому было принять решение о ребрендинге. Не просто перерисовать логотип, а переосмыслить бренд: что говорит бренд? какие смыслы он несет миру? куда и как он хочет развиваться?</p>
+            <p>Провели исследование на мировом рынке. Оказалось, что «Ростех» никто не понимает. Вредили два фактора: длинное и сложно название «Ростехнологии», а также звезда и цвета в логотипе, ассоциация с СССР. Воспринимали как закрытую, непонятная структуру. Поэтому было принять решение о ребрендинге. Не просто перерисовать логотип, а переосмыслить бренд: что говорит бренд? какие смыслы он несет миру? куда и как он хочет развиваться?</p>
           </div>
           <div class="modal__gradient"></div>
         </div>
@@ -1236,12 +1249,431 @@
       </div>
     </div>
     <!-- End modal modalRosteh -->
+    <!-- Begin Modal Kalash -->
+    <div class="modal fade modalRosteh" id="modalDescript1">
+      <div class="modal-dialog">
+        <!-- begin modal__rosteh-->
+        <div class="modal modal__rosteh"><a class="form__close modal-close" href="#" data-dismiss="modal"></a>
+          <div class="modal__title">калашников концерн</div>
+          <ul class="modal__list modal__list_bigTitle">
+            <li><span>результат</span></li>
+            <li><span>Процесс</span></li>
+            <li class="active"><span>Причины</span></li>
+          </ul>
+          <div class="modal__text hide">
+            <h4>Результат</h4>
+            <p>Новый логотип состоит из двух цветов – красного и черного. Он образован двумя буквами «К», взятыми из названия «Концерн Калашников». Кроме того, в рисунке содержится изображение пули, вылетающей из ствола, а также использованы цвета флага Удмуртии.</p>
+            <p>В конце 2014 года концерн представил новую концепцию развития, а вместе с ней и новые бренды: корпоративный бренд концерна, а также продуктовые бренды боевое оружие Калашников, охотничье оружие Ижмаш и спортивное стрелковое оружие Байкал.</p>
+            <p>Презентация нового бренда впервые с Олимпиады в Сочи заставила весь мир говорить о России в положительном ключе. В мировых СМИ вышло более 2 000 позитивных публикаций в 37 странах о презентации нового бренда Концерна. В том числе в таких изданиях как Guardian, Independent, Washington Post, People Daily, CNN, Xinhua, Al Jazeera. В течение недели новый бренд и слоган продуктовой линейки Калашникова обсуждались в мировом сообществе и заслужили высочайшую оценку экспертного сообщества.</p>
+          </div>
+          <div class="modal__text hide">
+            <h4>Процесс</h4>
+            <ul>
+              <li>В 2014 году «Концерн Калашников» начал кампанию по ребрендингу, объявив о новой философии самого известного в мире автомата: «оружие мира». </li>
+              <li>Полный спектр работ был выполнен не только по корпоративному, но и по 3 продуктовым брендам – «Калашников», «Байкал» и «ИЖМАШ». </li>
+              <li>Также разработан единый фирменный стиль для всех рекламных макетов, выставочных павильонов и фирменных зон концерна в магазинах.</li>
+              <li>Кроме этого, в рамках ребрендинга были разработаны предложения по формированию линейки фирменных аксессуаров и одежды, которая позволит еще больше популяризовать концерн и его деятельность.</li>
+            </ul>
+          </div>
+          <div class="modal__text">
+            <h4>Причины для брендинга</h4>
+            <p>В 2011 году НПО «Ижмаш» находилось на грани банкротства. Вмешательство ГК Ростех позволило сохранить предприятие, которое было переименовано в концерн Калашников и стало головным предприятием нового оружейного холдинга. </p>
+            <p>Бренд «Калашников» ставит перед собой важнейшую цель на ближайшие годы – развитие эргономики и промышленного дизайна. </p>
+            <p>Несовременный бренд, не отражающий новую стратегию Концерна</p>
+            <p>Конкуренция с мировыми лидерами оружейной промышленности невозможна без сильного, узнаваемого бренда</p>
+            <p>Падение продаж продукции Концерна Путаница в линейке продукции Концерна в умах потребителей</p>
+            <p>Художественная несостоятельность примитивности и старомодность старого логотипа</p>
+            <p>Негативные ассоциации у международной общественности с Калашниковым как оружием террористов</p>
+          </div>
+          <div class="modal__gradient"></div>
+        </div>
+        <!-- end modal__rosteh-->
+      </div>
+    </div>
+    <!-- End modal Kalash -->
+    <!-- Begin Modal Технодинамика -->
+    <div class="modal fade modalRosteh" id="modalDescript3">
+      <div class="modal-dialog">
+        <!-- begin modal__rosteh-->
+        <div class="modal modal__rosteh"><a class="form__close modal-close" href="#" data-dismiss="modal"></a>
+          <div class="modal__title">Технодинамика</div>
+          <ul class="modal__list">
+            <li><span>результат</span></li>
+            <li><span>Процесс</span></li>
+            <li class="active"><span>Задача</span></li>
+          </ul>
+          <div class="modal__text hide">
+            <h4>Результат</h4>
+            <p>Свое отражение новая идеология компании нашла и в дизайне, основанном на метафоре северного сияния и символизирующем энергию и стремление выйти за рамки возможного.</p>
+          </div>
+          <div class="modal__text hide">
+            <h4>Процесс</h4>
+            <p>В результате ребрендинга компания получила имя Технодинамика и определила свою ключевую идею — решение нетривиальных задач в аэрокосмической отрасли. Ключевой фигурой в этом процессе становится инженер, а человеческий капитал выступает на первый план развития предприятия. Новый бренд сочетает в себе традиции русской инженерной школы и новейших наработок в области высоких технологий.</p>
+          </div>
+          <div class="modal__text">
+            <h4>Задача</h4>
+            <p>В 2009 году 36 компаний российской авиапромышленности были объединены в холдинг «Авиационное оборудование», призванный преодолеть отставание, накопившееся в отрасли. </p>
+            <p>Холдинг должен был стать поставщиком первого уровня на российском рынке и надежным партнером крупнейших зарубежных игроков. Разработанная стратегия включала в себя фундаментальные изменения, которые необходимо было поддержать новому бренду.</p>
+          </div>
+          <div class="modal__gradient"></div>
+        </div>
+        <!-- end modal__rosteh-->
+      </div>
+    </div>
+    <!-- End modal Технодинамика -->
+    <!-- Begin Modal Минпромторг -->
+    <div class="modal fade modalRosteh" id="modalDescript4">
+      <div class="modal-dialog">
+        <!-- begin modal__rosteh-->
+        <div class="modal modal__rosteh"><a class="form__close modal-close" href="#" data-dismiss="modal"></a>
+          <div class="modal__title">Минпромторг</div>
+          <ul class="modal__list">
+            <li><span>результат</span></li>
+            <li><span>Процесс</span></li>
+            <li class="active"><span>Задача</span></li>
+          </ul>
+          <div class="modal__text hide">
+            <h4>Результат</h4>
+            <ul>
+              <li>Новая визуальная идентичность Минпромторга подчёркивает роль и деятельность министерства как регулятора и гаранта развития промышленного потенциала России. Новый образ Минпромторга также доносит четкое видение миссии и направления работы Министерства. </li>
+              <li>В конце 2014 года Д. Мантуров вошел в рейтинг наиболее «прозрачных» министров, составленный Всероссийским центром изучения общественного мнения (7 место, +19 позиций в рейтинге).</li>
+              <li>Менее чем за год количество подписчиков в соц сетях увеличилось более чем в 5 раз (с 8000 до 44000). Каждый месяц более 500 000 пользователей социальных сетей видят новости посты Минпромторга в ленте новостей.</li>
+            </ul>
+          </div>
+          <div class="modal__text hide">
+            <h4>Процесс</h4>
+            <p>Проведение исследований.</p>
+            <p>Разработка платформы бренда МПТ</p>
+            <p>Разработка дизайна бренда</p>
+            <p>Разработка единого фирменного стиля МПТ</p>
+            <p>Создание единого, современного визуального контура Министерства</p>
+            <p>Создан собственный фото и видео-банк</p>
+          </div>
+          <div class="modal__text">
+            <h4>Задача</h4>
+            <p>Отсутствие структурованных коммуникаций. Раздробленность и фрагментарность коммуникаций. Как следствие, невозможность донесения правильных месседжей до целевых</p>
+            <p>Отсутствие понимания роли коммуникаций в достижении целей деятельности Министерства</p>
+            <p>Отсутствие ясных коммуникационных задач Размытый и непонятный образ МПТ в сознании общественности</p>
+            <p>Несоответствие реальных достижений министерства и мест в ключевых для МПТ рейтингах</p>
+            <p>Низкая узнаваемость и цитируемость Д.В. Мантурова</p>
+            <p>Отсутствие коммуникаций в интернете. Моральное устаревание коммуникаций от лица Министерства</p>
+            <p>Отсутствие антикризисных коммуникаций. Несоответствие информационной повестки министерства актуальным вопросам</p>
+            <p>”Выключенность” МПТ из международной информационной повестки</p>
+          </div>
+          <div class="modal__gradient"></div>
+        </div>
+        <!-- end modal__rosteh-->
+      </div>
+    </div>
+    <!-- End modal Минпромторг -->
+    <!-- Begin Modal Штокман АГ -->
+    <div class="modal fade modalRosteh" id="modalDescript5">
+      <div class="modal-dialog">
+        <!-- begin modal__rosteh-->
+        <div class="modal modal__rosteh"><a class="form__close modal-close" href="#" data-dismiss="modal"></a>
+          <div class="modal__title">Штокман АГ</div>
+          <ul class="modal__list">
+            <li><span>результат</span></li>
+            <li><span>Процесс</span></li>
+            <li class="active"><span>Задача</span></li>
+          </ul>
+          <div class="modal__text hide">
+            <h4>Результат</h4>
+          </div>
+          <div class="modal__text hide">
+            <h4>Процесс</h4>
+          </div>
+          <div class="modal__text">
+            <h4>Задача</h4>
+            <p>Разработать общую платформу ценностей для мультинационального и полилингвального русско-франко-норвежского компании «Штокман Девелопмент АГ»</p>
+            <p>Выразить основные принципы проекта по освоению Штокмановского газового месторождения в Баренцовом море - экологичность, прогрессивность, гармоничное отношение к окружающей среде, настроенность на диалог со всеми целевыми аудиториями - в визуальной идентичности бренда</p>
+            <p>Компания «Штокман Девелопмент АГ» была образована 15 февраля 2008 года для проектирования, финансирования, строительства и эксплуатации комплексного освоения Штокмановского газоконденсатного месторождения. Компания будет выступать собственником инфраструктуры на протяжении 25 лет с момента ввода месторождения в эксплуатацию. Маркетингом газа, добытого в рамках проекта, будет заниматься ОАО «Газпром».</p>
+          </div>
+          <div class="modal__gradient"></div>
+        </div>
+        <!-- end modal__rosteh-->
+      </div>
+    </div>
+    <!-- End modal Штокман АГ -->
+    <!-- Begin Modal Thyssen Krupp -->
+    <div class="modal fade modalRosteh" id="modalDescript6">
+      <div class="modal-dialog">
+        <!-- begin modal__rosteh-->
+        <div class="modal modal__rosteh"><a class="form__close modal-close" href="#" data-dismiss="modal"></a>
+          <div class="modal__title">Thyssen Krupp</div>
+          <ul class="modal__list modal__list_short">
+            <li><span>Задача</span></li>
+            <li class="active"><span>Описание</span></li>
+          </ul>
+          <div class="modal__text hide">
+            <h4>Задача</h4>
+            <ul>
+              <li>Обновление дизайна бренда ThyssenKrupp</li>
+              <li>От «диверсифицированного технологичного концерна с высокой компетентностью по строительным материалам» до интегрированного технологичного бренда</li>
+              <li>От корпоративной ориентации к ориентации на потребителя</li>
+              <li>От индивидуальных навыков к общей силе</li>
+              <li>От многообразия к единству</li>
+            </ul>
+          </div>
+          <div class="modal__text">
+            <h4>Описание</h4>
+            <p>Thyssen Krupp — один из крупнейших промышленных концернов Германии, основан 17 марта 1999 года. Концерн возник в результате слияния двух фирм: Thyssen AG и Friedrich Krupp AG Hoesch-Krupp. ТиссенКрупп АГ является крупнейшим в мире производителем высоколегированной стали, а также металлообрабатывающих станков. Концерн занимает ведущие позиции в мире по производству листовой нержавеющей стали, лифтов и эскалаторов. ТюссенКрупп разделена на такие отраслевые сегменты, как: сталь, нержавеющая сталь, лифты и эскалаторы, автомобильные компоненты, технологии, материалы, услуги. Имеет клиентов более чем в 160 странах мира и дочерние предприятия или представительства более чем в 80 странах мира. Число сотрудников концерна ТиссенКрупп превысило 158 000 человек и товарооборот достигает €43 миллиардов.</p>
+          </div>
+          <div class="modal__gradient"></div>
+        </div>
+        <!-- end modal__rosteh-->
+      </div>
+    </div>
+    <!-- End modal Thyssen Krupp -->
+    <!-- Begin Modal РУСС -->
+    <div class="modal fade modalRosteh" id="modalDescript7">
+      <div class="modal-dialog">
+        <!-- begin modal__rosteh-->
+        <div class="modal modal__rosteh"><a class="form__close modal-close" href="#" data-dismiss="modal"></a>
+          <div class="modal__title">РУС</div>
+          <ul class="modal__list">
+            <li><span>результат</span></li>
+            <li><span>задача</span></li>
+            <li class="active"><span>Описание</span></li>
+          </ul>
+          <div class="modal__text hide">
+            <h4>Результат</h4>
+            <ul>
+              <li>Название учебного заведения — Российский Университет Спецназа — отражает его универсальность, широкое разнообразие программ подготовки и государственный масштаб деятельности. Слоган «В знании — сила» воплощает основную идею Университета: победа в современных условиях достигается только путем сочетания силы, выносливости и отваги, с применением высокотехнологичного оружия, специальных навыков и глубоких знаний из широкого спектра дисциплин. Логотип исполнен в форме копья; он отражает силу, динамизм и стремление Университета к постоянному расширению во всё новые сферы деятельности. В контрформе логотипа угадываются стрела, пуля и артиллерийский снаряд. </li>
+              <li>Идея экспансии и умножения, заложенная в знаке, позиционирует Университет как мощную платформу, на базе которой в дальнейшем будут возникать новые компетенции, продукты, технологии и направления подготовки.</li>
+            </ul>
+          </div>
+          <div class="modal__text hide">
+            <h4>задача</h4>
+            <ul>
+              <li>Создание бренда мирового класса, увеличивающего конкурентоспособность Центра на мировой профессиональной арене, его инвестиционную привлекательность и возможности для коммерческого роста.</li>
+              <li>Сильный бренд Центра, как успешного коммерчески независимого проекта, рассчитанного не только на военные, но и гражданские аудитории и открытого для контакта со СМИ, должен внести существенный вклад в улучшение общего имиджа Чеченской республики в федеральном масштабе, в том числе как привлекательного туристического направления.</li>
+            </ul>
+          </div>
+          <div class="modal__text">
+            <h4>Описание</h4>
+            <p>
+              РУС – российский университет спецназа. 
+              <br><br>
+              Причины для брендинга
+              Сложность вызывает отсутствие уникального названия и логотипа Центра, бренд-архитектуры, учитывающей различные направления подготовки, а также системы графическо-визуальной идентификации, отражающих его характеристики, лидерские позиции и инновации, что в долгосрочной перспективе не позволяет разработать целостную коммуникационную стратегию и создать единый запоминающийся образ в сознании целевых групп.
+            </p>
+          </div>
+          <div class="modal__gradient"></div>
+        </div>
+        <!-- end modal__rosteh-->
+      </div>
+    </div>
+    <!-- End modal РУСС -->
+    <!-- Begin Modal САЛАИР -->
+    <div class="modal fade modalRosteh" id="modalDescript8">
+      <div class="modal-dialog">
+        <!-- begin modal__rosteh-->
+        <div class="modal modal__rosteh"><a class="form__close modal-close" href="#" data-dismiss="modal"></a>
+          <div class="modal__title">САЛАИР</div>
+          <ul class="modal__list">
+            <li><span>результат</span></li>
+            <li><span>задача</span></li>
+            <li class="active"><span>Описание</span></li>
+          </ul>
+          <div class="modal__text hide">
+            <h4>Результат</h4>
+            <ul>
+              <li>Новый визуальный образ компании отражает мужественность, зрелость, лаконичность и технологичность. Также надёжность, уверенность и безопасность, мужественность</li>
+              <li>«Салаир» расширяет пространство и обеспечивает надежный контроль над временем, закладывая основу для успеха в конкурентной борьбе. <br><br><a href="www.salairtrans.ru">www.salairtrans.ru</a></li>
+            </ul>
+          </div>
+          <div class="modal__text hide">
+            <h4>задача</h4>
+            <ul>
+              <li>Снизить уровень зависимости от якорного клиента</li>
+              <li>Быть комплексным оператором по всему спектру логистических услуг (авто, ж/д и т.д.)</li>
+              <li>Расширить клиентскую базу, в первую очередь, в промышленном секторе</li>
+              <li>Быть высокотехнологичной компанией</li>
+            </ul>
+          </div>
+          <div class="modal__text">
+            <h4>Описание</h4>
+            <ul>
+              <li>Салаир - комплексная логистика</li>
+              <li>ООО «Салаир» разрабатывает и внедряет комплексные решения в промышленной логистике. Компания создает технологические процессы, обеспечивающие надежное, четкое и бесперебойное функционирование производственных цепочек крупных корпораций. География проникновения сети компании позволяет решать логистические задачи любого характера и сложности в любой точке России и мира.</li>
+            </ul>
+          </div>
+          <div class="modal__gradient"></div>
+        </div>
+        <!-- end modal__rosteh-->
+      </div>
+    </div>
+    <!-- End modal САЛАИР -->
+    <!-- Begin Modal калашников 1 -->
+    <div class="modal fade modalRosteh" id="modalDescript111">
+      <div class="modal-dialog">
+        <!-- begin modal__rosteh-->
+        <div class="modal modal__rosteh"><a class="form__close modal-close" href="#" data-dismiss="modal"></a>
+          <div class="modal__title">калашников</div>
+          <div class="modal__text">
+            <h4>Описание</h4>
+            <p>В Концерн Калашников входят 3 продуктовых оружейных бренда: «Калашников» – боевое и гражданское оружие, «Baikal» – охотничье и гражданское оружие, «IZHMASH» – спортивное оружие. Новыми направлениями деятельности Концерна являются: дистанционно-управляемые боевые модули, беспилотные летательные аппараты и многофункциональные катера специального назначения. <br><br><a href="www.kalashnikov.com">www.kalashnikov.com</a></p>
+          </div>
+          <div class="modal__gradient"></div>
+        </div>
+        <!-- end modal__rosteh-->
+      </div>
+    </div>
+    <!-- End modal калашников 1 -->
+    <!-- Begin Modal Байкал -->
+    <div class="modal fade modalRosteh" id="modalDescript9">
+      <div class="modal-dialog">
+        <!-- begin modal__rosteh-->
+        <div class="modal modal__rosteh"><a class="form__close modal-close" href="#" data-dismiss="modal"></a>
+          <div class="modal__title">Байкал</div>
+          <div class="modal__text">
+            <h4>Описание</h4>
+            <p>В Концерн Калашников входят 3 продуктовых оружейных бренда: «Калашников» – боевое и гражданское оружие, «Baikal» – охотничье и гражданское оружие, «IZHMASH» – спортивное оружие. Новыми направлениями деятельности Концерна являются: дистанционно-управляемые боевые модули, беспилотные летательные аппараты и многофункциональные катера специального назначения. <br><br><a href="www.kalashnikov.com">www.kalashnikov.com</a></p>
+          </div>
+          <div class="modal__gradient"></div>
+        </div>
+        <!-- end modal__rosteh-->
+      </div>
+    </div>
+    <!-- End modal Байкал -->
+    <!-- Begin Modal ИЖМАШ-->
+    <div class="modal fade modalRosteh" id="modalDescript10">
+      <div class="modal-dialog">
+        <!-- begin modal__rosteh-->
+        <div class="modal modal__rosteh"><a class="form__close modal-close" href="#" data-dismiss="modal"></a>
+          <div class="modal__title">ИЖМАШ</div>
+          <div class="modal__text">
+            <h4>Описание</h4>
+            <p>В Концерн Калашников входят 3 продуктовых оружейных бренда: «Калашников» – боевое и гражданское оружие, «Baikal» – охотничье и гражданское оружие, «IZHMASH» – спортивное оружие. Новыми направлениями деятельности Концерна являются: дистанционно-управляемые боевые модули, беспилотные летательные аппараты и многофункциональные катера специального назначения <br><br><a href="www.kalashnikov.com">www.kalashnikov.com</a></p>
+          </div>
+          <div class="modal__gradient"></div>
+        </div>
+        <!-- end modal__rosteh-->
+      </div>
+    </div>
+    <!-- End modal ИЖМАШ-->
+    <!-- Begin Modal BLL -->
+    <div class="modal fade modalRosteh" id="modalDescript11">
+      <div class="modal-dialog">
+        <!-- begin modal__rosteh-->
+        <div class="modal modal__rosteh"><a class="form__close modal-close" href="#" data-dismiss="modal"></a>
+          <div class="modal__title">BLL</div>
+          <ul class="modal__list modal__list_short">
+            <li><span>результат</span></li>
+            <li class="active"><span>Причины</span></li>
+          </ul>
+          <div class="modal__text hide">
+            <h4>Результат</h4>
+            <p>Специалисты в окрасочном оборудовании, поставляющие и локализующие на российском рынке продукцию лучших европейских производителей. Их экспертиза основывается на многолетнем опыте и практическом знании новейших тенденций окрасочной индустрии. Они обеспечивают полный комплекс инжиниринговых услуг: от выбора оборудования до проектирования линии и монтажа. <br><br><a href="www.bll-mes.com">www.bll-mes.com</a></p>
+          </div>
+          <div class="modal__text">
+            <h4>Причины для брендинга</h4>
+            <p>Консервативный образ компании</p>
+            <p>Не понятно, мы поставщик импортного оборудования или инжиниринговая компания?</p>
+            <p>Необходимость развивать другие направления бизнеса слабо развита практика активных продаж</p>
+            <p>В компании есть потребность в выстраивании новой структуры управления, основанной на открытой коммуникации, личной ответственности и высокой мотивации</p>
+            <p>Хотим быть причастными инновациям 21 века и концепции «Индустрия 4.0».</p>
+          </div>
+          <div class="modal__gradient"></div>
+        </div>
+        <!-- end modal__rosteh-->
+      </div>
+    </div>
+    <!-- End modal BLL -->
+    <!-- Begin Modal КРЭТ -->
+    <div class="modal fade modalRosteh" id="modalDescript12">
+      <div class="modal-dialog">
+        <!-- begin modal__rosteh-->
+        <div class="modal modal__rosteh"><a class="form__close modal-close" href="#" data-dismiss="modal"></a>
+          <div class="modal__title">КРЭТ</div>
+          <ul class="modal__list modal__list_short">
+            <li><span>задача</span></li>
+            <li class="active"><span>Описание</span></li>
+          </ul>
+          <div class="modal__text hide">
+            <h4>задача</h4>
+            <ul>
+              <li><b>Создать отличие <br></b>Брендинг дает возможность подчеркнуть особенности нашего продукта; то, что отличает наше предложение и делает его привлекательнее других. Успешный брендинг повышает эффективность продукта или огранизации. И если раньше это был один из многих, похожих между собой товаров, то теперь у него появляется свой уникальный характер. Он может создать эмоциональный резонанс в умах потребителей, которые, выбирая продукт, исходят как из эмоциональных, так и из практических соображений.</li>
+              <li><b>Повысить ценность <br></b>В целом, потребители согласны платить большую сумму за брендированный продукт, чем за простой немаркированный товар. Бренд также можно развить за счет дополнительных предложений.</li>
+              <li><b>Установить связь с людьми <br></b>Устанавливать связи с людьми важно для любых организаций, и бренд помогает в этом, воплощая качества, привлекательные для клиентов.</li>
+            </ul>
+          </div>
+          <div class="modal__text">
+            <h4>Описание</h4>
+            <p><b>КРЭТ – АО «Концерн Радиоэлектронные технологии» <br><br></b>Является разработчиком авионики для ведущих образцов российской военной авиации, а также для пилотируемого космического корабля «Союз-ТМА». Холдинг в области средств радиоэлектронной борьбы и государственного опознавания, комплексов радиоэлектронного оборудования. Сегодня КРЭТ является крупнейшим в России холдингом, который объединяет более 70 организаций радиоэлектронной промышленности. Их деятельность связана с разработкой и производством средств радиоэлектронной борьбы и разведки, государственного опознавания, комплексов и систем бортового радиоэлектронного оборудования, измерительной аппаратуры специального назначения, а также разъемных электрических соединителей и кабельной продукции.</p>
+          </div>
+          <div class="modal__gradient"></div>
+        </div>
+        <!-- end modal__rosteh-->
+      </div>
+    </div>
+    <!-- End modal КРЭТ -->
+    <!-- Begin Modal РЕНОВА -->
+    <div class="modal fade modalRosteh" id="modalDescript13">
+      <div class="modal-dialog">
+        <!-- begin modal__rosteh-->
+        <div class="modal modal__rosteh"><a class="form__close modal-close" href="#" data-dismiss="modal"></a>
+          <div class="modal__title">РЕНОВА</div>
+          <ul class="modal__list">
+            <li><span>результат</span></li>
+            <li><span>Причины</span></li>
+            <li class="active"><span>Описание</span></li>
+          </ul>
+          <div class="modal__text hide">
+            <h4>Результат</h4>
+            <p>Компания освежила свой внешний облик и привела в порядок архитектуру бренда. Также обновила свой корпоративный брендбук и расширила коммуникационные каналы. </p>
+          </div>
+          <div class="modal__text hide">
+            <h4>Причины для фейслифтинга</h4>
+            <ul>
+              <li>Отсутствие фирменного стиля</li>
+              <li>Отсутствие чёткого распределения бренд архитектуры</li>
+              <li>Приведение в соответствие корпоративного брендбука</li>
+            </ul>
+          </div>
+          <div class="modal__text">
+            <h4>Описание</h4>
+            <p>Группа компаний «Ренова» — международная частная бизнес-группа, состоящая из управляющих компаний, фондов прямых и портфельных инвестиций, владеющих и управляющих активами в металлургической, горнодобывающей, химической, строительной отраслях, транспорте, энергетике, телекоммуникациях, высокотехнологическом машиностроении, ЖКХ, медицине и финансовом секторе в России и за рубежом (странах СНГ, Швейцарии, Италии, Южной Африке и США). Основана в 1990 году. </p>
+          </div>
+          <div class="modal__gradient"></div>
+        </div>
+        <!-- end modal__rosteh-->
+      </div>
+    </div>
+    <!-- End modal РЕНОВА -->
+    <!-- Begin Modal Kalash -->
+    <div class="modal fade modalRosteh" id="modalDescript14">
+      <div class="modal-dialog">
+        <!-- begin modal__rosteh-->
+        <div class="modal modal__rosteh"><a class="form__close modal-close" href="#" data-dismiss="modal"></a>
+          <div class="modal__title">калашников</div>
+          <ul class="modal__list">
+            <li><span>результат</span></li>
+            <li><span>задача</span></li>
+            <li class="active"><span>Описание</span></li>
+          </ul>
+          <div class="modal__text hide">
+            <h4>Результат</h4>
+          </div>
+          <div class="modal__text hide">
+            <h4>задача</h4>
+          </div>
+          <div class="modal__text">
+            <h4>Описание</h4>
+          </div>
+          <div class="modal__gradient"></div>
+        </div>
+        <!-- end modal__rosteh-->
+      </div>
+    </div>
+    <!-- End modal Kalash -->
     <!-- begin Modal privacyModal-->
     <div class="modal fade privacyModal" id="privacyModal">
       <div class="modal-dialog">
         <div class="modal-content"><a class="form__close modal-close" href="#" data-dismiss="modal"></a>
           <h2>Политика конфиденциальности</h2>
-          <p>Настоящая Политика конфиденциальности персональных данных (далее – Политика конфиденциальности) действует в отношении всей информации, которую сайт «Время Первых»,  расположенный на доменном имени www.go.timetofirst.ru, может получить о Пользователе во время использования сайта , программ и продуктов. </p>
+          <p>Настоящая Политика конфиденциальности персональных данных (далее – Политика конфиденциальности) действует в отношении всей информации, которую сайт «Время Первых»,  расположенный на доменном имени kohldesign.ru, может получить о Пользователе во время использования сайта , программ и продуктов. </p>
           <p><b>1. ОПРЕДЕЛЕНИЕ ТЕРМИНОВ</b></p>
           <p>1.1.	В настоящей Политике конфиденциальности используются следующие термины: </p>
           <p>1.1.1.	«Администрация сайта (далее – Администрация сайта) » – уполномоченные сотрудники на управления сайтом, действующие от имени Название организации,  которые организуют и (или) осуществляет обработку персональных данных, а также определяет цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными.</p>
@@ -1342,10 +1774,10 @@
           <p>9.2. Новая Политика конфиденциальности вступает в силу с момента ее размещения на Сайте , если иное не предусмотрено новой редакцией Политики конфиденциальности.</p>
           <p>9.3. Все предложения или вопросы по настоящей Политике конфиденциальности следует сообщать  указать раздел сайта </p>
           <p>
-            9.4. Действующая Политика конфиденциальности размещена на странице по адресу www.go.timetofirst.ru  адрес магазина.
+            9.4. Действующая Политика конфиденциальности размещена на странице по адресу kohldesign.ru  адрес магазина.
             
           </p>
-          <p>Для связи с администратором сайта по любым вопросам вы можете написать письмо на e-mail: info@timetofirst.ru</p>
+          <p>Для связи с администратором сайта по любым вопросам вы можете написать письмо на e-mail: kohl@kohldesign.ru</p>
         </div>
       </div>
     </div>
@@ -1356,7 +1788,7 @@
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.inputmask.bundle.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6xBYxta7psDhgHr88kpkDQ3bXdfMgxy8"></script>
-    <script src="js/function.js?0.4"></script>
+    <script src="js/function.js?0.6"></script>
     <script src="js/google-maps.js"></script>
   </body>
 </html>

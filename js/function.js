@@ -52,7 +52,7 @@ $(document).ready(function() {
       arrows: false,
       fade: true,
       asNavFor: '.sliderNav',
-      infinite: false,
+      // infinite: false,
       adaptiveHeight: true
     });
     $('.sliderFor2').slick({
@@ -61,7 +61,7 @@ $(document).ready(function() {
       arrows: false,
       fade: true,
       asNavFor: '.sliderNav',
-      infinite: false
+      // infinite: false
     });
     $('.sliderFor3').slick({
       slidesToShow: 1,
@@ -69,7 +69,7 @@ $(document).ready(function() {
       arrows: false,
       fade: true,
       asNavFor: '.sliderNav',
-      infinite: false,
+      // infinite: false,
     });
     var slider = $('.sliderNav').slick({
       slidesToShow: 5,
@@ -77,14 +77,16 @@ $(document).ready(function() {
       asNavFor: '.sliderFor,.sliderFor2,.sliderFor3',
       dots: false,
       arrows: false,
-      centerMode: true,
+      // centerMode: true,
       focusOnSelect: true,
       vertical: true,
-      infinite: false,
+      // infinite: false,
+      // verticalSwiping: true,
       responsive: [
         {
           breakpoint: 767,
           settings: {
+            verticalSwiping: false,
             slidesToShow: 1,
             vertical: false,
             asNavFor: '.sliderFor,.sliderFor3',
@@ -101,7 +103,6 @@ $(document).ready(function() {
         slider.slick('slickNext');
     });
 
-    // РџРѕСЏРІР»РµРЅРёРµ РїРѕР»СЏ РїСЂРё РІС‹Р±РѕСЂРµ РёРЅРїСѓС‚Р° РІ РјРѕРґР°Р»РєРµ
     $('.form__radio input').change(function() {
         var inputDate = $('#input_date')
         var checked = $('#form_radio_1').prop('checked')
@@ -114,15 +115,22 @@ $(document).ready(function() {
         }
     });
 
-    // РўР°Р±С‹ РІ РјРѕРґР°Р»РєРµ
-    var houseTab = $('#modal_tabs li')
-    var houseGroup = $('.modal__text');
-    houseTab.click(function() {
-        var index = $(this).index();
-        houseTab.removeClass('active');
+    $('.modal__list li').click(function() {
+        var houseTabs = $(this).parent().find('li');
+        var houseGroup = $(this).closest('.modal-dialog').find('.modal__text');
+        var i = $(this).index();
+        houseTabs.removeClass('active');
         $(this).addClass('active');
         houseGroup.addClass('hide');
-        houseGroup.eq(index).removeClass('hide');
+        houseGroup.eq(i).removeClass('hide');
+    });
+
+    $('.promotion__item').on('mouseenter', function() {
+        $(this).addClass('hover');
+    });
+
+    $('.promotion__item').on('mouseleave', function() {
+        $(this).removeClass('hover');
     });
 
     // Tooltips in Meeting block

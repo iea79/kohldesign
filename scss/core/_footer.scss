@@ -8,7 +8,7 @@
 	@extend %clear_a;
 	@media (max-width : 768px) {
 		text-align: center;
-		padding: 2.6em 0 2em;
+		padding: 2.3em 0 2em;
 	}
 	&__left {
 		float: left;
@@ -18,7 +18,7 @@
 			float: none;
 			display: block;
 			padding-left: 0.9em;
-			margin: 0 auto 2.4em;
+			margin: 0 auto 1.7em;
 			text-align: left;
 		}
 	}
@@ -43,14 +43,17 @@
 		display: table-cell;
 		vertical-align: middle;
 		@media (max-width: 767px) {
-			width: 19em;
-			line-height: 1.1;
-		    font-size: 0.7em;
+			font-family: "Gotham Pro";
+			width: 22.9em;
+			line-height: 1.2;
+		    font-size: 0.6em;
 		    text-align: left;
-		    padding-left: 0.7em;
-		    padding-top: 0.5em;
+		    font-weight: 400;
+		    padding-left: 0.8em;
+		    padding-top: 0.7em;
 		    display: inline-block;
 		    vertical-align: top;
+		    letter-spacing: .11em;
 		    br {
 		    	display: none;
 		    }
@@ -70,18 +73,22 @@
 		color: #00b9fe;
 		font-size: 0.875em;
 		@media (max-width : 768px) {
-			font-size: 1.1em;
+			font-size: 1.07em;
+			margin-bottom: 1.3em;
 		}
 	}
 	&__copy {
 		color: #fff4fb;
 		opacity: 0.3;
+		@media (max-width: 767px) {
+		    font-size: 1.1em;
+		}
 	}
 	&__right {
 		float: right;
 		@media (max-width : 768px) {
 			float: none;
-			margin-bottom: 0.8em;
+			margin-bottom: 0.95em;
 		}
 	}
 	&__tel {
@@ -89,7 +96,7 @@
 		font-size: 1.5em;
   		font-weight: 500;
   		@media (max-width : 768px) {
-			margin-bottom: 0.8em;
+			margin-bottom: 0.6em;
 		}
 	}
 	&__order {
@@ -105,8 +112,9 @@
 		}
 		@media (max-width : 768px) {
 			float: none;
-			padding: 1em 2em;
+			padding: 1em 1.8em;
 			font-size: 1.2em;
+			letter-spacing: .04em;
 			border-radius: 1.5em;
 			border: 0.063em solid #f01e1e;
 			&:hover {
